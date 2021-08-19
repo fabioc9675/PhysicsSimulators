@@ -1,19 +1,22 @@
 import React, { useEffect, useState } from "react";
 import Editor from "./Editor";
 
+import useLocalStorage from "../hooks/useLocalStorage";
+
 function App() {
-  const [html, setHtml] = useState('')
-  const [css, setCss] = useState('')
-  const [js, setJs] = useState('')
+  const [html, setHtml] = useLocalStorage('html', '')
+  const [css, setCss] = useLocalStorage('css', '')
+  const [js, setJs] = useLocalStorage('js', '')
   const [srcDoc, setSrcDoc] = useState('')
 
   useEffect(() => {
     const timeout = setTimeout(() => {
       setSrcDoc(`
+        <!DOCTYPE html>
         <html>
           <body>${html}</body>
           <style>${css}</style>
-          <script>${js}</script>
+          <script>${js}</script>       
         </html>  
       `)
     }, 1000)
@@ -47,7 +50,7 @@ function App() {
         <iframe
           srcDoc={srcDoc}
           title="output"
-          sandbox="allow-scripts"
+          sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
           frameBorder="0"
           width="100%"
           height="100%"
