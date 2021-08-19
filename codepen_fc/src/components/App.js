@@ -13,10 +13,28 @@ function App() {
     const timeout = setTimeout(() => {
       setSrcDoc(`
         <!DOCTYPE html>
-        <html>
+        <html lang="">
+
+        <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>p5.js example</title>
+          <style>
+            ${css}
+          </style>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.sound.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
+          <link rel="stylesheet" type="text/css" href="style.css">
+          <meta charset="utf-8" /><!-- <script src="../addons/p5.sound.js"></script> -->
+          <script>${js}</script>
+        
+        </head>
+
+
           <body>${html}</body>
-          <style>${css}</style>
-          <script>${js}</script>       
+               
         </html>  
       `)
     }, 1000)
