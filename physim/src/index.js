@@ -5,7 +5,7 @@ import SimFrame from './components/SimFrame';
 
 ReactDOM.render(
   <React.StrictMode>
-    <SimFrame />
+    <SimFrame url = {'https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/main/SolarSystem/sketch.js'}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
