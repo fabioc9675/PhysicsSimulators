@@ -5,7 +5,7 @@ import Editor from "./Editor";
 
 function SimFrame(props) {
   // definition of language Used in simulator
-  const { url } = props;
+  const { url, doc, act } = props;
 
   const [p5, setP5] = useState("");
 
@@ -81,6 +81,14 @@ function SimFrame(props) {
             width="100%"
             height="100%"
           />
+        </div>
+      </div>
+      <div class="pane-bottom">
+        <div className="pane-bottom bottom-left-pane">
+          <iframe src={doc} width="100%" height="100%" />
+        </div>
+        <div className="pane-bottom bottom-right-pane">
+          <iframe src={act} width="100%" height="100%" />
         </div>
       </div>
     </>

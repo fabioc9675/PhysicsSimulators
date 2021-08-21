@@ -18,6 +18,21 @@ body {
   width: 60vw;
 }
 
+.pane-bottom {
+  display: flex;
+  flex-direction: row;
+  height: 40vh;
+}
+
+.bottom-left-pane {
+  background-color: hsl(255, 6%, 50%);
+  width: 40vw;
+}
+.bottom-right-pane {
+  background-color: hsl(255, 6%, 50%);
+  width: 40vw;
+}
+
 .top-right-pane iframe {
   position: relative;
   top: 0;
