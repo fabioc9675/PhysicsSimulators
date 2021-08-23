@@ -85,10 +85,10 @@ function SimFrame(props) {
       </div>
       <div class="pane-bottom">
         <div className="pane-bottom bottom-left-pane">
-          <iframe src={doc} width="100%" height="100%" />
+          <iframe src={doc} width="100%" height="100%" frameBorder="0" />
         </div>
         <div className="pane-bottom bottom-right-pane">
-          <iframe src={act} width="100%" height="100%" />
+          <iframe src={act} width="100%" height="100%" frameBorder="0" />
         </div>
       </div>
     </>
