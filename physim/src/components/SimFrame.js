@@ -7,7 +7,12 @@ function SimFrame(props) {
   // definition of language Used in simulator
   const { url, doc, act } = props;
 
+  // use of remote libraries for graphics
+  const urlGraphLib =
+    "https://raw.githubusercontent.com/jagracar/grafica.js/master/releases/grafica.min.js";
+
   const [p5, setP5] = useState("");
+  const [galib, setGalib] = useState("");
 
   // variable to have srcDoc component for iFrame
   const [srcDoc, setSrcDoc] = useState("");
@@ -27,25 +32,24 @@ function SimFrame(props) {
               margin: 0;
               overflow: hidden;
             }
-          </style>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+          </style>         
           <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.dom.min.js"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
+          <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script> -->
           <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
           <link rel="stylesheet" type="text/css" href="style.css">
-          <meta charset="utf-8" /><!-- <script src="../addons/p5.sound.js"></script> -->
+          <!-- <script src="https://raw.githubusercontent.com/jagracar/grafica.js/master/releases/grafica.min.js"></script> -->
+          <script>${galib}</script>
           <script>${p5}</script>
         </head>
           <body>
-            <main>
-            </main>
+          
           </body>
         </html>
       `);
     }, 1000);
     return () => clearTimeout(timeout);
-  }, [p5]);
+  }, [galib, p5]);
 
   // function to feed the script page
   window.onload = function loadSketch() {
@@ -56,6 +60,18 @@ function SimFrame(props) {
       .then(function (data) {
         // console.log(data);
         setP5(data);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+
+    fetch(urlGraphLib)
+      .then(function (response) {
+        return response.text();
+      })
+      .then(function (data) {
+        // console.log(data);
+        setGalib(data);
       })
       .catch(function (error) {
         console.log(error);
@@ -76,7 +92,7 @@ function SimFrame(props) {
         <div className="pane top-right-pane">
           <iframe
             srcDoc={srcDoc}
-            title="Simulación"
+            title="Simulation"
             sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
             frameBorder="0"
             width="100%"
@@ -84,12 +100,24 @@ function SimFrame(props) {
           />
         </div>
       </div>
-      <div class="pane-bottom">
+      <div className="pane-bottom">
         <div className="pane-bottom bottom-left-pane">
-          <iframe src={doc} width="100%" height="100%" frameBorder="0" />
+          <iframe
+            title="Theory"
+            src={doc}
+            width="100%"
+            height="100%"
+            frameBorder="0"
+          />
         </div>
         <div className="pane-bottom bottom-right-pane">
-          <iframe src={act} width="100%" height="100%" frameBorder="0" />
+          <iframe
+            title="Laboratory"
+            src={act}
+            width="100%"
+            height="100%"
+            frameBorder="0"
+          />
         </div>
       </div>
     </>

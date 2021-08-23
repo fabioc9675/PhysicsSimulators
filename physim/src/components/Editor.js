@@ -1,11 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import "codemirror/lib/codemirror.css";
 import "codemirror/theme/material.css";
 import "codemirror/mode/javascript/javascript";
 
 import { Controlled as ControlledEditor } from "react-codemirror2";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCompressAlt, faExpandAlt } from "@fortawesome/free-solid-svg-icons";
 
 export default function Editor(props) {
   // definition of properties for Editor component
