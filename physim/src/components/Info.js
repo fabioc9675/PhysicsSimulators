@@ -28,9 +28,9 @@ export default function Info(props) {
             fontSize: "1.3rem",
           }}
         >
-          Autor= {aut_1}
+          Autor: {aut_1}
         </div>
-        <div>{em_1}</div>
+        <div style={{ paddingLeft: "1rem" }}>{em_1}</div>
       </div>
       <div>
         <div
@@ -39,9 +39,9 @@ export default function Info(props) {
             fontSize: "1.3rem",
           }}
         >
-          Autor= {aut_2}
+          Autor: {aut_2}
         </div>
-        <div>{em_2}</div>
+        <div style={{ paddingLeft: "1rem" }}>{em_2}</div>
       </div>
       <div>
         <div
@@ -50,9 +50,9 @@ export default function Info(props) {
             fontSize: "1.3rem",
           }}
         >
-          Autor= {aut_3}
+          Autor: {aut_3}
         </div>
-        <div>{em_3}</div>
+        <div style={{ paddingLeft: "1rem" }}>{em_3}</div>
       </div>
       <div
         style={{

@@ -108,14 +108,14 @@ function SimFrame(props) {
         <div className="pane-bottom">
           <div className="pane-bottom bottom-left-pane">
             <Reader
-              displayName="Fundamentación Teórica"
+              displayName="Fundamentación teórica"
               title="Theory"
               source={doc}
             />
           </div>
           <div className="pane-bottom bottom-right-pane">
             <Reader
-              displayName="Actividad de Laboratorio"
+              displayName="Actividad de laboratorio"
               title="laboratory"
               source={act}
             />
