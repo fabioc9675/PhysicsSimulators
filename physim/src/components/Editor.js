@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/Editor.css";
 import "codemirror/lib/codemirror.css";
 import "codemirror/theme/material.css";
 import "codemirror/mode/javascript/javascript";

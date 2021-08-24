@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
+import "../styles/SimFrame.css";
 
 // local imports
 import Editor from "./Editor";
+import Reader from "./Reader";
 
 function SimFrame(props) {
   // definition of language Used in simulator
@@ -102,21 +104,17 @@ function SimFrame(props) {
       </div>
       <div className="pane-bottom">
         <div className="pane-bottom bottom-left-pane">
-          <iframe
+          <Reader
+            displayName="Fundamentación Teórica"
             title="Theory"
-            src={doc}
-            width="100%"
-            height="100%"
-            frameBorder="0"
+            source={doc}
           />
         </div>
         <div className="pane-bottom bottom-right-pane">
-          <iframe
-            title="Laboratory"
-            src={act}
-            width="100%"
-            height="100%"
-            frameBorder="0"
+          <Reader
+            displayName="Actividad de Laboratorio"
+            title="laboratory"
+            source={act}
           />
         </div>
       </div>
