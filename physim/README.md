@@ -8,6 +8,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### `npm install @fortawesome/react-fontawesome @fortawesome/free-solid-svg-icons @fortawesome/fontawesome-svg-core`
 
+### `npm install react-router react-router-dom`
+
 ## Available Scripts
 
 In the project directory, you can run:
