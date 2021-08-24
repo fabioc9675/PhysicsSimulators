@@ -6,6 +6,7 @@
   padding: 0.5rem;
   background-color: hsl(255, 6%, 25%);
   width: 100%;
+  font-size: 1rem;
 }
 
 .editor-container .CodeMirror-scroll {
@@ -22,6 +23,7 @@
   padding: 0.5rem 0.5rem 0.5rem 1rem;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
+  font-size: 1.3rem;
 }
 
 .CodeMirror {

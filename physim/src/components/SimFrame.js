@@ -4,10 +4,11 @@ import "../styles/SimFrame.css";
 // local imports
 import Editor from "./Editor";
 import Reader from "./Reader";
+import Info from "./Info";
 
 function SimFrame(props) {
   // definition of language Used in simulator
-  const { url, doc, act } = props;
+  const { url, doc, act, paneTitle, author, email } = props;
 
   // use of remote libraries for graphics
   const urlGraphLib =
@@ -83,39 +84,52 @@ function SimFrame(props) {
   return (
     <>
       <div className="pane">
-        <div className="pane top-left-pane">
-          <Editor
-            language="javascript"
-            displayName="Editor de código"
-            value={p5}
-            onChange={setP5}
-          />
+        <div className="pane pane-title">{paneTitle}</div>
+        <div className="pane-top">
+          <div className="pane-top top-left-pane">
+            <Editor
+              language="javascript"
+              displayName="Editor de código"
+              value={p5}
+              onChange={setP5}
+            />
+          </div>
+          <div className="pane-top top-right-pane">
+            <iframe
+              srcDoc={srcDoc}
+              title="Simulation"
+              sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+              frameBorder="0"
+              width="100%"
+              height="100%"
+            />
+          </div>
         </div>
-        <div className="pane top-right-pane">
-          <iframe
-            srcDoc={srcDoc}
-            title="Simulation"
-            sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
-            frameBorder="0"
-            width="100%"
-            height="100%"
-          />
-        </div>
-      </div>
-      <div className="pane-bottom">
-        <div className="pane-bottom bottom-left-pane">
-          <Reader
-            displayName="Fundamentación Teórica"
-            title="Theory"
-            source={doc}
-          />
-        </div>
-        <div className="pane-bottom bottom-right-pane">
-          <Reader
-            displayName="Actividad de Laboratorio"
-            title="laboratory"
-            source={act}
-          />
+        <div className="pane-bottom">
+          <div className="pane-bottom bottom-left-pane">
+            <Reader
+              displayName="Fundamentación Teórica"
+              title="Theory"
+              source={doc}
+            />
+          </div>
+          <div className="pane-bottom bottom-right-pane">
+            <Reader
+              displayName="Actividad de Laboratorio"
+              title="laboratory"
+              source={act}
+            />
+          </div>
+          <div className="pane-bottom author-info">
+            <Info
+              aut_1={author[0]}
+              em_1={email[0]}
+              aut_2={author[1]}
+              em_2={email[1]}
+              aut_3={author[2]}
+              em_3={email[2]}
+            />
+          </div>
         </div>
       </div>
     </>
