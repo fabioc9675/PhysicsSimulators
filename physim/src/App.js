@@ -66,6 +66,31 @@ export default function App() {
               />
             )}
           />
+          <Route
+            forceRefresh={true}
+            exact
+            path="/simul_03"
+            component={() => (
+              <SimFrame
+                paneTitle={"Figuras de lissajous"}
+                url={
+                  "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/main/Controls/sketch.js"
+                }
+                doc={
+                  "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/main/SolarSystem/Theory.pdf&embedded=true"
+                }
+                act={
+                  "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/main/SolarSystem/Activity.pdf&embedded=true"
+                }
+                author={["Jhon Jaramillo", "Jaime Osorio", "Fabian Castaño"]}
+                email={[
+                  "email_03@email.com",
+                  "email_01@email.com",
+                  "email_02@email.com",
+                ]}
+              />
+            )}
+          />
         </Switch>
       </Router>
     </div>

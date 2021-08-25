@@ -20,7 +20,38 @@ function SimFrame(props) {
   // variable to have srcDoc component for iFrame
   const [srcDoc, setSrcDoc] = useState("");
 
+  // function to feed the script page
   useEffect(() => {
+    // loading some data
+    // console.log("Loading...");
+    fetch(url)
+      .then(function (response) {
+        return response.text();
+      })
+      .then(function (data) {
+        // console.log(data);
+        setP5(data);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+
+    fetch(urlGraphLib)
+      .then(function (response) {
+        return response.text();
+      })
+      .then(function (data) {
+        // console.log(data);
+        setGalib(data);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }, [url]);
+
+  // function to execute change in component
+  useEffect(() => {
+    // console.log("Changing...");
     const timeout = setTimeout(() => {
       setSrcDoc(`
         <!DOCTYPE html>
@@ -53,33 +84,6 @@ function SimFrame(props) {
     }, 1000);
     return () => clearTimeout(timeout);
   }, [galib, p5]);
-
-  // function to feed the script page
-  window.onload = function loadSketch() {
-    fetch(url)
-      .then(function (response) {
-        return response.text();
-      })
-      .then(function (data) {
-        // console.log(data);
-        setP5(data);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
-
-    fetch(urlGraphLib)
-      .then(function (response) {
-        return response.text();
-      })
-      .then(function (data) {
-        // console.log(data);
-        setGalib(data);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
-  };
 
   return (
     <>

@@ -1,0 +1,9 @@
+.MainFrame {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.SimButton {
+  padding: 1rem;
+}
