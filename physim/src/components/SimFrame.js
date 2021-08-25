@@ -5,6 +5,7 @@ import "../styles/SimFrame.css";
 import Editor from "./Editor";
 import Reader from "./Reader";
 import Info from "./Info";
+import logo from "../logos/UdeA.png";
 
 function SimFrame(props) {
   // definition of language Used in simulator
@@ -88,7 +89,10 @@ function SimFrame(props) {
   return (
     <>
       <div className="pane">
-        <div className="pane pane-title">{paneTitle}</div>
+        <div className="pane pane-title">
+          <div style={{ paddingTop: "0.2rem" }}>{paneTitle}</div>
+          <img src={logo} alt="" height="80%" />
+        </div>
         <div className="pane-top">
           <div className="pane-top top-left-pane">
             <Editor
