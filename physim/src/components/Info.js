@@ -10,6 +10,7 @@ export default function Info(props) {
         padding: "2.0rem",
         color: "white",
         fontFamily: "serif",
+        overflow: "auto",
       }}
     >
       <div
