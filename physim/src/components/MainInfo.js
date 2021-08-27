@@ -8,14 +8,9 @@ export default function MainInfo() {
   console.log(description.text);
   return (
     <div className="MainInfo-pane">
-      <div className="MainInfo-pane MainInfo-Title">Descripción</div>
-      <div className="MainInfo-pane MainInfo-Body">{description.text}</div>
-      <img
-        className="MainInfo-pane MainInfo-Logo"
-        src={logo}
-        alt=""
-        height="5%"
-      />
+      <div className="MainInfo-Title">Descripción</div>
+      <div className="MainInfo-Body">{description.text}</div>
+      <img className="MainInfo-Logo" src={logo} alt="" height="5%" />
     </div>
   );
 }
