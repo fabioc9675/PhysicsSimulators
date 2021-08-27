@@ -2,6 +2,9 @@ import React from "react";
 import "../styles/MainView.css";
 import SimDescriptor from "./SimDescriptor";
 
+// import data of simulators
+import dataSim from "../data/data.json";
+
 // local imports
 import logo from "../logos/UdeA.png";
 import MainInfo from "./MainInfo";
@@ -18,16 +21,24 @@ export default function MainView() {
         <div className="MainFrame-pane pane-left">
           <MainInfo />
         </div>
-
         <div>
           <div className="SimButton">
-            <SimDescriptor buttonLabel="Simulacion 1" pathUrl="/simul_01" />
+            <SimDescriptor
+              buttonLabel="Simulacion 1"
+              pathUrl={dataSim.sim01.path}
+            />
           </div>
           <div className="SimButton">
-            <SimDescriptor buttonLabel="Simulacion 2" pathUrl="/simul_02" />
+            <SimDescriptor
+              buttonLabel="Simulacion 2"
+              pathUrl={dataSim.sim02.path}
+            />
           </div>
           <div className="SimButton">
-            <SimDescriptor buttonLabel="Simulacion 3" pathUrl="/simul_03" />
+            <SimDescriptor
+              buttonLabel="Simulacion 3"
+              pathUrl={dataSim.sim03.path}
+            />
           </div>
         </div>
       </div>
