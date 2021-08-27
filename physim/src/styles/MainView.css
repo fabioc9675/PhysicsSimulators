@@ -4,6 +4,30 @@
   height: 100vh;
 }
 
+.pane-title {
+  display: flex;
+  flex-direction: row;
+  height: 5vh;
+  justify-content: space-between;
+  background-color: rgb(1, 96, 45);
+  color: white;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 3vh;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.MainFrame-pane {
+  display: flex;
+  flex-direction: row;
+  height: 95vh;
+}
+
+.pane-left {
+  width: 20vw;
+  background-color: rgb(1, 96, 45);
+}
+
 .SimButton {
   padding: 1rem;
 }
