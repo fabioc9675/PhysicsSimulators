@@ -1,4 +1,9 @@
 import React, { useEffect, useState } from "react";
+import { useHistory } from "react-router";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
+
+// styles
 import "../styles/SimFrame.css";
 
 // local imports
@@ -7,10 +12,12 @@ import Reader from "./Reader";
 import Info from "./Info";
 
 function SimFrame(props) {
+  let history = useHistory();
   // definition of language Used in simulator
   const { url, doc, act, paneTitle, author, email } = props;
 
   // use of remote libraries for graphics
+  const logo = "resources/logos/UdeA.png";
   const urlGraphLib =
     "https://raw.githubusercontent.com/jagracar/grafica.js/master/releases/grafica.min.js";
 
@@ -85,10 +92,21 @@ function SimFrame(props) {
     return () => clearTimeout(timeout);
   }, [galib, p5]);
 
+  function backOnClick() {
+    // come back to the main view
+    history.push("/main");
+  }
+
   return (
     <>
       <div className="pane">
-        <div className="pane pane-title">{paneTitle}</div>
+        <div className="pane pane-title">
+          <div style={{ paddingTop: "0.2rem" }} onClick={backOnClick}>
+            <FontAwesomeIcon icon={faAngleLeft} />
+          </div>
+          <div>{paneTitle}</div>
+          <img src={logo} alt="" height="80%" />
+        </div>
         <div className="pane-top">
           <div className="pane-top top-left-pane">
             <Editor

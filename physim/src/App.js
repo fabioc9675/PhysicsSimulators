@@ -2,6 +2,9 @@ import React from "react";
 import SimFrame from "./components/SimFrame";
 import MainView from "./components/MainView";
 
+// import data of simulators
+import dataSim from "../src/data/data.json";
+
 import {
   BrowserRouter as Router,
   Route,
@@ -19,75 +22,45 @@ export default function App() {
           <Route
             forceRefresh={true}
             exact
-            path="/simul_01"
+            path={dataSim.sim01.path}
             component={() => (
               <SimFrame
-                paneTitle={"Gravitación universal"}
-                url={
-                  "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/main/SolarSystem/sketch.js"
-                }
-                doc={
-                  "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/main/SolarSystem/Theory.pdf&embedded=true"
-                }
-                act={
-                  "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/main/SolarSystem/Activity.pdf&embedded=true"
-                }
-                author={["Fabian Castaño", "Jaime Osorio", "Jhon Jaramillo"]}
-                email={[
-                  "email_01@email.com",
-                  "email_02@email.com",
-                  "email_03@email.com",
-                ]}
+                paneTitle={dataSim.sim01.title}
+                url={dataSim.sim01.url}
+                doc={dataSim.sim01.doc}
+                act={dataSim.sim01.act}
+                author={dataSim.sim01.author}
+                email={dataSim.sim01.email}
               />
             )}
           />
           <Route
             forceRefresh={true}
             exact
-            path="/simul_02"
+            path={dataSim.sim02.path}
             component={() => (
               <SimFrame
-                paneTitle={"Colisión de partículas"}
-                url={
-                  "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/main/ParticleCollision/sketch.js"
-                }
-                doc={
-                  "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/main/SolarSystem/Theory.pdf&embedded=true"
-                }
-                act={
-                  "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/main/SolarSystem/Activity.pdf&embedded=true"
-                }
-                author={["Jaime Osorio", "Fabian Castaño", "Jhon Jaramillo"]}
-                email={[
-                  "email_02@email.com",
-                  "email_01@email.com",
-                  "email_03@email.com",
-                ]}
+                paneTitle={dataSim.sim02.title}
+                url={dataSim.sim02.url}
+                doc={dataSim.sim02.doc}
+                act={dataSim.sim02.act}
+                author={dataSim.sim02.author}
+                email={dataSim.sim02.email}
               />
             )}
           />
           <Route
             forceRefresh={true}
             exact
-            path="/simul_03"
+            path={dataSim.sim03.path}
             component={() => (
               <SimFrame
-                paneTitle={"Figuras de lissajous"}
-                url={
-                  "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/main/Controls/sketch.js"
-                }
-                doc={
-                  "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/main/SolarSystem/Theory.pdf&embedded=true"
-                }
-                act={
-                  "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/main/SolarSystem/Activity.pdf&embedded=true"
-                }
-                author={["Jhon Jaramillo", "Jaime Osorio", "Fabian Castaño"]}
-                email={[
-                  "email_03@email.com",
-                  "email_01@email.com",
-                  "email_02@email.com",
-                ]}
+                paneTitle={dataSim.sim03.title}
+                url={dataSim.sim03.url}
+                doc={dataSim.sim03.doc}
+                act={dataSim.sim03.act}
+                author={dataSim.sim03.author}
+                email={dataSim.sim03.email}
               />
             )}
           />

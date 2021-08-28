@@ -1,0 +1,26 @@
+.MainInfo-pane {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 20vw;
+}
+
+.MainInfo-Title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.MainInfo-Body {
+  padding: 1rem;
+  font-size: 1.2rem;
+  overflow: auto;
+  height: 75vh;
+  white-space: pre-wrap;
+}
+
+.MainInfo-Logo {
+  align-self: center;
+  justify-self: left;
+  padding: 5vh;
+}

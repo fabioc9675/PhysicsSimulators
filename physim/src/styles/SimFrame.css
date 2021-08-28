@@ -6,12 +6,13 @@
 
 .pane-title {
   display: flex;
+  flex-direction: row;
   height: 5vh;
   justify-content: space-between;
   background-color: rgb(1, 96, 45);
   color: white;
-  padding-top: 0.5rem;
   padding-left: 2rem;
+  padding-right: 2rem;
   font-size: 3vh;
   font-family: "Times New Roman", Times, serif;
 }

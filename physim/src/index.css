@@ -1,3 +1,24 @@
 body {
   margin: 0;
 }
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(255, 6%, 13%) hsl(255, 6%, 13%);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+*::-webkit-scrollbar-track {
+  background: none;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: hsl(255, 6%, 13%);
+  border-radius: 0px;
+  border: 2px solid hsl(255, 6%, 13%);
+}
