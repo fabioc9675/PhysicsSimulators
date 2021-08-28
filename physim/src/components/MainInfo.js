@@ -1,11 +1,11 @@
 import React from "react";
 import "../styles/MainInfo.css";
 
-import description from "../logos/lorem.json";
-import logo from "../logos/UdeA.png";
+import description from "../textFiles/lorem.json";
 
 export default function MainInfo() {
-  console.log(description.text);
+  const logo = "resources/logos/UdeA.png";
+  //console.log(description.text);
   return (
     <div className="MainInfo-pane">
       <div className="MainInfo-Title">Descripción</div>

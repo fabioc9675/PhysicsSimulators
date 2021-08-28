@@ -3,7 +3,7 @@ import { useHistory } from "react-router";
 
 export default function SimDescriptor(props) {
   // component props
-  const { buttonLabel, pathUrl } = props;
+  const { buttonLabel, pathUrl, imgDir } = props;
 
   // URL history
   let history = useHistory();
@@ -15,7 +15,9 @@ export default function SimDescriptor(props) {
 
   return (
     <div>
-      <button onClick={HandleClick}>{buttonLabel}</button>
+      <button onClick={HandleClick}>
+        <img src={imgDir} alt={buttonLabel} height="100px" />
+      </button>
     </div>
   );
 }

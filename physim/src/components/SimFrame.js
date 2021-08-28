@@ -10,7 +10,6 @@ import "../styles/SimFrame.css";
 import Editor from "./Editor";
 import Reader from "./Reader";
 import Info from "./Info";
-import logo from "../logos/UdeA.png";
 
 function SimFrame(props) {
   let history = useHistory();
@@ -18,6 +17,7 @@ function SimFrame(props) {
   const { url, doc, act, paneTitle, author, email } = props;
 
   // use of remote libraries for graphics
+  const logo = "resources/logos/UdeA.png";
   const urlGraphLib =
     "https://raw.githubusercontent.com/jagracar/grafica.js/master/releases/grafica.min.js";
 

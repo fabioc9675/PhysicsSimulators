@@ -7,7 +7,8 @@
     "act": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/main/SolarSystem/Activity.pdf&embedded=true",
     "author": ["Fabian Castaño", "Jaime Osorio", "Jhon Jaramillo"],
     "email": ["email_01@email.com", "email_02@email.com", "email_03@email.com"],
-    "abst": "breve descripcion acerca de el simulador de gravitacion universal"
+    "abst": "breve descripcion acerca de el simulador de gravitacion universal",
+    "icon": "resources/logos/Sim_01_400x400.jpg"
   },
   "sim02": {
     "path": "/simul_02",
@@ -17,7 +18,8 @@
     "act": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/main/SolarSystem/Activity.pdf&embedded=true",
     "author": ["Jaime Osorio", "Fabian Castaño", "Jhon Jaramillo"],
     "email": ["email_02@email.com", "email_01@email.com", "email_03@email.com"],
-    "abst": "breve descripcion acerca de el simulador de colision de particulas"
+    "abst": "breve descripcion acerca de el simulador de colision de particulas",
+    "icon": "resources/logos/Sim_02_400x400.jpg"
   },
   "sim03": {
     "path": "/simul_03",
@@ -27,6 +29,7 @@
     "act": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/main/SolarSystem/Activity.pdf&embedded=true",
     "author": ["Jhon Jaramillo", "Jaime Osorio", "Fabian Castaño"],
     "email": ["email_03@email.com", "email_01@email.com", "email_02@email.com"],
-    "abst": "breve descripcion acerca de el simulador de figuras de lissajous"
+    "abst": "breve descripcion acerca de el simulador de figuras de lissajous",
+    "icon": "resources/logos/Sim_03_400x400.jpg"
   }
 }
