@@ -1,0 +1,52 @@
+.desc-pane {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(0, 149, 121);
+  height: 20vh;
+  width: 95%;
+  border-radius: 2vh;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 12px 12px 0 rgba(0, 0, 0, 0.19);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.desc-button {
+  height: 20vh;
+  width: 20vh;
+  border: none;
+  cursor: pointer;
+  box-shadow: none;
+  border-radius: 2vh;
+  justify-content: center;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+.desc-icon {
+  height: 18vh;
+  width: 18vh;
+  border-radius: 1.5vh;
+}
+
+.des-content {
+  color: white;
+  width: 70%;
+  padding: 2rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.des-title {
+  font-size: 2rem;
+}
+
+.des-abstract {
+  padding-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.desc-line {
+  color: white;
+  background-color: white;
+  height: 0.1rem;
+  border-color: white;
+}
