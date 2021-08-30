@@ -5,7 +5,7 @@
     "url": "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/main/SolarSystem/sketch.js",
     "doc": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/main/SolarSystem/Theory.pdf&embedded=true",
     "act": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/main/SolarSystem/Activity.pdf&embedded=true",
-    "author": ["Fabian Castaño", "Jaime Osorio", "Jhon Jaramillo"],
+    "author": ["Fabian Castaño", "Jaime Osorio", "Jose Ruiz"],
     "email": ["email_01@email.com", "email_02@email.com", "email_03@email.com"],
     "abst": "breve descripcion acerca de el simulador de gravitacion universal",
     "icon": "resources/logos/Sim_01_400x400.jpg"
@@ -16,7 +16,7 @@
     "url": "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/main/ParticleCollision/sketch.js",
     "doc": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/main/SolarSystem/Theory.pdf&embedded=true",
     "act": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/main/SolarSystem/Activity.pdf&embedded=true",
-    "author": ["Jaime Osorio", "Fabian Castaño", "Jhon Jaramillo"],
+    "author": ["Jaime Osorio", "Fabian Castaño", "Jose Ruiz"],
     "email": ["email_02@email.com", "email_01@email.com", "email_03@email.com"],
     "abst": "breve descripcion acerca de el simulador de colision de particulas",
     "icon": "resources/logos/Sim_02_400x400.jpg"
@@ -27,7 +27,7 @@
     "url": "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/main/Controls/sketch.js",
     "doc": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/main/SolarSystem/Theory.pdf&embedded=true",
     "act": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/main/SolarSystem/Activity.pdf&embedded=true",
-    "author": ["Jhon Jaramillo", "Jaime Osorio", "Fabian Castaño"],
+    "author": ["Jose Ruiz", "Jaime Osorio", "Fabian Castaño"],
     "email": ["email_03@email.com", "email_01@email.com", "email_02@email.com"],
     "abst": "breve descripcion acerca de el simulador de figuras de lissajous",
     "icon": "resources/logos/Sim_03_400x400.jpg"
