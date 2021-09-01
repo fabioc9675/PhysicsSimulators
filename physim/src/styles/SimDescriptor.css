@@ -31,17 +31,16 @@
 .des-content {
   color: white;
   width: 70%;
-  padding: 2rem;
+  padding: 1rem;
   font-family: "Times New Roman", Times, serif;
 }
 
 .des-title {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .des-abstract {
-  padding-top: 0.5rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .desc-line {
