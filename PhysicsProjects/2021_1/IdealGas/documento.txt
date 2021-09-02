@@ -1,0 +1,4 @@
+Titulo de la simulación: Gas ideal
+Autores: Jhoan Eusse, Andrés Muñoz, Santiago Tabares
+email: camilo.eusse@udea.edu.co, andres.munoza@udea.edu.co, santiago.tabaresg@udea.edu.co
+Descripción de la simulación: Se simula un gas ideal el cual sigue una distribución de Maxwell pudiendo variar los parámetros de temperatura y velocidades iniciales 

@@ -1,0 +1,158 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath, amssymb, amscd, amsthm, amsfonts}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{float}
+
+\oddsidemargin 0pt
+\evensidemargin 0pt
+\marginparwidth 40pt
+\marginparsep 10pt
+\topmargin -20pt
+\headsep 10pt
+\textheight 8.7in
+\textwidth 6.65in
+\linespread{1.2}
+
+\title{Teroía del gas ideal}
+\author{Santiago Tabares, Andrés Muñoz y Jhoan Eusse}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Descripición del gas ideal}
+
+El gas ideal es un modelo simple de la mécanica estadística que exitosamente explica muchas propiedades de los gases reales, tales como su capacidad calorífica. 
+
+El gas consiste de N partículas clásicas con posición $\vec{x_{i}}$ y velocidad $\vec{v_i}$, contenidas en una caja de lado L. Cada partícula es una "esfera rígida" de radio $r_{i}$ y masa $m_{i}$. Las partículas no interaccionan por medio de un potencial, sino que únicamente colisionan  elásticamente una con otra y se reflejan(especularmente) con las paredes de la caja que las contienen. Como todas las interacciones son elásticas, la energía total del sistema 
+
+\begin{equation}
+    E = \sum_{i} \dfrac{1}{2}m_{i}|\vec{v_{i}}|^{2}
+    \end{equation}
+se conserva.
+
+\subsection{Ecuación de movimiento}
+
+Ahora, vamos a describir la evolución en el tiempo de estas colisiones de partículas clásicas. Cuando una partícula está viajando libremente a través del espacio, se mueve a una velocidad fija con una trayectoria dada por 
+
+\begin{equation}
+    \vec{x_{i}(t + \Delta t)} = \vec{x_{i}}(t) + \vec{v_{i}}\Delta t 
+\end{equation}
+
+Una partícula es reflejada por una pared, con un vector unitario normal a la superficie $\hat{n}$ en una posición $w$ a lo largo de la coordenada $\hat{n}$, si la partícula toca la pared, que es, si 
+
+\begin{equation}
+    \vec{x_{i}} - r_{i}\hat{n} = w
+\end{equation}
+
+Ya que solo estamos considerando reflexiones especulares, la componente de velocidad normal a la pared is invertida, significando que su velocidad cambie como
+
+\begin{equation}
+    \vec{v_{i}} \rightarrow\vec{v_{i}} - 2(\vec{v_{i}}\cdot\hat{n})\hat{n}
+\end{equation}
+
+Una colisión entre 2 partículas $i$ y $j$ ocurre cuando 
+\begin{equation}
+    |\vec{x_{i}} - \vec{x_{j}}| = r_{i} + r_{j}
+
+\end{equation}
+
+o cuando las partículas se tocan. DUrante la colisión, hay un intercambio de momento $\vec{q}$ entre las partículas:
+
+\begin{equation} 
+\begin{split}
+\vec{v_{i}} & \rightarrow \vec{v_{i}} + \vec{q}/m_{i}  \\
+ \vec{v_{j}} & \rightarrow \vec{v_{j}} - \vec{q}/m_{j}
+\end{split}
+\end{equation}
+
+Para fijar $\vec{q}$, aplicamos 2 ligaduras. Ya que solo consideramos colisiones elásticas donde la energía cinética se conserva, se debe satisfacer 
+
+\begin{equation}
+    \dfrac{1}{2}m_{i}v_{i}^{2}+\dfrac{1}{2}m_{j}v_{j}^{2} = \dfrac{1}{2}m_{i}|\vec{v_{i}} + \vec{q}/m_{i}|^{2} + \dfrac{1}{2}m_{j}|\vec{v_{j}} - \vec{q}/m_{j}|^{2} 
+\end{equation}
+
+y ya que solo consideramos "colisiones especulares", "\vec{q}" debe orientarse normal al plano de reflexión, esto es,
+
+\begin{equation}
+    \vec{q} = q\hat{r_{ij}},
+    
+\end{equation}
+
+donde $\hat{r_{ij}} = (\vec{r_{i}} - \vec{r_{j}})/|\vec{r_{i}} - \vec{r_{j}}|$ es un vector unitario relativo entre el centro de las partículas. Resolviendo estas ecuaciones para q obtenemos que el momento transferido ecuando dos partículas colisionan es
+
+\begin{equation}
+    \vec{q} = -2\dfrac{m_{i}m_{j}}{m_{i} + m_{j}}[(\vec{v_{i}} - \vec{v_{j}})\cdot\hat{r_{ij}}]\hat{r_{ij}}
+\end{equation}
+
+\subsection{Distribución de Maxwell-Boltzmann}
+
+Curiosamente, no importa como las partículas del gas se encuentren en sus condiciones iniciales siempre van a tender a un estado de equilibrio. La tendencia experimental de las partículas a acercarse a un cierto equilibrio de velocidades se apoya sobre una explicación teórica simple.
+
+Partamos de un argumento clásico de la maximización de la entropía para derivar la distribución de velocidades de Maxwell.Boltzmann. 
+
+Consideremos un sistema de N partículas conpartiendo una energía total $E$. Supongamos que la energías posibles están dadas por $\epsilon_{i}$. Deseamos saber la distribución de equilibrio de energías, es decir, cuántas partículas tienen energía $\epsilon_{i}$.
+
+Sabemos que para un gas ideal, el número de miscroestados está dado por 
+
+\begin{equation}
+    W = \dfrac{N!}{\prod_{i}n_{i}!}
+\end{equation}
+
+donde $N!$ cuenta el número total de formas de re-asignar energías a las partículas, y $n_{i}$ corrige el problema de sobre conteo para diferentes partículas teneiendo la misma energía $\epsilon{i}$. Una forma de simplificar la expresión es tomar el logaritmo de los microestados. Podemos usar la aproximación de Sterling $\log n! \approx n\log n- n$ para el límite de $n$ grandes:
+
+\begin{equation}
+    \log W \approx N\log N - N -\sum_{i}(n_{i}\log n_{i} - n_{i}) 
+\end{equation}
+\begin{equation}
+    = N\log N - \sum_{i}n_{i}\log n_{i}
+\end{equation}
+
+Ahora, nuestra tarea se resume en econtrar la distribución {$n_{i}$} que máximiza $\log W$, sujeta a las ligaduras 
+
+\begin{equation*}
+    \sum_{i}n_{i} = N; \sum_{i}\epsilon_{i}n_{i} = E.
+\end{equation*}
+
+INtroduciendo los multiplicadores de Lagrange $\alpha$ y $\beta$ para implementar estas ligaduras, encontramos que se debe satisfacer 
+
+\begin{equation*}
+    G({n_{i}}) = \log W + \alpha(ligadura 1) + \beta(ligadura 2)
+\end{equation*}
+\begin{equation}
+    = N\log N - \sum_{i}\log n_{i} + \alpha(N - \sum_{i}n_{i}) + \beta(E - \sum_{i}\epsilon_{i}n_{i})
+\end{equation}
+
+Tomando la derivada de $G$ con respecto a $n_{j}$, encontramos 
+
+\begin{equation}
+    \dfrac{dG}{dn_{j}} = -\log n_{j} - 1 -\alpha - \beta\epsilon_{i}
+\end{equation}
+y estableciendo el críterio de la primera derivada para encontrar el máximo de $n_{j}$, llegamos al siguiente resultado 
+
+\begin{equation}
+    n_{j} = e^{1 - \alpha}e^{-\beta\epsilon_{i}} 	\vdots \box{\dfrac{n_{j}}{N} = \dfrac{1}{Z}e^{-\beta\epsilo_{i}}}
+\end{equation}
+donde definimos $Z = Ne^{1+\alpha} = \sum_{i}e^{-\beta\epsilon_{i}}$. La ecuación (15) es conocida como la distribución de Maxwell-Bolzmann; se dice que la distribución de {$n_{i}$} cae exponencialmente en la energía.
+
+Para derivar la distribución de velocidades de la distribución de energía, necesitamos hacer unos pocos pasos adicionales. Ya que la energía cinética de una partícula esta dada por $\epsilon = \dfrac{1}{2}mv^{2}$, la distribución de velocidades es está por 
+
+\begin{equation}
+    P(\vec{v})d\vec{v} \propto e^{-\beta m|\vec{v}|^{2}/2}
+\end{equation}
+
+Para caso partícular en 2 dimensiones, el elemento de área es $d\vec{v} = 2\pi vdv$, así la distribución de velocidades de Maxwell-Boltzmann para partículas en una caja que describe un gas ideal, es finalmente 
+
+\begin{equation}
+    P(v)dv \propto ve^{-\beta mv^{2}/2}
+\end{equation}
+
+\cite{Chang}\cite{bannerman2014stable}
+
+\bibliographystyle{ieeetr}
+
+\bibliography{references}
+
+\end{document}
