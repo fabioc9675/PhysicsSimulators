@@ -22,6 +22,36 @@ export default function App() {
           <Route
             forceRefresh={true}
             exact
+            path={dataSim.simEnTr.path}
+            component={() => (
+              <SimFrame
+                paneTitle={dataSim.simEnTr.title}
+                url={dataSim.simEnTr.url}
+                doc={dataSim.simEnTr.doc}
+                act={dataSim.simEnTr.act}
+                author={dataSim.simEnTr.author}
+                email={dataSim.simEnTr.email}
+              />
+            )}
+          />
+          <Route
+            forceRefresh={true}
+            exact
+            path={dataSim.simIdGa.path}
+            component={() => (
+              <SimFrame
+                paneTitle={dataSim.simIdGa.title}
+                url={dataSim.simIdGa.url}
+                doc={dataSim.simIdGa.doc}
+                act={dataSim.simIdGa.act}
+                author={dataSim.simIdGa.author}
+                email={dataSim.simIdGa.email}
+              />
+            )}
+          />
+          <Route
+            forceRefresh={true}
+            exact
             path={dataSim.sim01.path}
             component={() => (
               <SimFrame

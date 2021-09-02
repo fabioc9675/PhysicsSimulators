@@ -5,12 +5,14 @@ body {
 /* Works on Firefox */
 * {
   scrollbar-width: thin;
+  scrollbar-height: thin;
   scrollbar-color: hsl(255, 6%, 13%) hsl(255, 6%, 13%);
 }
 
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
   width: 0.8rem;
+  height: 0.8rem;
 }
 
 *::-webkit-scrollbar-track {

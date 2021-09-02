@@ -71,7 +71,10 @@ function SimFrame(props) {
             body {
               padding: 0;
               margin: 0;
-              overflow: hidden;
+              overflow: auto;
+            }
+            canvas {
+              display: block;
             }
           </style>         
           <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>

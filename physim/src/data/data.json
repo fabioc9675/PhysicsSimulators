@@ -1,10 +1,45 @@
 {
+  "simEnTr": {
+    "path": "/EnergyTransfer",
+    "title": "Colisión de partículas en 2D",
+    "url": "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/main/PhysicsProjects/2021_1/EnergyTransfer/sketch.js",
+    "doc": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/main/PhysicsProjects/2021_1/EnergyTransfer/phy.pdf&embedded=true",
+    "act": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/main/PhysicsProjects/2021_1/EnergyTransfer/act.pdf&embedded=true",
+    "author": [
+      "Carlos Andrés Toro",
+      "Lucas Hernán Quiceno",
+      "Victor Manuel Oviedo"
+    ],
+    "email": [
+      "carlos.toroc@udea.edu.co",
+      "lucas.quiceno@udea.edu.co",
+      "victor.oviedo@udea.edu.co"
+    ],
+    "abst": "Colisiones de partículas 2D donde se puede variar el número bolas, su masa, velocidad inicial, parámetro de fricción y porcentaje de elasticidad en los choques.",
+    "icon": "resources/logos/Sim_ET_400x400.jpg"
+  },
+  "simIdGa": {
+    "path": "/IdealGas",
+    "title": "Gas ideal",
+    "url": "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/main/PhysicsProjects/2021_1/IdealGas/sketch.js",
+    "doc": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/main/PhysicsProjects/2021_1/IdealGas/phy.pdf&embedded=true",
+    "act": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/main/PhysicsProjects/2021_1/IdealGas/act.pdf&embedded=true",
+    "author": ["Jhoan Eusse", "Andrés Muñoz", "Santiago Tabares"],
+    "email": [
+      "camilo.eusse@udea.edu.co",
+      "andres.munoza@udea.edu.co",
+      "santiago.tabaresg@udea.edu.co"
+    ],
+    "abst": "Se simula un gas ideal el cual sigue una distribución de Maxwell pudiendo variar los parámetros de temperatura y velocidades iniciales.",
+    "icon": "resources/logos/Sim_IG_400x400.png"
+  },
+
   "sim01": {
     "path": "/simul_01",
     "title": "Gravitación universal",
-    "url": "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/main/SolarSystem/sketch.js",
-    "doc": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/main/SolarSystem/Theory.pdf&embedded=true",
-    "act": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/main/SolarSystem/Activity.pdf&embedded=true",
+    "url": "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/main/examples/SolarSystem/sketch.js",
+    "doc": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/main/examples/SolarSystem/Theory.pdf&embedded=true",
+    "act": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/main/examples/SolarSystem/Activity.pdf&embedded=true",
     "author": ["Fabian Castaño", "Jaime Osorio", "Jose Ruiz"],
     "email": ["email_01@email.com", "email_02@email.com", "email_03@email.com"],
     "abst": "Breve descripción acerca del simulador de gravitación universal. Se presenta un sistema estrella planetas en interacción gravitacional para mostrar el comportamiento de los cuerpos celestes.",
@@ -13,9 +48,9 @@
   "sim02": {
     "path": "/simul_02",
     "title": "Colisión de partículas",
-    "url": "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/main/ParticleCollision/sketch.js",
-    "doc": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/main/SolarSystem/Theory.pdf&embedded=true",
-    "act": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/main/SolarSystem/Activity.pdf&embedded=true",
+    "url": "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/main/examples/ParticleCollision/sketch.js",
+    "doc": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/main/examples/SolarSystem/Theory.pdf&embedded=true",
+    "act": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/main/examples/SolarSystem/Activity.pdf&embedded=true",
     "author": ["Jaime Osorio", "Fabian Castaño", "Jose Ruiz"],
     "email": ["email_02@email.com", "email_01@email.com", "email_03@email.com"],
     "abst": "Breve descripción acerca del simulador de colisión de partículas",
@@ -24,9 +59,9 @@
   "sim03": {
     "path": "/simul_03",
     "title": "Figuras de lissajous",
-    "url": "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/main/Controls/sketch.js",
-    "doc": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/main/SolarSystem/Theory.pdf&embedded=true",
-    "act": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/main/SolarSystem/Activity.pdf&embedded=true",
+    "url": "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/main/examples/Controls/sketch.js",
+    "doc": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/main/examples/SolarSystem/Theory.pdf&embedded=true",
+    "act": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/main/examples/SolarSystem/Activity.pdf&embedded=true",
     "author": ["Jose Ruiz", "Jaime Osorio", "Fabian Castaño"],
     "email": ["email_03@email.com", "email_01@email.com", "email_02@email.com"],
     "abst": "Breve descripción acerca del simulador de figuras de lissajous",
