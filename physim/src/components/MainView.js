@@ -44,20 +44,20 @@ export default function MainView() {
             </div>
             <div className="SimButton">
               <SimDescriptor
-                buttonLabel="Simulacion 3"
-                pathUrl={dataSim.sim03.path}
-                imgDir={dataSim.sim03.icon}
-                title={dataSim.sim03.title}
-                abstract={dataSim.sim03.abst}
+                buttonLabel="Simulacion LV"
+                pathUrl={dataSim.simLoVo.path}
+                imgDir={dataSim.simLoVo.icon}
+                title={dataSim.simLoVo.title}
+                abstract={dataSim.simLoVo.abst}
               />
             </div>
             <div className="SimButton">
               <SimDescriptor
-                buttonLabel="Simulacion 1"
-                pathUrl={dataSim.sim01.path}
-                imgDir={dataSim.sim01.icon}
-                title={dataSim.sim01.title}
-                abstract={dataSim.sim01.abst}
+                buttonLabel="Simulacion SP"
+                pathUrl={dataSim.simSiPe.path}
+                imgDir={dataSim.simSiPe.icon}
+                title={dataSim.simSiPe.title}
+                abstract={dataSim.simSiPe.abst}
               />
             </div>
             <div className="SimButton">

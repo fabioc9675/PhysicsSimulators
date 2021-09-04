@@ -33,6 +33,36 @@
     "abst": "Se simula un gas ideal el cual sigue una distribución de Maxwell pudiendo variar los parámetros de temperatura y velocidades iniciales.",
     "icon": "resources/logos/Sim_IG_400x400.png"
   },
+  "simLoVo": {
+    "path": "/LotkaVolterra",
+    "title": "Ecuaciones de Lotka-Volterra",
+    "url": "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2021_1/LotkaVolterra/sketch.js",
+    "doc": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2021_1/LotkaVolterra/phy.pdf&embedded=true",
+    "act": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2021_1/LotkaVolterra/act.pdf&embedded=true",
+    "author": ["Carlos Betancur", "Yessica Lenis", "-"],
+    "email": [
+      "candres.betancur@udea.edu.co",
+      "yessica.lenis@udea.edu.co",
+      "-"
+    ],
+    "abst": "Simulación orientada a las ciencias biológicas la cual modela un sistema dinámico depredador-presa entre 2 especies cuyo comportamiento poblacional se rige mediante las ecuaciones de Lotka-Volterra.",
+    "icon": "resources/logos/Sim_LV_400x400.jpg"
+  },
+  "simSiPe": {
+    "path": "/SimplePendulum",
+    "title": "Péndulo Simple",
+    "url": "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2021_1/SimplePendulum/Sketch.js",
+    "doc": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2021_1/SimplePendulum/phy.pdf&embedded=true",
+    "act": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2021_1/SimplePendulum/act.pdf&embedded=true",
+    "author": ["Daniel Henao", "Alexander Valencia", "-"],
+    "email": [
+      "daniel.henao3@udea.edu.co",
+      "alexander.valenciaa@udea.edu.co",
+      "-"
+    ],
+    "abst": "Se propone el estudio del movimiento producido por el péndulo simple en ausencia de fricción, identificando propiedades como la relación entre el período y la longitud.",
+    "icon": "resources/logos/Sim_SP_400x400.jpg"
+  },
 
   "sim01": {
     "path": "/simul_01",
