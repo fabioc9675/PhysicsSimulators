@@ -9,7 +9,7 @@
 
  let suelo;
  let dt = 1 / 30; //que tanto se avanza en el tiempo
- let gravedad = createVector(0, 9.8);//Se crea un vector que será la gravedad
+ let gravedad = 0;//Se crea un vector que será la gravedad
  let y0=100;//se crea la una variable la cual nos define a velocidad inicial
  let fontsize = 14;
  
@@ -41,6 +41,7 @@
  function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
   frameRate(30); //numero de interacciones por segundo
+  gravedad = createVector(0, 9.8);//Se crea un vector que será la gravedad
 
   suelo = new Tierra(-width/2, 0, width, height); //se crea el fondo
 
