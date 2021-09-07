@@ -63,6 +63,21 @@
     "abst": "Se propone el estudio del movimiento producido por el péndulo simple en ausencia de fricción, identificando propiedades como la relación entre el período y la longitud.",
     "icon": "resources/logos/Sim_SP_400x400.jpg"
   },
+  "simEnCo": {
+    "path": "/EnergyConservation",
+    "title": "Conservación de la energía",
+    "url": "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2021_1/EnergyConservation/sketch.js",
+    "doc": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2021_1/EnergyConservation/phy.pdf&embedded=true",
+    "act": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2021_1/EnergyConservation/act.pdf&embedded=true",
+    "author": ["Luis Avendaño", "Santiago Quintero", "-"],
+    "email": [
+      "adrian.avendano@udea.edu.co",
+      "santiago.quinteroc@udea.edu.co",
+      "-"
+    ],
+    "abst": "Se presenta una pelota en caída libre o tiro parabólico para detallar la conservación de la energía mecánica.",
+    "icon": "resources/logos/Sim_EC_400x400.png"
+  },
 
   "sim01": {
     "path": "/simul_01",
