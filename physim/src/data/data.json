@@ -78,6 +78,21 @@
     "abst": "Se presenta una pelota en caída libre o tiro parabólico para detallar la conservación de la energía mecánica.",
     "icon": "resources/logos/Sim_EC_400x400.png"
   },
+  "simCoOs": {
+    "path": "/CoupledOscillator",
+    "title": "Osciladores acoplados no amortiguados",
+    "url": "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2021_1/CoupledOscillator/sketch.js",
+    "doc": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2021_1/CoupledOscillator/phy.pdf&embedded=true",
+    "act": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2021_1/CoupledOscillator/act.pdf&embedded=true",
+    "author": ["Rafael Barrera", "Andrea Valencia", "-"],
+    "email": [
+      "rafael.barreraq@udea.edu.co",
+      "andrea.valenciac@udea.edu.co",
+      "-"
+    ],
+    "abst": "Por medio de esta simulación es posible recrear el comportamiento de dos osciladores que se relacionan entre si por medio de resortes.",
+    "icon": "resources/logos/Sim_CO_400x400.jpg"
+  },
 
   "sim01": {
     "path": "/simul_01",
