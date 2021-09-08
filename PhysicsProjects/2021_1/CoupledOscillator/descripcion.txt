@@ -1,0 +1,8 @@
+Titulo de la simulación:Sistema libre de dos osciladores acoplados no amortiguados
+Nombre de los autores:Rafael Barrera Quiroz, Andrea Valencia Cortés
+Email de los autores: rafael.barreraq@udea.edu.co, andrea.valenciac@udea.edu.co
+Descripción:Por medio de esta simulación es posible recrear el comportamiento de dos osciladores que se relacionan
+entre si por medio de resortes. En esta simulación interactiva, el estudiante puede aproximarse al movimiento armonico
+simple, el cual es un topico escencial en la fisica.
+
+
