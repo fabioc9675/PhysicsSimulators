@@ -52,6 +52,66 @@ export default function App() {
           <Route
             forceRefresh={true}
             exact
+            path={dataSim.simLoVo.path}
+            component={() => (
+              <SimFrame
+                paneTitle={dataSim.simLoVo.title}
+                url={dataSim.simLoVo.url}
+                doc={dataSim.simLoVo.doc}
+                act={dataSim.simLoVo.act}
+                author={dataSim.simLoVo.author}
+                email={dataSim.simLoVo.email}
+              />
+            )}
+          />
+          <Route
+            forceRefresh={true}
+            exact
+            path={dataSim.simSiPe.path}
+            component={() => (
+              <SimFrame
+                paneTitle={dataSim.simSiPe.title}
+                url={dataSim.simSiPe.url}
+                doc={dataSim.simSiPe.doc}
+                act={dataSim.simSiPe.act}
+                author={dataSim.simSiPe.author}
+                email={dataSim.simSiPe.email}
+              />
+            )}
+          />
+          <Route
+            forceRefresh={true}
+            exact
+            path={dataSim.simEnCo.path}
+            component={() => (
+              <SimFrame
+                paneTitle={dataSim.simEnCo.title}
+                url={dataSim.simEnCo.url}
+                doc={dataSim.simEnCo.doc}
+                act={dataSim.simEnCo.act}
+                author={dataSim.simEnCo.author}
+                email={dataSim.simEnCo.email}
+              />
+            )}
+          />
+          <Route
+            forceRefresh={true}
+            exact
+            path={dataSim.simCoOs.path}
+            component={() => (
+              <SimFrame
+                paneTitle={dataSim.simCoOs.title}
+                url={dataSim.simCoOs.url}
+                doc={dataSim.simCoOs.doc}
+                act={dataSim.simCoOs.act}
+                author={dataSim.simCoOs.author}
+                email={dataSim.simCoOs.email}
+              />
+            )}
+          />
+          <Route
+            forceRefresh={true}
+            exact
             path={dataSim.sim01.path}
             component={() => (
               <SimFrame

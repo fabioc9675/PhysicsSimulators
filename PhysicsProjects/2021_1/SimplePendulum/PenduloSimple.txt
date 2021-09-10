@@ -1,0 +1,4 @@
+Péndulo Simple.
+Autores: Daniel Henao, Alexander Valencia.
+E-mail: daniel.henao3@udea.edu.co, alexander.valenciaa@udea.edu.co
+Descripción: Se propone el estudio del movimiento producido por el péndulo simple en ausencia de fricción, identificando propiedades como la relación entre el período y la longitud.

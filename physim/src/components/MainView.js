@@ -44,38 +44,38 @@ export default function MainView() {
             </div>
             <div className="SimButton">
               <SimDescriptor
-                buttonLabel="Simulacion 3"
-                pathUrl={dataSim.sim03.path}
-                imgDir={dataSim.sim03.icon}
-                title={dataSim.sim03.title}
-                abstract={dataSim.sim03.abst}
+                buttonLabel="Simulacion LV"
+                pathUrl={dataSim.simLoVo.path}
+                imgDir={dataSim.simLoVo.icon}
+                title={dataSim.simLoVo.title}
+                abstract={dataSim.simLoVo.abst}
               />
             </div>
             <div className="SimButton">
               <SimDescriptor
-                buttonLabel="Simulacion 1"
-                pathUrl={dataSim.sim01.path}
-                imgDir={dataSim.sim01.icon}
-                title={dataSim.sim01.title}
-                abstract={dataSim.sim01.abst}
+                buttonLabel="Simulacion SP"
+                pathUrl={dataSim.simSiPe.path}
+                imgDir={dataSim.simSiPe.icon}
+                title={dataSim.simSiPe.title}
+                abstract={dataSim.simSiPe.abst}
               />
             </div>
             <div className="SimButton">
               <SimDescriptor
-                buttonLabel="Simulacion 2"
-                pathUrl={dataSim.sim02.path}
-                imgDir={dataSim.sim02.icon}
-                title={dataSim.sim02.title}
-                abstract={dataSim.sim02.abst}
+                buttonLabel="Simulacion EC"
+                pathUrl={dataSim.simEnCo.path}
+                imgDir={dataSim.simEnCo.icon}
+                title={dataSim.simEnCo.title}
+                abstract={dataSim.simEnCo.abst}
               />
             </div>
             <div className="SimButton">
               <SimDescriptor
-                buttonLabel="Simulacion 3"
-                pathUrl={dataSim.sim03.path}
-                imgDir={dataSim.sim03.icon}
-                title={dataSim.sim03.title}
-                abstract={dataSim.sim03.abst}
+                buttonLabel="Simulacion CO"
+                pathUrl={dataSim.simCoOs.path}
+                imgDir={dataSim.simCoOs.icon}
+                title={dataSim.simCoOs.title}
+                abstract={dataSim.simCoOs.abst}
               />
             </div>
           </div>

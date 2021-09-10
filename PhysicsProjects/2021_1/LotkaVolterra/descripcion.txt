@@ -1,0 +1,15 @@
+Ecuaciones Dinámicas de Lotka-Volterra
+
+Autores:
+- Carlos Andrés Betancur Yepes
+  candres.betancur@udea.edu.co
+
+- Yessica Lorena Lenis Arias
+  yessica.lenis@udea.edu.co
+
+
+Descripción:
+Simulación computacional orientada a las ciencias biológicas la cual consiste en modelar un sistema dinámico 
+depredador-presa entre 2 especies cuyo comportamiento poblacional se rige mediante las ecuaciones de Lotka-Volterra. 
+
+
