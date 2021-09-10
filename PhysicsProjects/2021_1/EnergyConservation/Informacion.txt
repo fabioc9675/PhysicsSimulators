@@ -1,0 +1,9 @@
+Conservación de la energía mecánica
+
+Luis Adrián Avendaño Londoño
+Santiago Quintero Cordoba
+
+adrian.avendano@udea.edu.co
+santiago.quinteroc@udea.edu.co
+
+Se presenta una pelota en caída libre o tiro parabólico para detallar la conservación de la energía mecánica.
