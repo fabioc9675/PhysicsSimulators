@@ -1,0 +1,18 @@
+version: '3.3'
+
+services:
+
+  react-app:
+    image: react-app
+    restart: always
+    build:
+      context: .
+    ports:
+      - 3000:3000
+    networks:
+      - simulaciones
+    
+networks:
+  simulaciones:
+    external: true
+
