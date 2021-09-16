@@ -23,7 +23,8 @@
   flex-direction: row;
 }
 .Simulators-pane {
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   width: 40vw;
 }
 
@@ -31,6 +32,23 @@
   display: flex;
   flex-direction: row;
   height: 95vh;
+}
+
+.pane-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.pane-right-content {
+  display: flex;
+  flex-direction: row;
+  height: 83vh;
+  overflow: hidden;
+}
+
+.Content {
+  background-color: rgb(0, 114, 151);
+  height: 12vh;
 }
 
 .pane-left {

@@ -93,6 +93,21 @@
     "abst": "Por medio de esta simulación es posible recrear el comportamiento de dos osciladores que se relacionan entre si por medio de resortes.",
     "icon": "resources/logos/Sim_CO_400x400.jpg"
   },
+  "simSuRe": {
+    "path": "/SurfaceReflection",
+    "title": "Refracción, reflexión y transmisión",
+    "url": "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2021_1/SurfaceReflection/sketch.js",
+    "doc": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2021_1/SurfaceReflection/phy.pdf&embedded=true",
+    "act": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2021_1/SurfaceReflection/act.pdf&embedded=true",
+    "author": ["Julián Sierra", "-", "-"],
+    "email": [
+      "juilan.sierrav@udea.edu.co",
+      "-",
+      "-"
+    ],
+    "abst": "En esta simulación se detalla cómo se comporta la luz al pasar de un medio a otro. Se halla el ángulo de refracción mediante la ley de Descartes-Snell, se halla el ángulo crítico, la intensidad de reflexión y transmisión mediante la fórmula de Fresnel-Snell.",
+    "icon": "resources/logos/Sim_SR_400x400.jpg"
+  },
 
   "sim01": {
     "path": "/simul_01",
