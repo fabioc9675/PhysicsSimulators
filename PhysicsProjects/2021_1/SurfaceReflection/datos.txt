@@ -1,0 +1,5 @@
+﻿- titulo de la simulación: Simulación de la refracción, reflexión y transmisión de la luz
+- nombre de los autores: Julián Sierra Vélez
+- email de los autores: juilan.sierrav@udea.edu.co
+- descripción corta de la simulacion: En esta simulación se detalla cómo se comporta la luz al pasar de un medio a otro. Se halla el ángulo de refracción mediante la ley de Descartes-Snell, se halla el ángulo crítico y finalmente la intensidad de reflexión y transmisión mediante la fórmula de Fresnel-Snell.
+
