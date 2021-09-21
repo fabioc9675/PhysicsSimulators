@@ -20,8 +20,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "genversion --es6 src/textFiles/autobuild_version.js && react-scripts start",
+    "build": "genversion --es6 src/textFiles/autobuild_version.js && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -42,5 +42,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "genversion": "^3.0.1"
   }
 }

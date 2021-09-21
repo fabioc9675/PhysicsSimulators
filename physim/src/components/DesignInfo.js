@@ -1,4 +1,5 @@
 import React from "react";
+import { version } from "../textFiles/autobuild_version";
 
 export default function DesignInfo(props) {
   // authors information
@@ -70,6 +71,15 @@ export default function DesignInfo(props) {
           }}
         >
           <div style={{ fontSize: "2.0rem" }}>Instituto de Física</div>
+          <div
+            style={{
+              paddingTop: "0.3rem",
+              paddingLeft: "50%",
+              fontSize: "1.0rem",
+            }}
+          >
+            Versión: {version}
+          </div>
         </div>
       </div>
     </div>
