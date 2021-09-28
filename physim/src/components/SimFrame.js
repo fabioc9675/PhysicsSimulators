@@ -3,6 +3,8 @@ import { useHistory } from "react-router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 
+import ReactGA from "react-ga";
+
 // styles
 import "../styles/SimFrame.css";
 
@@ -54,6 +56,11 @@ function SimFrame(props) {
       .catch(function (error) {
         console.log(error);
       });
+
+    // sending information to Google Analytics
+    ReactGA.initialize("UA-208799821-1");
+    // to report page view
+    ReactGA.pageview(window.location.pathname + window.location.search);
   }, [url]);
 
   // function to execute change in component

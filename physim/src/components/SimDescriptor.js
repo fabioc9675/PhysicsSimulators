@@ -2,6 +2,8 @@ import React from "react";
 import { useHistory } from "react-router";
 import "../styles/SimDescriptor.css";
 
+import ReactGA from "react-ga";
+
 export default function SimDescriptor(props) {
   // component props
   const { buttonLabel, pathUrl, imgDir, title, abstract } = props;
@@ -11,6 +13,13 @@ export default function SimDescriptor(props) {
 
   // function to handle click
   function HandleClick() {
+    // sending information to Google Analytics
+    ReactGA.event({
+      category: "Button",
+      action: "Accessed to " + pathUrl,
+    });
+    // alert("Se envio informacion a Google Analytics");
+
     history.push(pathUrl);
   }
 
