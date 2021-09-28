@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/MainView.css";
+
+import ReactGA from "react-ga";
 
 // import data of simulators
 import dataSim from "../data/data.json";
@@ -11,6 +13,12 @@ import DesignInfo from "./DesignInfo";
 
 export default function MainView() {
   const logo = "resources/logos/UdeA.png";
+
+  useEffect(() => {
+    ReactGA.initialize("UA-208799821-1");
+    // to report page view
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
 
   return (
     <div className="MainFrame">
