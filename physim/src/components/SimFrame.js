@@ -58,7 +58,7 @@ function SimFrame(props) {
       });
 
     // sending information to Google Analytics
-    ReactGA.initialize("UA-208799821-1");
+    // ReactGA.initialize("UA-208799821-1");
     // to report page view
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, [url]);
