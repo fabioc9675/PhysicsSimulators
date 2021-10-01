@@ -13,6 +13,7 @@
     "react": "^17.0.2",
     "react-codemirror2": "^7.2.1",
     "react-dom": "^17.0.2",
+    "react-ga": "^3.3.0",
     "react-google-docs-viewer": "^1.0.1",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
@@ -20,8 +21,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "genversion --es6 src/textFiles/autobuild_version.js && react-scripts start",
-    "build": "genversion --es6 src/textFiles/autobuild_version.js && react-scripts build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -44,6 +45,8 @@
     ]
   },
   "devDependencies": {
-    "genversion": "^3.0.1"
+    "genversion": "^3.0.1",
+    "install": "^0.13.0",
+    "npm": "^7.24.1"
   }
 }

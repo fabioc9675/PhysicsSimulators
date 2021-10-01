@@ -10,6 +10,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### `npm install react-router react-router-dom`
 
+### `npm install npm install genversion --save-dev` look https://stackoverflow.com/questions/59978450/how-to-do-app-versioning-in-create-react-app
+
+scripts": {
+"start": "genversion --es6 src/textFiles/autobuild_version.js && react-scripts start",
+"build": "react-scripts build",
+"test": "react-scripts test",
+"eject": "react-scripts eject"
+},
+
+### `npm install react-ga --save` look https://www.youtube.com/watch?v=H-D-kaCjKfc
+
 ## Available Scripts
 
 In the project directory, you can run:
