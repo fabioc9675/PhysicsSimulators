@@ -7,62 +7,81 @@ export default function Info(props) {
   return (
     <div
       style={{
-        padding: "2.0rem",
+        display: "flex",
+        flexDirection: "row",
+        padding: "1.5rem",
         color: "white",
         fontFamily: "serif",
-        overflow: "auto",
+        overflow: "hidden",
       }}
     >
+      <div style={{ display: "flex", flexDirection: "row" }}>
+        <div style={{ width: "5vw" }}></div>
+        <div>
+          <div
+            style={{
+              paddingTop: "2rem",
+              fontSize: "1.3rem",
+            }}
+          >
+            Autor: {aut_1}
+          </div>
+          <div style={{ paddingLeft: "2rem", paddingRight: "2rem" }}>
+            {em_1}
+          </div>
+        </div>
+        <div style={{ width: "12vw" }}>
+          <div
+            style={{
+              paddingTop: "2rem",
+              fontSize: "1.3rem",
+            }}
+          >
+            Autor: {aut_2}
+          </div>
+          <div style={{ paddingLeft: "2rem", paddingRight: "2rem" }}>
+            {em_2}
+          </div>
+        </div>
+        <div style={{ width: "12vw" }}>
+          <div
+            style={{
+              paddingTop: "2rem",
+              fontSize: "1.3rem",
+            }}
+          >
+            Autor: {aut_3}
+          </div>
+          <div style={{ paddingLeft: "2rem", paddingRight: "2rem" }}>
+            {em_3}
+          </div>
+        </div>
+      </div>
       <div
         style={{
-          fontSize: "2rem",
-          fontWeight: "bold",
+          display: "flex",
+          flexDirection: "column",
         }}
       >
-        Instituto de Física
-      </div>
-      <div></div>
-      <div>
         <div
           style={{
-            paddingTop: "1rem",
-            fontSize: "1.3rem",
+            fontSize: "2rem",
+            fontWeight: "bold",
+            paddingLeft: "2rem",
           }}
         >
-          Autor: {aut_1}
+          Instituto de Física
         </div>
-        <div style={{ paddingLeft: "1rem" }}>{em_1}</div>
-      </div>
-      <div>
         <div
           style={{
+            paddingLeft: "2rem",
             paddingTop: "1rem",
-            fontSize: "1.3rem",
+            fontSize: "2rem",
+            fontWeight: "bold",
           }}
         >
-          Autor: {aut_2}
+          Universidad de Antioquia
         </div>
-        <div style={{ paddingLeft: "1rem" }}>{em_2}</div>
-      </div>
-      <div>
-        <div
-          style={{
-            paddingTop: "1rem",
-            fontSize: "1.3rem",
-          }}
-        >
-          Autor: {aut_3}
-        </div>
-        <div style={{ paddingLeft: "1rem" }}>{em_3}</div>
-      </div>
-      <div
-        style={{
-          paddingTop: "3rem",
-          fontSize: "2rem",
-          fontWeight: "bold",
-        }}
-      >
-        Universidad de Antioquia
       </div>
     </div>
   );

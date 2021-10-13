@@ -20,17 +20,17 @@
 .pane-top {
   display: flex;
   flex-direction: row;
-  height: 57vh;
+  height: 80vh;
 }
 
 .top-left-pane {
   background-color: hsl(255, 6%, 25%);
-  width: 40vw;
+  width: 35vw;
 }
 
 .top-right-pane {
   background-color: hsl(255, 6%, 75%);
-  width: 60vw;
+  width: 65vw;
 }
 
 .top-right-pane iframe {
@@ -44,19 +44,47 @@
 .pane-bottom {
   display: flex;
   flex-direction: row;
-  height: 38vh;
-}
-
-.bottom-left-pane {
-  background-color: hsl(255, 6%, 50%);
-  width: 40vw;
-}
-.bottom-right-pane {
-  background-color: hsl(255, 6%, 50%);
-  width: 40vw;
+  height: 15vh;
 }
 
 .author-info {
   background-color: rgb(1, 96, 45);
+  width: 100vw;
+}
+
+.bottom-left-pane {
+  background-color: hsl(255, 6%, 50%);
   width: 20vw;
+}
+.bottom-right-pane {
+  background-color: hsl(255, 6%, 50%);
+  width: 20vw;
+}
+
+.link-pane {
+  display: flex;
+  flex-direction: row;
+  width: 15vw;
+  overflow: hidden;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+.link-button {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(0, 149, 121);
+  height: 13vh;
+  width: 13vw;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 12px 12px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 2vh;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.6rem;
 }

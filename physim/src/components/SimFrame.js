@@ -10,7 +10,7 @@ import "../styles/SimFrame.css";
 
 // local imports
 import Editor from "./Editor";
-import Reader from "./Reader";
+// import Reader from "./Reader";
 import Info from "./Info";
 
 function SimFrame(props) {
@@ -138,7 +138,7 @@ function SimFrame(props) {
           </div>
         </div>
         <div className="pane-bottom">
-          <div className="pane-bottom bottom-left-pane">
+          {/* <div className="pane-bottom bottom-left-pane">
             <Reader
               displayName="Fundamentación teórica"
               title="Theory"
@@ -151,8 +151,34 @@ function SimFrame(props) {
               title="laboratory"
               source={act}
             />
-          </div>
+          </div>*/}
           <div className="pane-bottom author-info">
+            <div className="link-pane">
+              <a
+                href={doc}
+                without
+                rel="noopener noreferrer"
+                target="_blank"
+                style={{
+                  textDecoration: "none",
+                }}
+              >
+                <button className="link-pane link-button">Ver teoría</button>
+              </a>
+            </div>
+            <div className="link-pane">
+              <a
+                href={act}
+                without
+                rel="noopener noreferrer"
+                target="_blank"
+                style={{
+                  textDecoration: "none",
+                }}
+              >
+                <button className="link-pane link-button">Ver actividad</button>
+              </a>
+            </div>
             <Info
               aut_1={author[0]}
               em_1={email[0]}
