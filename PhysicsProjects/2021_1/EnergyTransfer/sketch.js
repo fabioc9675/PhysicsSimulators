@@ -2,7 +2,7 @@ let dt = 1/10;
 let balls=[]; //lista vacía que guardará información de las bolas.
 let l=150; //altura para mostrar botones
 let w=window.innerWidth; //ancho de la mesa de billar 
-let h=window.innerHeight-l; //altura de la mesa de billar
+let h=(window.innerHeight-l); //altura de la mesa de billar
 let fontsize = 14;
 let table; //tabla para guardar datos al final de la simulación
 let p=0; // necesario para llevar conteo del tiempo
@@ -49,255 +49,262 @@ textAlign(LEFT, CENTER);
 
 button=createButton('Restaurar');
 button.mousePressed(resetSketch); 
-button.position(1290,475);
+button.position(w-75,h);
 
 button2=createButton('Parar');
 button2.mousePressed(Parar);
-button2.position(1315,495);
+button2.position(w-50,h+20);
 
 button3=createButton('Seguir');
 button3.mousePressed(Seguir);
-button3.position(1310,515);
+button3.position(w-55,h+40);
 
 button4=createButton('Salvar');
 button4.mousePressed(Salvar);
-button4.position(1310,535);
+button4.position(w-54,h+60);
 
 //En esta sección creamos las etiquetas del color de las diferentes bolas en el orden: Amarilla, Roja, Azul, Morada, Naranja y Rosada junto 
 //con los sliders que controlaran la masa de dichas bolas.
 
 p4 = createP('Masas [g]');
-p4.position(w/7-50,h-5);
+p4.position(60,h-5);
 
 p11 = createP('Amarilla'); //etiqueta de color
-p11.position(w/7-180,h + l-136); //posiciona dicha etiqueta. Los valores numéricos aquí fueron obtenidos por ensayo y error hasta lograr un ajuste bueno.
+p11.position(0,h+13); //posiciona dicha etiqueta. Los valores numéricos aquí fueron obtenidos por ensayo y error hasta lograr un ajuste bueno.
 sliderR1 = createSlider(10, 200, 10, 1); //crea slider que puede variar entre 10 y 200, tomando por defecto el valor 10 y variando en pasos de una unidad.
-sliderR1.position(w/7-100, h + l-121); //posiciona slider
-sliderR1.style('width', '150px'); //Explorando VisualCode encontramos que aproximadamente 1360px=659--------> 150px=72.7
-p21 = createP('R=' + sliderR1.value()); //Muestra en la pantalla el valor numerico seleccionado en el slider.
-p21.position(w/7+55,h + l-136); // posiciona dicho valor numerico. 
+sliderR1.position(60, h + l-121); //posiciona slider
+sliderR1.style('width', '70px'); //Explorando VisualCode encontramos que aproximadamente 1360px=659--------> 150px=72.7
+p21 = createP(sliderR1.value()); //Muestra en la pantalla el valor numerico seleccionado en el slider.
+p21.position(60+111.6-40,h + l-136); // posiciona dicho valor numerico. 
 
 p12 = createP('Roja');
-p12.position(w/7-180,h + l-116);
+p12.position(0,h + 13+20);
 sliderR2 = createSlider(10, 200, 50, 1);
-sliderR2.position(w/7-100, h + l - 101);
-sliderR2.style('width', '150px');
-p22 = createP('R='+sliderR2.value());
-p22.position(w/7+55,h + l-116);
+sliderR2.position(60, h + l - 101);
+sliderR2.style('width', '70px');
+p22 = createP(sliderR2.value());
+p22.position(60+111.6-40,h + l-116);
 
 p13 = createP('Azul');
-p13.position(w/7-180,h + l-96);
+p13.position(0,h + 13+40);
 sliderR3 = createSlider(10, 200, 90, 1);
-sliderR3.position(w/7-100, h + l - 81);
-sliderR3.style('width', '150px');
-p23 = createP('R='+sliderR1.value());
-p23.position(w/7+55,h + l-96);
+sliderR3.position(60, h + l - 81);
+sliderR3.style('width', '70px');
+p23 = createP(sliderR1.value());
+p23.position(60+111.6-40,h + l-96);
 
 p14 = createP('Morada');
-p14.position(w/7-180,h + l-76);
+p14.position(0,h +13+60);
 sliderR4 = createSlider(10, 200, 130, 1);
-sliderR4.position(w/7-100, h + l - 61);
-sliderR4.style('width', '150px');
+sliderR4.position(60, h + l - 61);
+sliderR4.style('width', '70px');
 p24 = createP('R='+sliderR1.value());
-p24.position(w/7+55,h + l-76);
+p24.position(60+111.6-40,h + l-76);
 
 p15 = createP('Naranja');
-p15.position(w/7-180,h + l-56);
+p15.position(0,h + 13+80);
 sliderR5 = createSlider(10, 200, 170, 1);
-sliderR5.position(w/7-100, h + l - 41);
-sliderR5.style('width', '150px');
-p25 = createP('R='+sliderR1.value());
-p25.position(w/7+55,h + l-56);
+sliderR5.position(60, h + l - 41);
+sliderR5.style('width', '70px');
+p25 = createP(sliderR1.value());
+p25.position(60+111.6-40,h + l-56);
 
 p16 = createP('Rosada');
-p16.position(w/7-180,h + l-36);
+p16.position(0,h +13+100);
 sliderR6 = createSlider(10, 200, 200, 1);
-sliderR6.position(w/7-100, h + l - 21);
-sliderR6.style('width', '150px');
-p26 = createP('R='+sliderR1.value());
-p26.position(w/7+55,h + l-36);
+sliderR6.position(60, h + l - 21);
+sliderR6.style('width', '70px');
+p26 = createP(sliderR1.value());
+p26.position(60+111.6-40,h + l-36);
 
 //En esta seccion sigue estructuralmente los mismos pasos que la anterior solo que esta vez construimos los sliders para las posiciones iniciales en el eje horizontal x. Por tanto aplican comentarios análogos.
 p_x = createP('Posición x [cm]');
-p_x.position(w/4,h-5);
+p_x.position(60+111.6-10-20,h-5);
 
-sliderpx1 = createSlider(round(-w/2+2*39.34,1),round(w/2-2*39.34,1),-w/2+w/7, 0.1);
-sliderpx1.position(w/4-50, h + l-121);
-sliderpx1.style('width', '150px');
-px1 = createP('' + sliderpx1.value());
-px1.position(w/3,h + l-136);
+sliderpx1 = createSlider(round(-w/2+2*12,1),round(w/2-2*12,1),-w/2+w/7, 0.1);
+sliderpx1.position(60+111.6, h + l-121);
+sliderpx1.style('width', '70px');
+px1 = createP( sliderpx1.value());
+px1.position(60+2*111.6-40,h + l-136);
 
-sliderpx2 = createSlider(round(-w/2+2*39.34,1),round(w/2-2*39.34,1),-w/2+2*w/7, 0.1);
-sliderpx2.position(w/4-50, h + l - 101);
-sliderpx2.style('width', '150px');
-px2 = createP('R='+sliderpx2.value());
-px2.position(w/3,h + l-116);
+sliderpx2 = createSlider(round(-w/2+2*12,1),round(w/2-2*12,1),-w/2+2*w/7, 0.1);
+sliderpx2.position(60+111.6, h + l - 101);
+sliderpx2.style('width', '70px');
+px2 = createP(sliderpx2.value());
+px2.position(60+2*111.6-40,h + l-116);
 
-sliderpx3 = createSlider(round(-w/2+2*39.34,1),round(w/2-2*39.34,1),-w/2+3*w/7, 0.1);
-sliderpx3.position(w/4-50, h + l - 81);
-sliderpx3.style('width', '150px');
-px3 = createP('R='+sliderpx3.value());
-px3.position(w/3,h + l-96);
+sliderpx3 = createSlider(round(-w/2+2*12,1),round(w/2-2*12,1),-w/2+3*w/7, 0.1);
+sliderpx3.position(60+111.6, h + l - 81);
+sliderpx3.style('width', '70px');
+px3 = createP(sliderpx3.value());
+px3.position(60+2*111.6-40,h + l-96);
 
-sliderpx4 = createSlider(round(-w/2+2*39.34,1),round(w/2-2*39.34,1),-w/2+4*w/7, 0.1);
-sliderpx4.position(w/4-50, h + l - 61);
-sliderpx4.style('width', '150px');
+sliderpx4 = createSlider(round(-w/2+2*12,1),round(w/2-2*12,1),-w/2+4*w/7, 0.1);
+sliderpx4.position(60+111.6, h + l - 61);
+sliderpx4.style('width', '70px');
 px4 = createP('R='+sliderpx4.value());
-px4.position(w/3,h + l-76);
+px4.position(60+2*111.6-40,h + l-76);
 
-sliderpx5 = createSlider(round(-w/2+2*39.34,1),round(w/2-2*39.34,1),-w/2+5*w/7, 0.1);
-sliderpx5.position(w/4-50, h + l - 41);
-sliderpx5.style('width', '150px');
+sliderpx5 = createSlider(round(-w/2+2*12,1),round(w/2-2*12,1),-w/2+5*w/7, 0.1);
+sliderpx5.position(60+111.6, h + l - 41);
+sliderpx5.style('width', '70px');
 px5 = createP('R='+sliderpx5.value());
-px5.position(w/3,h + l-56);
+px5.position(60+2*111.6-40,h + l-56);
 
-sliderpx6 = createSlider(round(-w/2+2*39.34,1),round(w/2-2*39.34,1),-w/2+6*w/7, 0.1);
-sliderpx6.position(w/4-50, h + l - 21);
-sliderpx6.style('width', '150px');
+sliderpx6 = createSlider(round(-w/2+2*12,1),round(w/2-2*12,1),-w/2+6*w/7, 0.1);
+sliderpx6.position(60+111.6, h + l - 21);
+sliderpx6.style('width', '70px');
 px6 = createP('R='+sliderpx6.value());
-px6.position(w/3,h + l-36);
+px6.position(60+2*111.6-40,h + l-36);
 
 //sliders posicion y
 p_y = createP('Posición y [cm]');
-p_y.position(w/4+180,h-5);
+p_y.position(60+2*111.6-10-20,h-5);
 
-sliderpy1 = createSlider(round(-h/2+2*39.34,1),round(h/2-2*39.34,1),0,0.1);
-sliderpy1.position(w/4+150, h + l-121);
-sliderpy1.style('width', '150px');
-py1 = createP('' + sliderpy1.value());
-py1.position(w/3+195,h + l-136);
+sliderpy1 = createSlider(round(-h/2+2*12,1),round(h/2-2*12,1),0,0.1);
+sliderpy1.position(60+2*111.6, h + l-121);
+sliderpy1.style('width', '70px');
+py1 = createP(sliderpy1.value());
+py1.position(60+3*111.6-40,h + l-136);
 
-sliderpy2 = createSlider(round(-h/2+2*39.34,1),round(h/2-2*39.34,1),0, 0.1);
-sliderpy2.position(w/4+150, h + l - 101);
-sliderpy2.style('width', '150px');
+sliderpy2 = createSlider(round(-h/2+2*12,1),round(h/2-2*12,1),0, 0.1);
+sliderpy2.position(60+2*111.6, h + l - 101);
+sliderpy2.style('width', '70px');
 py2 = createP('R='+sliderpy2.value());
-py2.position(w/3+195,h + l-116);
+py2.position(60+3*111.6-40,h + l-116);
 
-sliderpy3 = createSlider(round(-h/2+2*39.34,1),round(h/2-2*39.34,1),0, 0.1);
-sliderpy3.position(w/4+150, h + l - 81);
-sliderpy3.style('width', '150px');
+sliderpy3 = createSlider(round(-h/2+2*12,1),round(h/2-2*12,1),0, 0.1);
+sliderpy3.position(60+2*111.6, h + l - 81);
+sliderpy3.style('width', '70px');
 py3 = createP('R='+sliderpy3.value());
-py3.position(w/3+195,h + l-96);
+py3.position(60+3*111.6-40,h + l-96);
 
-sliderpy4 = createSlider(round(-h/2+2*39.34,1),round(h/2-2*39.34,1),0, 0.1);
-sliderpy4.position(w/4+150, h + l - 61);
-sliderpy4.style('width', '150px');
+sliderpy4 = createSlider(round(-h/2+2*12,1),round(h/2-2*12,1),0, 0.1);
+sliderpy4.position(60+2*111.6, h + l - 61);
+sliderpy4.style('width', '70px');
 py4 = createP('R='+sliderpy4.value());
-py4.position(w/3+195,h + l-76);
+py4.position(60+3*111.6-40,h + l-76);
 
-sliderpy5 = createSlider(round(-h/2+2*39.34,1),round(h/2-2*39.34,1),0, 0.1);
-sliderpy5.position(w/4+150, h + l - 41);
-sliderpy5.style('width', '150px');
+sliderpy5 = createSlider(round(-h/2+2*12,1),round(h/2-2*12,1),0, 0.1);
+sliderpy5.position(60+2*111.6, h + l - 41);
+sliderpy5.style('width', '70px');
 py5 = createP('R='+sliderpy5.value());
-py5.position(w/3+195,h + l-56);
+py5.position(60+3*111.6-40,h + l-56);
 
-sliderpy6 = createSlider(round(-h/2+2*39.34,1),round(h/2-2*39.34,1),0, 0.1);
-sliderpy6.position(w/4+150, h + l - 21);
-sliderpy6.style('width', '150px');
+sliderpy6 = createSlider(round(-h/2+2*12,1),round(h/2-2*12,1),0, 0.1);
+sliderpy6.position(60+2*111.6, h + l - 21);
+sliderpy6.style('width', '70px');
 py6 = createP(sliderpy6.value());
-py6.position(w/3+195,h + l-36);
+py6.position(60+3*111.6-40,h + l-36);
 
 //sliders velocidad x
 v_x = createP('Velocidad x [cm/s]');
-v_x.position(w/4+370,h-5);
+v_x.position(60+3*111.6-15-20,h-5);
 
 slidervx1 = createSlider(-30, 30, 0, 0.1);
-slidervx1.position(w/4+350, h + l-121);
-slidervx1.style('width', '150px');
+slidervx1.position(60+3*111.6, h + l-121);
+slidervx1.style('width', '70px');
 vx1 = createP(slidervx1.value());
-vx1.position(w/3+395,h + l-136);
+vx1.position(60+4*111.6-40,h + l-136);
 
 slidervx2 = createSlider(-30, 30, 0, 0.1);
-slidervx2.position(w/4+350, h + l - 101);
-slidervx2.style('width', '150px');
+slidervx2.position(60+3*111.6, h + l - 101);
+slidervx2.style('width', '70px');
 vx2 = createP(slidervx2.value());
-vx2.position(w/3+395,h + l-116);
+vx2.position(60+4*111.6-40,h + l-116);
 
 slidervx3 = createSlider(-30, 30, 0, 0.1);
-slidervx3.position(w/4+350, h + l - 81);
-slidervx3.style('width', '150px');
+slidervx3.position(60+3*111.6, h + l - 81);
+slidervx3.style('width', '70px');
 vx3 = createP(slidervx3.value());
-vx3.position(w/3+395,h + l-96);
+vx3.position(60+4*111.6-40,h + l-96);
 
 slidervx4 = createSlider(-30, 30, 0, 0.1);
-slidervx4.position(w/4+350, h + l - 61);
-slidervx4.style('width', '150px');
+slidervx4.position(60+3*111.6, h + l - 61);
+slidervx4.style('width', '70px');
 vx4 = createP(slidervx4.value());
-vx4.position(w/3+395,h + l-76);
+vx4.position(60+4*111.6-40,h + l-76);
 
 slidervx5 = createSlider(-30, 30, 0, 0.1);
-slidervx5.position(w/4+350, h + l - 41);
-slidervx5.style('width', '150px');
+slidervx5.position(60+3*111.6, h + l - 41);
+slidervx5.style('width', '70px');
 vx5 = createP(slidervx5.value());
-vx5.position(w/3+395,h + l-56);
+vx5.position(60+4*111.6-40,h + l-56);
 
 slidervx6 = createSlider(-30, 30, 0, 0.1);
-slidervx6.position(w/4+350, h + l - 21);
-slidervx6.style('width', '150px');
+slidervx6.position(60+3*111.6, h + l - 21);
+slidervx6.style('width', '70px');
 vx6 = createP(slidervx6.value());
-vx6.position(w/3+395,h + l-36);
+vx6.position(60+4*111.6-40,h + l-36);
 
 //sliders velocidad y
 v_y = createP('Velocidad y [cm/s]');
-v_y.position(w/4+560,h-5);
+v_y.position(60+4*111.6-5-20,h-5);
 
 slidervy1 = createSlider(-30, 30, 0, 0.1);
-slidervy1.position(w/4+550, h + l-121);
-slidervy1.style('width', '150px');
+slidervy1.position(60+4*111.6, h + l-121);
+slidervy1.style('width', '70px');
 vy1 = createP(slidervy1.value());
-vy1.position(w/3+595,h + l-136);
+vy1.position(60+5*111.6-40,h + l-136);
 
 slidervy2 = createSlider(-30, 30, 0, 0.1);
-slidervy2.position(w/4+550, h + l - 101);
-slidervy2.style('width', '150px');
+slidervy2.position(60+4*111.6, h + l - 101);
+slidervy2.style('width', '70px');
 vy2 = createP(slidervy2.value());
-vy2.position(w/3+595,h + l-116);
+vy2.position(60+5*111.6-40,h + l-116);
 
 slidervy3 = createSlider(-30, 30, 0, 0.1);
-slidervy3.position(w/4+550, h + l - 81);
-slidervy3.style('width', '150px');
+slidervy3.position(60+4*111.6, h + l - 81);
+slidervy3.style('width', '70px');
 vy3 = createP(slidervy3.value());
-vy3.position(w/3+595,h + l-96);
+vy3.position(60+5*111.6-40,h + l-96);
 
 slidervy4 = createSlider(-30, 30, 0, 0.1);
-slidervy4.position(w/4+550, h + l - 61);
-slidervy4.style('width', '150px');
+slidervy4.position(60+4*111.6, h + l - 61);
+slidervy4.style('width', '70px');
 vy4 = createP(slidervy4.value());
-vy4.position(w/3+595,h + l-76);
+vy4.position(60+5*111.6-40,h + l-76);
 
 slidervy5 = createSlider(-30, 30, 0, 0.1);
-slidervy5.position(w/4+550, h + l - 41);
-slidervy5.style('width', '150px');
+slidervy5.position(60+4*111.6, h + l - 41);
+slidervy5.style('width', '70px');
 vy5 = createP(slidervy5.value());
-vy5.position(w/3+595,h + l-56);
+vy5.position(60+5*111.6-40,h + l-56);
 
 slidervy6 = createSlider(-30, 30, 0, 0.1);
-slidervy6.position(w/4+550, h + l - 21);
-slidervy6.style('width', '150px');
+slidervy6.position(60+4*111.6, h + l - 21);
+slidervy6.style('width', '70px');
 vy6 = createP(slidervy6.value());
-vy6.position(w/3+595,h + l-36);
+vy6.position(60+5*111.6-40,h + l-36);
 
 
 //barra de bolas
 sliderx = createSlider(1, 6, 6); //controla numero de bolas
-sliderx.position(w/4+750, h + l - 125); //posiciona slider
-sliderx.style('width', '150px'); 
-p1=createP('Número de bolas = '+sliderx.value()); //crea etiqueta de Numero de bolas y muestra el valor numérico asignado por el usuario.
-p1.position(w/4+750,h-5); //posiciona la etiqueta anterior.
-
+sliderx.position(60+5*111.6, h + l - 125); //posiciona slider
+sliderx.style('width', '70px'); 
+p1=createP('Número de bolas'); //crea etiqueta de Numero de bolas y muestra el valor numérico asignado por el usuario.
+p1.position(60+5*111.6-15,h-5); //posiciona la etiqueta anterior.
+NumeroBolas = createP(sliderx.value());
+NumeroBolas.position(60+6*111.6-40+5,h + l-140);
 //barra elasticidad. Sigue una estructura y comentarios analogos a la barra de bolas.
 slidery = createSlider(0.1, 100, 50,0.1);
-slidery.position(w/4+750, h + l - 80);
-slidery.style('width', '150px');
-p2=createP('Porcentaje de elasticidad = '+slidery.value());
-p2.position(w/4+750,h+40); 
+slidery.position(60+5*111.6, h + l - 80);
+slidery.style('width', '70px');
+p2=createP('Porcentaje de elasticidad');
+p2.position(60+5*111.6-15,h+40); 
+ 
+Elasticidad = createP(slidery.value());
+Elasticidad.position(60+6*111.6-40+5,h + l-95);
 
 //barra fricción. Sigue una estructura y comentarios analogos a la barra de bolas.
 sliderz = createSlider(0, 1, 0, 0.01);
-sliderz.position(w/4+750, h + l - 35);
-sliderz.style('width', '150px');
-p3 = createP('Coeficiente de fricción = '+sliderz.value());
-p3.position(w/4+750,h+85);
+sliderz.position(60+5*111.6, h + l - 35);
+sliderz.style('width', '70px');
+p3 = createP('Coeficiente de fricción ');
+p3.position(60+5*111.6-15,h+85);
+
+Friccion = createP(sliderz.value());
+Friccion.position(60+6*111.6-40+5,h + l-50);
 
 //Cada vez que se modifica un slider se ejecuta la función resetSketch que se definirá mas adelante, pero tiene la función de reiniciar la
 //simulación con las condiciones iniciales de los valores actualizados de los sliders.
@@ -383,9 +390,9 @@ function resetSketch() {
   //Esta parte actualiza las etiquetas de los valores numéricos de los sliders de Numero de bolas, Porcentaje de elasticidad, Coeficiente de friccion
   // y posiciones en ejes horizontal y vertical de las diferentes bolas.
 table.clearRows();
-  p1.html('Número de bolas = '+sliderx.value());
-  p2.html('Porcentaje de elasticidad = '+slidery.value());
-  p3.html('Coeficiente de fricción = '+sliderz.value());
+  NumeroBolas.html(sliderx.value());
+  Elasticidad.html(slidery.value());
+  Friccion.html(sliderz.value());
   
   p21.html(sliderR1.value());
   p22.html(sliderR2.value());
