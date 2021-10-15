@@ -1,0 +1,12 @@
+Simulación del espectro electromagnético y la radiación de cuerpo negro.
+
+Autoras:
+Valentina Bedoya
+Maryi A. Carvajal
+
+Email:
+valentina.bedoyaa@udea.edu.co
+maryi.carvajal@udea.edu.co
+
+Descripción de la simulación:
+En esta simulación se aprederá sobre el espectro electromagnético, el cual, esta estrechamente relaciona con la radiación de cuerpo negro.
