@@ -619,8 +619,8 @@ function labels(){
 
 //Se cargan las imágenes que iran en el background 
 function preload() {
-  img = loadImage('Espectro.png'); // Cargar la imagen
-  img2 = loadImage('espectro.png');
+  img = loadImage('https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2021_1/BlackBody/espectro_sim.png'); // Cargar la imagen
+  img2 = loadImage('https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2021_1/BlackBody/espectro_the.png');
 }
 
 
