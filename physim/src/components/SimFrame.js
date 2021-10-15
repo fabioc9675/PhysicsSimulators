@@ -130,7 +130,7 @@ function SimFrame(props) {
             <iframe
               srcDoc={srcDoc}
               title="Simulation"
-              sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+              sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin allow-downloads"
               frameBorder="0"
               width="100%"
               height="100%"
