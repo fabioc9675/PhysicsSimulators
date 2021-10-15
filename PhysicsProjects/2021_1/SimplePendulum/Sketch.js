@@ -16,7 +16,7 @@ let omega_MAS;
 let g; // Aceleración de la gravedad
 let t; // Variable asociada al paso temporal
 let fps = 60;
-let h = 1/60; // Paso temporal, evolución sistema
+let h = 1/fps; // Paso temporal, evolución sistema
 let h2 = 0.5 * h;
 let w0; // Velocidad angular oscilador
 let desfase; // Desfase angular oscilador
@@ -62,8 +62,8 @@ Generación frame, propiedades iniciales objetos:
 píxeles (820 ancho, 366 alto) | 60 fotogramas/s 
 ************************************************/
 function setup() {
-  createCanvas(820, 366);
-  frameRate(60);
+  createCanvas(windowWidth, windowHeight);
+  frameRate(fps);
 
 //-----------------------------------------------
 // Valor inicial: ángulos y velocidades
@@ -78,7 +78,7 @@ function setup() {
   // Masa, Longitud, Gravedad; argumentos de
   // valores --> (inferior, superior, inicial)
   m = createSlider(2, 10, 6);
-  l = createSlider(30, 230, 150);
+  l = createSlider(40, 250, 200);
   g = createSlider(1, 20, 9.8, 0.1);
   
   // Amplitud, Velocidad; argumentos de valores
@@ -89,7 +89,7 @@ function setup() {
   // Rango, posición y estilo del cronómetro
   timer = createP("timer");
   setInterval(timeIt, 1000);
-  timer.position(80, 30);
+  timer.position(100, 55);
   timer.style('font-size','25px');
   
 //-----------------------------------------------
@@ -98,31 +98,31 @@ function setup() {
   // (1) Control de Masa, m[kg]
   let masa = createDiv();
   masa.style('transform: rotate(' + (270) + 'deg);');
-  masa.position(-30, 220);
+  masa.position(-20, 270);
   masa.child(m);
   
   // (2) Control de Longitud, L[cm]
   let longitud = createDiv();
   longitud.style('transform: rotate(' + (270) + 'deg);');
-  longitud.position(25, 220);
+  longitud.position(35, 270);
   longitud.child(l);
   
   // (3) Control de Gravedad, g [m/s2]
   let gravedad = createDiv();
   gravedad.style('transform: rotate(' + (270) + 'deg);');
-  gravedad.position(80, 220);
+  gravedad.position(90, 270);
   gravedad.child(g);
   
   // (4) Control de Angulo
   let d = createDiv();
   d.style('transform: rotate(' + (270) + 'deg);');
-  d.position(620, 190);
+  d.position(670, 270);
   d.child(theta00);
   
   // (5) Control de Velocidad Angular, w
   let f = createDiv();
   f.style('transform: rotate(' + (270) + 'deg);');
-  f.position(670, 190);
+  f.position(720, 270);
   f.child(omega00);
   
 //-----------------------------------------------
@@ -131,7 +131,7 @@ function setup() {
   // Botón (1)--> Aplicar | Angulos y Velocidades 
   boton_aplicar = createButton('Aplicar');
   boton_aplicar.mousePressed(cambios);
-  boton_aplicar.position(697, 330);
+  boton_aplicar.position(747, 410);
   
   // Aplicación cambios en Angulos y Velocidades,
   // como condición inicial de dinámica sistema
@@ -145,34 +145,34 @@ function setup() {
   // Botón (2)--> Play | Iniciar Simulación
   boton_play = createButton('Play');
   boton_play.mousePressed(seguir);
-  boton_play.position(20, 10);
+  boton_play.position(20, 20);
   
   // Botón (3)--> Pause | Suspender, Pausar
   boton_pause = createButton('Pause');
   boton_pause.mousePressed(pausa);
-  boton_pause.position(75, 10);
+  boton_pause.position(75, 20);
   
   // Botón (4)--> Reset | Reestablecer Simulación
   boton_reset = createButton('Reset');
   boton_reset.mousePressed(inicial);
-  boton_reset.position(140, 10);
+  boton_reset.position(140, 20);
   
   // Botón (5)--> Oscilador | Péndulo M.A.S.
   boton_MAS = createButton('Oscilador armonico');
   boton_MAS.style('background-color', color(255,50,60));
   boton_MAS.mousePressed(oscilador);
-  boton_MAS.position(660, 10);
+  boton_MAS.position(710, 20);
   
   // Botón (6)--> Péndulo Simple | Péndulo Real
   boton_pendulo = createButton('NO pendulo real');
   boton_pendulo.style('background-color', color(0,255,0));
   boton_pendulo.mousePressed(pendulo);
-  boton_pendulo.position(670, 50);
+  boton_pendulo.position(720, 60);
   
   // Botón (7)--> Iniciar Registro | Guardar
   boton_guardar = createButton('Iniciar registro');
   boton_guardar.mousePressed(guardar);
-  boton_guardar.position(210, 10);
+  boton_guardar.position(210, 20);
 }
 
 /************************************************
@@ -184,16 +184,16 @@ function draw() {
 
   // Textos de controles --> barras verticales
   fill(0);
-  text('Angulo', 680, 110);
-  text(theta00.value(), 692, 310);
-  text('w', 745, 110);
-  text(omega00.value(), 745, 310);
-  text('m [kg]', 35, 135);
-  text(m.value(), 44, 340);
-  text('L [cm]', 89, 135);
-  text(l.value(), 94, 340);
-  text('g [m/s2]', 140, 135);
-  text(g.value(), 150, 340);
+  text('Angulo', 730, 190);
+  text(theta00.value(), 742, 390);
+  text('w', 795, 190);
+  text(omega00.value(), 795, 390);
+  text('m [kg]', 45, 185);
+  text(m.value(), 54, 390);
+  text('L [cm]', 99, 185);
+  text(l.value(), 104, 390);
+  text('g [m/s2]', 150, 185);
+  text(g.value(), 160, 390);
 
 //-----------------------------------------------
 // Visualización de los péndulos:
@@ -247,20 +247,20 @@ acoplan líneas de las funciones draw() y setup()
 ************************************************/
 function inicial(){
   clear();
-  createCanvas(820, 366);
+  createCanvas(windowWidth, windowHeight);
   background(255);
   
   fill(0);
-  text('Angulo', 680, 110);
-  text(theta00.value(), 692, 310);
-  text('w', 745, 110);
-  text(omega00.value(), 745, 310);
-  text('m [kg]', 35, 135);
-  text(m.value(), 44, 340);
-  text('L [cm]', 89, 135);
-  text(l.value(), 94, 340);
-  text('g [m/s2]', 140, 135);
-  text(g.value(), 150, 340);
+  text('Angulo', 710, 190);
+  text(theta00.value(), 722, 390);
+  text('w', 775, 190);
+  text(omega00.value(), 775, 390);
+  text('m [kg]', 45, 185);
+  text(m.value(), 54, 390);
+  text('L [cm]', 99, 185);
+  text(l.value(), 104, 390);
+  text('g [m/s2]', 150, 185);
+  text(g.value(), 160, 390);
   
   translate(width/2+20, height/2-30);
   

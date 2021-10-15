@@ -16,43 +16,42 @@ export default function Info(props) {
       }}
     >
       <div style={{ display: "flex", flexDirection: "row" }}>
-        <div style={{ width: "5vw" }}></div>
-        <div>
+        <div style={{ width: "16vw" }}>
           <div
             style={{
-              paddingTop: "2rem",
+              paddingTop: "1rem",
               fontSize: "1.3rem",
             }}
           >
             Autor: {aut_1}
           </div>
-          <div style={{ paddingLeft: "2rem", paddingRight: "2rem" }}>
+          <div style={{ paddingLeft: "1rem", paddingRight: "1rem" }}>
             {em_1}
           </div>
         </div>
-        <div style={{ width: "12vw" }}>
+        <div style={{ width: "16vw" }}>
           <div
             style={{
-              paddingTop: "2rem",
+              paddingTop: "1rem",
               fontSize: "1.3rem",
             }}
           >
             Autor: {aut_2}
           </div>
-          <div style={{ paddingLeft: "2rem", paddingRight: "2rem" }}>
+          <div style={{ paddingLeft: "1rem", paddingRight: "1rem" }}>
             {em_2}
           </div>
         </div>
-        <div style={{ width: "12vw" }}>
+        <div style={{ width: "16vw" }}>
           <div
             style={{
-              paddingTop: "2rem",
+              paddingTop: "1rem",
               fontSize: "1.3rem",
             }}
           >
             Autor: {aut_3}
           </div>
-          <div style={{ paddingLeft: "2rem", paddingRight: "2rem" }}>
+          <div style={{ paddingLeft: "1rem", paddingRight: "1rem" }}>
             {em_3}
           </div>
         </div>
@@ -67,15 +66,15 @@ export default function Info(props) {
           style={{
             fontSize: "2rem",
             fontWeight: "bold",
-            paddingLeft: "2rem",
+            paddingLeft: "1rem",
           }}
         >
           Instituto de Física
         </div>
         <div
           style={{
-            paddingLeft: "2rem",
-            paddingTop: "1rem",
+            paddingLeft: "1rem",
+            paddingTop: "0.5rem",
             fontSize: "2rem",
             fontWeight: "bold",
           }}

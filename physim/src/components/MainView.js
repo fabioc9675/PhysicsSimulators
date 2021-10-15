@@ -71,6 +71,11 @@ export default function MainView() {
                     abstract={dataSim.simSiPe.abst}
                   />
                 </div>
+              </div>
+            </div>
+
+            <div className="SimFrame">
+              <div className="Simulators-pane">
                 <div className="SimButton">
                   <SimDescriptor
                     buttonLabel="Simulacion EC"
@@ -98,10 +103,16 @@ export default function MainView() {
                     abstract={dataSim.simSuRe.abst}
                   />
                 </div>
-              </div>
-            </div>
-            <div className="SimFrame">
-              <div className="Simulators-pane">
+                <div className="SimButton">
+                  <SimDescriptor
+                    buttonLabel="Simulacion BB"
+                    pathUrl={dataSim.simBlBo.path}
+                    imgDir={dataSim.simBlBo.icon}
+                    title={dataSim.simBlBo.title}
+                    abstract={dataSim.simBlBo.abst}
+                  />
+                </div>
+
                 <div className="SimButton">
                   <SimDescriptor
                     buttonLabel="Simulacion 1"

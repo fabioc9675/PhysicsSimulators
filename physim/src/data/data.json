@@ -40,11 +40,7 @@
     "doc": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2021_1/LotkaVolterra/phy.pdf&embedded=true",
     "act": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2021_1/LotkaVolterra/act.pdf&embedded=true",
     "author": ["Carlos Betancur", "Yessica Lenis", "-"],
-    "email": [
-      "candres.betancur@udea.edu.co",
-      "yessica.lenis@udea.edu.co",
-      "-"
-    ],
+    "email": ["candres.betancur@udea.edu.co", "yessica.lenis@udea.edu.co", "-"],
     "abst": "Simulación orientada a las ciencias biológicas la cual modela un sistema dinámico depredador-presa entre 2 especies cuyo comportamiento poblacional se rige mediante las ecuaciones de Lotka-Volterra.",
     "icon": "resources/logos/Sim_LV_400x400.jpg"
   },
@@ -100,13 +96,24 @@
     "doc": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2021_1/SurfaceReflection/phy.pdf&embedded=true",
     "act": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2021_1/SurfaceReflection/act.pdf&embedded=true",
     "author": ["Julián Sierra", "-", "-"],
-    "email": [
-      "juilan.sierrav@udea.edu.co",
-      "-",
-      "-"
-    ],
+    "email": ["juilan.sierrav@udea.edu.co", "-", "-"],
     "abst": "En esta simulación se detalla cómo se comporta la luz al pasar de un medio a otro. Se halla el ángulo de refracción mediante la ley de Descartes-Snell, se halla el ángulo crítico, la intensidad de reflexión y transmisión mediante la fórmula de Fresnel-Snell.",
     "icon": "resources/logos/Sim_SR_400x400.jpg"
+  },
+  "simBlBo": {
+    "path": "/BlackBody",
+    "title": "Radiación de cuerpo negro",
+    "url": "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2021_1/BlackBody/sketch.js",
+    "doc": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2021_1/BlackBody/phy.pdf&embedded=true",
+    "act": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2021_1/BlackBody/act.pdf&embedded=true",
+    "author": ["Valentina Bedoya", "Maryi Carvajal", "-"],
+    "email": [
+      "valentina.bedoyaa@udea.edu.co",
+      "maryi.carvajal@udea.edu.co",
+      "-"
+    ],
+    "abst": "En esta simulación se aprederá sobre el espectro electromagnético, el cual, esta estrechamente relaciona con la radiación de cuerpo negro.",
+    "icon": "resources/logos/Sim_BB_400x400.png"
   },
 
   "sim01": {
