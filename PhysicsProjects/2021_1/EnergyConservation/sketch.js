@@ -9,9 +9,11 @@
 
  let suelo;
  let dt = 1 / 30; //que tanto se avanza en el tiempo
- let gravedad = 0;//Se crea un vector que será la gravedad
+ let gravedad = 0;
  let y0=100;//se crea la una variable la cual nos define a velocidad inicial
  let fontsize = 14;
+ let radio =10;
+ let t=0;
  
  //Se crean 4 botones y 3 cajas de texto para sus respectivos botones
  let botonAltura;
@@ -25,6 +27,11 @@
  let inputGravedad;
  
  let Guardar;
+
+ let x = [];
+ let v = [];
+ let j=0;
+
  ////////////////////////////
  
  // Se crean las variables donde se almacenaran las energías 
@@ -42,43 +49,42 @@
   canvas = createCanvas(windowWidth, windowHeight);
   frameRate(30); //numero de interacciones por segundo
   gravedad = createVector(0, 9.8);//Se crea un vector que será la gravedad
-
   suelo = new Tierra(-width/2, 0, width, height); //se crea el fondo
-
   //Tomar en cuenta que el programa toma positivo hacia abajo y negativo hacia arriba
 
-  pelota = new Balon(1000, createVector(0, -100), createVector(0, 0));//se crea la particula 
+  pelota = new Balon(1000, createVector(-width/4, -100), createVector(0, 0));//se crea la particula 
 
   textSize(fontsize);
   textAlign(LEFT, CENTER);
 
+  
   //creacion de los botones anteriormente definidos
-  botonAltura = createButton('Cambiar Altura en m');
-  botonAltura.position(30, height/2 +5);
+  botonAltura = createButton('Cambiar Altura(m)  ');
+  botonAltura.position(width/2,height/2-60);
   botonAltura.mousePressed(changeAltura);//accion del boton al darle clic
 
   inputAltura = createInput('');
-  inputAltura.position(130, height/2 + 5);
+  inputAltura.position(width/2+122, height/2-60);
   inputAltura.size(120);
 
-  botonMasa = createButton('Cambiar Masa en kg');
-  botonMasa.position(30, height/2 + 35);
+  botonMasa = createButton('Cambiar Masa(kg)    ');
+  botonMasa.position(width/2,height/2-100);
   botonMasa.mousePressed(changeMasa);//accion del boton al darle clic
 
   inputMasa = createInput('');
-  inputMasa.position(130, height/2 + 35);
+  inputMasa.position(width/2+122,height/2-100);
   inputMasa.size(120);
 
   botonGravedad = createButton('Cambiar Gravedad');
-  botonGravedad.position(30, height/2 + 65);
+  botonGravedad.position(width/2,height/2-140);
   botonGravedad.mousePressed(changeGravedad);//accion del boton al darle clic
 
   inputGravedad = createInput('');
-  inputGravedad.position(130, height/2 + 65);
+  inputGravedad.position(width/2+122,height/2-140);
   inputGravedad.size(120);
 
   Guardar = createButton('Guardar');
-  Guardar.position(30, height/2 + 95);
+  Guardar.position(width/2,height/2-20);
   Guardar.mousePressed(guardar);//accion del boton al darle clic
   //////////////
 
@@ -91,6 +97,7 @@
   tabla.addColumn('Energía mecanica');
   tabla.addColumn('Velocidad');
   tabla.addColumn('Altura');
+
 }
 
 
@@ -100,11 +107,15 @@ function changeAltura() { //Cambio de altura
   pos = int(inputAltura.value());
   inputAltura.value('');
 
-  if (pos >=30 && pos < 360) {
+  if (pos >=radio && pos < 360) {
     pelota.pos.y = -pos;
     pelota.vel.x = 0;
     pelota.vel.y = 0;
     y0=pos;
+    t=0;
+    x=[];
+    v=[];
+    j=0;
     loop();//hace que draw() se repita si se llego a usar noLoop();
   }
 }
@@ -118,6 +129,10 @@ function changeMasa() {//Cambio de masa
     pelota.vel.x = 0;
     pelota.vel.y = 0.0;
     pelota.mass = mass;
+    t=0;
+    x=[];
+    v=[];
+    j=0;
     loop();
   }
 }
@@ -131,6 +146,10 @@ function changeGravedad() {//Cambio de gravedad
     pelota.vel.x = 0;
     pelota.vel.y = 0;
     gravedad = createVector(0,g);
+    t=0;
+    x=[];
+    v=[];
+    j=0;
     loop();
   }
 }
@@ -147,20 +166,20 @@ function draw() { //codigo que se repetira infinitas veces hasta que se use un n
   // creacion de las lines que indican los valores de la altura 
   for(let i=0; i<=height/2 ;i =i+20){
     text(nfc(i) + " m" , -width/2, -i);
-    line(-width/2 + 50, -i, width/2, -i);
-    stroke(100);
+    line(-width/2 + 50, -i, 0, -i);
+    stroke(200);
   } 
   ////////////////////
 
   suelo.mostrar();
   pelota.movimiento(gravedad);//actualiazacion del movimiento de la particula
   pelota.mostrar(); 
-  if (pelota.pos.y >=-30){//condicion de que cuando la particula llegue al piso se detenga el programa
+  if (pelota.pos.y >=-radio){//condicion de que cuando la particula llegue al piso se detenga el programa
     noLoop();
   }
 
   ///calculo de todas las energías del sistema en KJ
-  V=abs(pelota.pos.y+30)*gravedad.y*pelota.mass / 1000;/*para que la energía potencial se anule en la parte 
+  V=abs(pelota.pos.y+radio)*gravedad.y*pelota.mass / 1000;/*para que la energía potencial se anule en la parte 
   baja ya que tomamos el sistema en su parte inferior en lugar del centro, la energía potencial
   no importa mucho donde definamos su cero, lo importante es el cambio en ella*/ 
   K=0.5*pelota.mass*pelota.vel.y**2 / 1000;
@@ -175,7 +194,7 @@ function draw() { //codigo que se repetira infinitas veces hasta que se use un n
   //Se añaden a la tabla los valores acuales de cada columna
   añadir = tabla.addRow();
 
-  añadir.setNum('Altura',-(pelota.pos.y+30));/*para que el movimiento sea tomado desde la posicion inferior
+  añadir.setNum('Altura',-(pelota.pos.y+radio));/*para que el movimiento sea tomado desde la posicion inferior
   de la particula*/
   añadir.setNum('Velocidad',pelota.vel.y);
   añadir.setNum('Gravedad',gravedad.y);
@@ -186,10 +205,44 @@ function draw() { //codigo que se repetira infinitas veces hasta que se use un n
 //////////
 
 //En pantalla se muestra como cambian las energias
-  text("Energía Potencial (KJ) = " + nfc(V, 3), 0, 10);
-  text("Energía Cinética (KJ) = " + nfc(K, 3), 0, 30);
-  text("Energía Mecánica (KJ) = " + nfc(E, 3), 0, 50);
-  ///////////////////
+text("Energía Potencial (KJ) = " + nfc(V, 3), 10, -height/2+10);
+text("Energía Cinética (KJ) = " + nfc(K, 3), 10, -height/2+40);
+text("Energía Mecánica (KJ) = " + nfc(E, 3), 10,-height/2+70);
+///////////////////
+
+
+
+////////creacion de las grficas
+x[j] = new GPoint(t, -pelota.pos.y);
+v[j] = new GPoint(t, -pelota.vel.y);
+
+plotx = new GPlot(this);// Se crea la grafica
+plotv = new GPlot(this);// Se crea la grafica
+
+plotx.setPos(0, 0);// Posicion de la grafica
+plotv.setPos(-width/2, 0);// Posicion de la grafica
+
+plotx.setOuterDim(width/2, height/2); // Dimension de la grafica
+plotv.setOuterDim(width/2, height/2); // Dimension de la grafica
+
+plotx.setPoints(x); // Puntos a graficar
+plotv.setPoints(v); // Puntos a graficar
+
+plotx.setTitleText("Posicion vs tiempo en la caida de la pelota");//titulo de la grafica
+plotv.setTitleText("velocidad vs tiempo en la caida de la pelota");//titulo de la grafica
+
+plotx.getXAxis().setAxisLabelText("Tiempo");//titulo del eje x
+plotv.getXAxis().setAxisLabelText("Tiempo");//titulo del eje x
+
+plotx.getYAxis().setAxisLabelText("Posición");//titulo del eje y
+plotv.getYAxis().setAxisLabelText("Velocidad");//titulo del eje y
+
+plotx.defaultDraw();//Se muestra la grafica
+plotv.defaultDraw();//Se muestra la grafica
+
+j+=1;
+t+=dt;
+///////////////////////
 }
 
 // crear tierra
@@ -215,7 +268,7 @@ let Balon = function (_mass, _pos, _vel) {//inicialmente a la particula se le de
   this.mostrar = function () {
     noStroke();
     fill(40);
-    ellipse(this.pos.x, this.pos.y, 60, 60);/*Se craea una esfera con radio 30 y centrada en
+    ellipse(this.pos.x, this.pos.y, 2*radio, 2*radio);/*Se craea una esfera con radio 30 y centrada en
     (this.pos.x, this.pos.y)
     */
   }
@@ -225,19 +278,6 @@ let Balon = function (_mass, _pos, _vel) {//inicialmente a la particula se le de
     this.vel.x += accel.x * dt;
     this.vel.y += accel.y * dt;
     this.pos.x += this.vel.x * dt;
-    this.pos.y = -((y0-30) - 0.5*(this.vel.y**2)/accel.y) ;
+    this.pos.y = -((y0-radio) - 0.5*(this.vel.y**2)/accel.y) ;
   }
-
-  /*Otra forma para hallar this.vel.y es con 
-  this.vel.y = sqrt(2*accel.y * abs(y0+this.pos.y))
-  
-  
-  Observar que y0+this.pos.y es una resta ya que y0 es definido de forma positiva mientras que this.pos.y
-  es negativo por la forma en la que el programa toma las posiciones hacia arriba
-
-  de forma parecida puede hallarse this.pos.y por medio de las ecuaciones de la conservacion de la energía,
-  este metodo no fue usado ya que si el movimiento es en x y y entonces hay que añadir otro termino al 
-  calculo lo cual es mayor trabajo computacional
-  */
-////////////////
 }
