@@ -106,6 +106,7 @@
 function changeAltura() { //Cambio de altura
   pos = int(inputAltura.value());
   inputAltura.value('');
+  pelota.bounces = 0;
 
   if (pos >=radio && pos < 360) {
     pelota.pos.y = -pos;
@@ -123,6 +124,7 @@ function changeAltura() { //Cambio de altura
 function changeMasa() {//Cambio de masa
   mass = int(inputMasa.value());
   inputMasa.value('');
+  pelota.bounces = 0;
 
   if (mass >0 && mass < 1000) {
     pelota.pos.y = -y0;
@@ -140,6 +142,7 @@ function changeMasa() {//Cambio de masa
 function changeGravedad() {//Cambio de gravedad
   g = int(inputGravedad.value());
   inputGravedad.value('');
+  pelota.bounces = 0;
 
   if (g >0 && g < 100) {
     pelota.pos.y = -y0;
@@ -175,6 +178,9 @@ function draw() { //codigo que se repetira infinitas veces hasta que se use un n
   pelota.movimiento(gravedad);//actualiazacion del movimiento de la particula
   pelota.mostrar(); 
   if (pelota.pos.y >=-radio){//condicion de que cuando la particula llegue al piso se detenga el programa
+    //noLoop();
+  }
+  if (pelota.bounces == 4){
     noLoop();
   }
 
@@ -264,6 +270,7 @@ let Balon = function (_mass, _pos, _vel) {//inicialmente a la particula se le de
   this.mass = _mass;
   this.pos = _pos;
   this.vel = _vel;
+  this.bounces = 0;
 
   this.mostrar = function () {
     noStroke();
@@ -279,5 +286,12 @@ let Balon = function (_mass, _pos, _vel) {//inicialmente a la particula se le de
     this.vel.y += accel.y * dt;
     this.pos.x += this.vel.x * dt;
     this.pos.y = -((y0-radio) - 0.5*(this.vel.y**2)/accel.y) ;
+    if (this.pos.y >=-radio){//condicion de que cuando la particula llegue al piso se detenga el programa
+    //noLoop();
+      this.vel.y = -  this.vel.y;
+      this.bounces += 1;
+    }
   }
+  
 }
+
