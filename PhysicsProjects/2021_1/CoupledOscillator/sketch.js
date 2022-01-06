@@ -49,6 +49,19 @@ let posvstiemp1 = [];
 let posvstiemp2 = [];
 let contador = 0;
 
+// inicializacion de resortes
+let resoI;
+let resoC;
+let resoD;
+
+// funcion de precarga de los componentes
+let img;
+function preload() {
+  img = loadImage(
+    "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/examples/SpringCoupled/coil.png"
+  );
+}
+
 //el cero de la pantalla es windowWidth/2,windowHeight/2 = (0,0)
 // en la funcion setup se inicializan las cosas
 function setup() {
@@ -65,7 +78,7 @@ function setup() {
   botonMasa1.size(130);
   botonMasa1.mousePressed(changeMass1);
 
-  inputMasa1 = createInput("");
+  inputMasa1 = createInput(masam1);
   inputMasa1.position(140, 20);
   inputMasa1.size(120);
 
@@ -75,7 +88,7 @@ function setup() {
   botonMasa2.size(130);
   botonMasa2.mousePressed(changeMass2);
 
-  inputMasa2 = createInput("");
+  inputMasa2 = createInput(masam2);
   inputMasa2.position(140, 40);
   inputMasa2.size(120);
 
@@ -85,7 +98,7 @@ function setup() {
   botonK1.size(130);
   botonK1.mousePressed(changeK1);
 
-  inputK1 = createInput("");
+  inputK1 = createInput(K1);
   inputK1.position(140, 60);
   inputK1.size(120);
 
@@ -95,7 +108,7 @@ function setup() {
   botonK2.size(130);
   botonK2.mousePressed(changeK2);
 
-  inputK2 = createInput("");
+  inputK2 = createInput(K2);
   inputK2.position(140, 80);
   inputK2.size(120);
 
@@ -105,7 +118,7 @@ function setup() {
   botonK3.size(130);
   botonK3.mousePressed(changeK3);
 
-  inputK3 = createInput("");
+  inputK3 = createInput(K3);
   inputK3.position(140, 100);
   inputK3.size(120);
 
@@ -115,7 +128,7 @@ function setup() {
   botonA1.size(130);
   botonA1.mousePressed(changeA1);
 
-  inputA1 = createInput("");
+  inputA1 = createInput(A1);
   inputA1.position(140, 120);
   inputA1.size(120);
 
@@ -125,7 +138,7 @@ function setup() {
   botonA2.size(130);
   botonA2.mousePressed(changeA2);
 
-  inputA2 = createInput("");
+  inputA2 = createInput(A2);
   inputA2.position(140, 140);
   inputA2.size(120);
 
@@ -135,7 +148,7 @@ function setup() {
   botonF1.size(130);
   botonF1.mousePressed(changeF1);
 
-  inputF1 = createInput("");
+  inputF1 = createInput(F1);
   inputF1.position(140, 160);
   inputF1.size(120);
 
@@ -145,7 +158,7 @@ function setup() {
   botonF2.size(130);
   botonF2.mousePressed(changeF2);
 
-  inputF2 = createInput("");
+  inputF2 = createInput(F2);
   inputF2.position(140, 180);
   inputF2.size(120);
 
@@ -153,14 +166,19 @@ function setup() {
   pared1 = new pared(350, 0, 40, 800);
   pared2 = new pared(-390, 0, 40, 800);
   mesa = new pared(-350, 150, 700, 30);
-  caja1 = new caja(100, 60, 90, "blue");
-  caja2 = new caja(-200, 60, 90, "red");
+  caja1 = new caja(100, 60, 90, "#386BF6");
+  caja2 = new caja(-200, 60, 90, "#D73619");
+
+  // Instanciamos los resortes
+  resoI = new spring(0.2, 1, 80);
+  resoC = new spring(0.2, 1, 80);
+  resoD = new spring(0.2, 1, 80);
 }
 
 // en la funcion draw() se muestran las cosas en pantalla
 function draw() {
   translate(windowWidth / 2, windowHeight / 2);
-  background(0, 0, 0); // color en la pantala
+  background(0, 55, 65); // color en la pantala
 
   // Texto en pantalla
   fill("red");
@@ -181,10 +199,15 @@ function draw() {
   caja2.movimiento2(A1, A2, K1, K2, K3, masam1, masam2, F1, F2);
   caja1.mostrar(); // caja derecha
   caja2.mostrar(); //caja izquierda
-  console.log("contador", contador);
-  console.log("posc1", caja1.x);
-  console.log("posc2", caja2.x);
-  console.log("tiempo", dt);
+
+  resoI.drawSpring(pared2, caja2);
+  resoC.drawSpring(caja2, caja1);
+  resoC.drawSpring(caja1, pared1);
+
+  // console.log("contador", contador);
+  // console.log("posc1", caja1.x);
+  // console.log("posc2", caja2.x);
+  // console.log("tiempo", dt);
   posvstiemp1[contador] = new GPoint(dt, caja1.x);
   posvstiemp2[contador] = new GPoint(dt, caja2.x);
 
@@ -230,7 +253,7 @@ let pared = function (_x, _y, _w, _h) {
 
   this.mostrar = function () {
     noStroke(); //bordes
-    fill("rgb(0,255,0)"); //color
+    fill("#4FBD57"); //color
     rect(this.x, this.y, this.w, this.h);
   };
 };
@@ -238,81 +261,99 @@ let pared = function (_x, _y, _w, _h) {
 // funcion para cambiar Masa1 de la caja1
 function changeMass1() {
   masam1 = int(inputMasa1.value());
-  inputMasa1.value("");
+  // inputMasa1.value("");
 
   caja1.m1 = masam1;
   caja2.m1 = masam1;
+
+  setup();
 }
 
 // funcion para cambiar Masa2 de la caja2
 function changeMass2() {
   masam2 = int(inputMasa2.value());
-  inputMasa2.value("");
+  // inputMasa2.value("");
 
   caja1.m2 = masam2;
   caja2.m2 = masam2;
+
+  setup();
 }
 
 // funcion para cambiar K1
 function changeK1() {
   K1 = int(inputK1.value());
-  inputK1.value("");
+  // inputK1.value("");
 
   caja1.k1 = K1;
   caja2.k1 = K1;
+
+  setup();
 }
 
 // funcion para cambiar K2
 function changeK2() {
   K2 = int(inputK2.value());
-  inputK2.value("");
+  // inputK2.value("");
 
   caja1.k2 = K2;
   caja2.k2 = K2;
+
+  setup();
 }
 
 // funcion para cambiar K3
 function changeK3() {
   K3 = int(inputK3.value());
-  inputK3.value("");
+  // inputK3.value("");
 
   caja1.k3 = K3;
   caja2.k3 = K3;
+
+  setup();
 }
 
 // funcion para cambiar A1
 function changeA1() {
   A1 = int(inputA1.value());
-  inputA1.value("");
+  // inputA1.value("");
 
   caja1.amp1 = A1;
   caja2.amp1 = A1;
+
+  setup();
 }
 // funcion para cambiar A2
 function changeA2() {
   A2 = int(inputA2.value());
-  inputA2.value("");
+  // inputA2.value("");
 
   caja1.amp2 = A2;
   caja2.amp2 = A2;
+
+  setup();
 }
 
 // funcion para cambiar F1
 function changeF1() {
   F1 = int(inputF1.value());
-  inputF1.value("");
+  // inputF1.value("");
 
   caja1.fas1 = F1;
   caja2.fas1 = F1;
+
+  setup();
 }
 
 // funcion para cambiar F2
 function changeF2() {
   F2 = int(inputF2.value());
-  inputF2.value("");
+  // inputF2.value("");
 
   caja1.fas2 = F2;
   caja2.fas2 = F2;
+
+  setup();
 }
 
 // funcion caja
@@ -396,5 +437,25 @@ let caja = function (_x, _y, _w, _color) {
       this.x +
       this.amp1 * sin(this.omega3 * dt + this.fas1) -
       this.amp2 * sin(this.omega4 * dt + this.fas2);
+  };
+};
+
+// funcion resortes
+let spring = function (_k, _d, _y) {
+  this.k = _k;
+  this.d = _d;
+  this.y = _y;
+  this.baseWidth = 0;
+
+  this.drawSpring = function (object1, object2) {
+    fill(150, 40, 100);
+    this.baseWidth = 0.06 * (object1.x + object1.w - object2.x) + -4;
+    image(
+      img,
+      object1.x + object1.w,
+      this.y - this.baseWidth,
+      abs(object1.x + object1.w - object2.x),
+      this.y + 2 * this.baseWidth
+    );
   };
 };
