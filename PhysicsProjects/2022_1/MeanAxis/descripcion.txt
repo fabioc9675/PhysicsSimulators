@@ -1,0 +1,6 @@
+Titulo de la simulación:Teorema del eje intermedio
+Nombre de los autores:Juan Andrés González Cristian Serna
+Email de los autores: juan.gonzalesm1@udea.edu.co, cristian.serna1@udea.edu.co
+Descripción:Simulador del movimiento de rotación de objetos tridimensionales y descripción del movimiento anormal en objetos asimétricos.
+
+
