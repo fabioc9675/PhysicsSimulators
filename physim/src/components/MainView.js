@@ -71,6 +71,33 @@ export default function MainView() {
                     abstract={dataSim.simSiPe.abst}
                   />
                 </div>
+                <div className="SimButton">
+                  <SimDescriptor
+                    buttonLabel="Simulacion DO"
+                    pathUrl={dataSim.simDaOs.path}
+                    imgDir={dataSim.simDaOs.icon}
+                    title={dataSim.simDaOs.title}
+                    abstract={dataSim.simDaOs.abst}
+                  />
+                </div>
+                <div className="SimButton">
+                  <SimDescriptor
+                    buttonLabel="Simulacion DP"
+                    pathUrl={dataSim.simDoPe.path}
+                    imgDir={dataSim.simDoPe.icon}
+                    title={dataSim.simDoPe.title}
+                    abstract={dataSim.simDoPe.abst}
+                  />
+                </div>
+                <div className="SimButton">
+                  <SimDescriptor
+                    buttonLabel="Simulacion MA"
+                    pathUrl={dataSim.simMeAx.path}
+                    imgDir={dataSim.simMeAx.icon}
+                    title={dataSim.simMeAx.title}
+                    abstract={dataSim.simMeAx.abst}
+                  />
+                </div>
               </div>
             </div>
 
