@@ -148,6 +148,21 @@
     "abst": "Simulador del movimiento de rotación de objetos tridimensionales y descripción del movimiento anormal en objetos asimétricos.",
     "icon": "resources/logos/Sim_MA_400x400.jpg"
   },
+  "simMaSp": {
+    "path": "/MassSpectro",
+    "title": "Espectrómetro de masas",
+    "url": "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2022_1/MassSpectro/sketch.js",
+    "doc": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2022_1/MassSpectro/phy.pdf&embedded=true",
+    "act": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2022_1/MassSpectro/act.pdf&embedded=true",
+    "author": ["Alejandro Restrepo Giraldo", "Juan Sebastián Ramírez", "-"],
+    "email": [
+      "alejandro.restrepo19@udea.edu.co",
+      "juan.ramirez114@udea.edu.co",
+      "-"
+    ],
+    "abst": "Se analiza la interacción de cargas eléctricas con campos magnéticos en el contexto de la aplicación tecnológica del espectrómetro de masas.",
+    "icon": "resources/logos/Sim_MS_400x400.jpg"
+  },
 
   "sim01": {
     "path": "/simul_01",
