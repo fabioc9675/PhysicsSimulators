@@ -1,0 +1,14 @@
+
+
+Título de la simulación: Espectrómetro de masas
+
+Autores: Alejandro Restrepo Giraldo y Juan Sebastián Ramírez Quintero
+
+Correos: alejandro.restrepo19@udea.edu.co  juan.ramirez114@udea.edu.co
+
+Descripción corta (21 palabras):  Se analiza la interacción de cargas eléctricas con campos magnéticos en el contexto de la aplicación tecnológica del espectrómetro de masas. 
+
+
+
+
+
