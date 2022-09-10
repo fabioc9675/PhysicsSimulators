@@ -49,3 +49,20 @@
   height: 0.1rem;
   border-color: white;
 }
+
+/* ===== HIGHLIGHT ===== */
+.card-highlight {
+  pointer-events: auto;
+  transform: scale(1);
+  transition: all 0.4s;
+}
+
+.card-highlight:hover {
+  opacity: 1;
+  transform: scale(1.04);
+}
+
+.content:hover .card-highlight:not(:hover) {
+  opacity: 0.5;
+  transform: scale(0.9);
+}
