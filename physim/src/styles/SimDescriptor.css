@@ -59,7 +59,7 @@
 
 .card-highlight:hover {
   opacity: 1;
-  transform: scale(1.04);
+  transform: scale(1.02);
 }
 
 .content:hover .card-highlight:not(:hover) {
