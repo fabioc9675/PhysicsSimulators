@@ -163,6 +163,17 @@
     "abst": "Se analiza la interacción de cargas eléctricas con campos magnéticos en el contexto de la aplicación tecnológica del espectrómetro de masas.",
     "icon": "resources/logos/Sim_MS_400x400.jpg"
   },
+  "simIsMo": {
+    "path": "/IsingModel",
+    "title": "Materiales en el Modelo Ising",
+    "url": "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2022_1/IsingModel/sketch.js",
+    "doc": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2022_1/IsingModel/phy.pdf&embedded=true",
+    "act": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2022_1/IsingModel/act.pdf&embedded=true",
+    "author": ["Daniela Andrea Torres Gómez", "Sergio Duque Mejía", "-"],
+    "email": ["dandrea.torres@udea.edu.co", "sergio.duquem@udea.edu.co", "-"],
+    "abst": "Estudio del comportamiento del promedio de magnetización cuando varía la temperatura para materiales con propiedades ferromagnéticas, paramagnéticas y anti-ferromagnéticas utilizando el modelo simplificado de Ising.",
+    "icon": "resources/logos/Sim_IM_400x400.png"
+  },
 
   "sim01": {
     "path": "/simul_01",
