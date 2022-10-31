@@ -1,0 +1,9 @@
+1. Código fuente: https://raw.githubusercontent.com/sergioduquem15/Simulacion_p5/main/p5_prueba/sketch.js
+2. Marco teórico: ver archivo adjunto llamado Simulación_ModeloIsing.pdf
+3. Actividad propuesta: ver archivo adjunto llamado Actividad_Simulacion.pdf
+4. Título: Estudio de materiales magnéticos usando el modelo de Ising
+5. Categoría: Electromagnetismo
+6. Nombre autores: Daniela Andrea Torres Gómez, Sergio Duque Mejía
+7. Email autores: dandrea.torres@udea.edu.co, sergio.duquem@udea.edu.co
+8. Descripción de 25 palabras: Estudio del comportamiento del promedio de magnetización cuando varía la temperatura para materiales con propiedades ferromagnéticas, paramagnéticas y anti-ferromagnéticas utilizando el modelo simplificado de Ising.
+9. Icono 400x400 pixeles: ver archivo adjunto llamado icono_ising.png
