@@ -1,0 +1,6 @@
+Titulo de la simulación: Partícula en campo EM
+Nombre de los autores: Samuel Hoyos, Esteban Marulanda, Carlos Granada
+Email de los autores: samuel.hoyos@udea.edu.co, esteban.marulandaa@udea.edu.co, candres.granada@udea.edu.co
+Descripción: Se simula el movimiento de una partícula cargada inmersa en un campo electromagnético. Se puede escoger el plano de visualización y se grafica el movimiento.
+
+
