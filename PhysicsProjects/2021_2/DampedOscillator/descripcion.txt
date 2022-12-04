@@ -1,0 +1,6 @@
+Titulo de la simulación:Oscilador amortiguado
+Nombre de los autores:Juan David Ramírez Cadavid
+Email de los autores: juan.ramirez19@udea.edu.co
+Descripción:un oscilador físico que debido a los parámetros del sistema puede presentar o no oscilaciones. La solución de la ecuación de movimiento deviene de una ecuación diferencial de segundo orden.
+
+

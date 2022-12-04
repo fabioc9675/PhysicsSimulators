@@ -41,7 +41,7 @@ let T_val;
 let pag = 1;
 
 function setup() {
-  createCanvas(1000, 600);
+  createCanvas(windowWidth, windowHeight);
 
   
   noStroke();

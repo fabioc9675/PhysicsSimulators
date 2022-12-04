@@ -1,0 +1,7 @@
+Titulo de la simulación: Péndulo doble
+Nombre de los autores:Juan David Ramírez Cadavid
+Email de los autores: juan.ramirez19@udea.edu.co
+Descripción:Un péndulo doble es un sistema compuesto por dos péndulos, con el segundo colgando del extremo del primero. La modificación de condiciones
+iniciales hace que se comporte como un sistema determinista o un sistema caótico.
+
+
