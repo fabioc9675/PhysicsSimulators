@@ -174,6 +174,32 @@
     "abst": "Estudio del comportamiento del promedio de magnetización cuando varía la temperatura para materiales con propiedades ferromagnéticas, paramagnéticas y anti-ferromagnéticas utilizando el modelo simplificado de Ising.",
     "icon": "resources/logos/Sim_IM_400x400.png"
   },
+  "simFiCh": {
+    "path": "/FieldCharge",
+    "title": "Partícula en campo EM",
+    "url": "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2022_1/FieldCharge/sketch.js",
+    "doc": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2022_1/FieldCharge/phy.pdf&embedded=true",
+    "act": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2022_1/FieldCharge/act.pdf&embedded=true",
+    "author": ["Samuel Hoyos", "Esteban Marulanda", "Carlos Granada"],
+    "email": [
+      "samuel.hoyos@udea.edu.co",
+      "esteban.marulandaa@udea.edu.co",
+      "candres.granada@udea.edu.co"
+    ],
+    "abst": "Se simula el movimiento de una partícula cargada inmersa en un campo electromagnético. Se puede escoger el plano de visualización y se grafica el movimiento.",
+    "icon": "resources/logos/Sim_FC_400x400.jpg"
+  },
+  "simBoDr": {
+    "path": "/BodyDrop",
+    "title": "Cuerpos rígidos rodando",
+    "url": "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2022_1/BodyDrop/sketch.js",
+    "doc": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2022_1/BodyDrop/phy.pdf&embedded=true",
+    "act": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2022_1/BodyDrop/act.pdf&embedded=true",
+    "author": ["Edwin Dair Zapata", "Andres Felipe Gomez", "-"],
+    "email": ["dair.zapata@udea.edu.co", "andres.gomez29@udea.edu.co", "-"],
+    "abst": "La simulación consiste en 4 cuerpos rígidos rondando por un plano inclinado, él objetivo es entender porqué un objeto en particular gana la carrera.",
+    "icon": "resources/logos/Sim_BD_400x400.jpg"
+  },
 
   "sim01": {
     "path": "/simul_01",

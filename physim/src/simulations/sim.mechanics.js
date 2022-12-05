@@ -46,6 +46,15 @@ export default function SimMechanics() {
                 abstract={dataSim.simEnCo.abst}
               />
             </div>
+            <div className="SimButton">
+              <SimDescriptor
+                buttonLabel="Simulacion BD"
+                pathUrl={dataSim.simBoDr.path}
+                imgDir={dataSim.simBoDr.icon}
+                title={dataSim.simBoDr.title}
+                abstract={dataSim.simBoDr.abst}
+              />
+            </div>
           </div>
         </div>
       </div>

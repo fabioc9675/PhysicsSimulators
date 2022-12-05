@@ -214,6 +214,36 @@ export default function App() {
               />
             )}
           />
+          <Route
+            forceRefresh={true}
+            exact
+            path={dataSim.simFiCh.path}
+            component={() => (
+              <SimFrame
+                paneTitle={dataSim.simFiCh.title}
+                url={dataSim.simFiCh.url}
+                doc={dataSim.simFiCh.doc}
+                act={dataSim.simFiCh.act}
+                author={dataSim.simFiCh.author}
+                email={dataSim.simFiCh.email}
+              />
+            )}
+          />
+          <Route
+            forceRefresh={true}
+            exact
+            path={dataSim.simBoDr.path}
+            component={() => (
+              <SimFrame
+                paneTitle={dataSim.simBoDr.title}
+                url={dataSim.simBoDr.url}
+                doc={dataSim.simBoDr.doc}
+                act={dataSim.simBoDr.act}
+                author={dataSim.simBoDr.author}
+                email={dataSim.simBoDr.email}
+              />
+            )}
+          />
 
           <Route
             forceRefresh={true}

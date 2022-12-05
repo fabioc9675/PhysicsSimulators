@@ -23,6 +23,15 @@ export default function SimElectro() {
                 abstract={dataSim.simMaSp.abst}
               />
             </div>
+            <div className="SimButton">
+              <SimDescriptor
+                buttonLabel="Simulacion FC"
+                pathUrl={dataSim.simFiCh.path}
+                imgDir={dataSim.simFiCh.icon}
+                title={dataSim.simFiCh.title}
+                abstract={dataSim.simFiCh.abst}
+              />
+            </div>
           </div>
         </div>
 
