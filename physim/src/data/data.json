@@ -5,11 +5,7 @@
     "url": "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2021_1/EnergyTransfer/sketch.js",
     "doc": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2021_1/EnergyTransfer/phy.pdf&embedded=true",
     "act": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2021_1/EnergyTransfer/act.pdf&embedded=true",
-    "author": [
-      "Carlos Toro",
-      "Lucas Quiceno",
-      "Victor Oviedo"
-    ],
+    "author": ["Carlos Toro", "Lucas Quiceno", "Victor Oviedo"],
     "email": [
       "carlos.toroc@udea.edu.co",
       "lucas.quiceno@udea.edu.co",
@@ -114,6 +110,95 @@
     ],
     "abst": "En esta simulación se aprederá sobre el espectro electromagnético, el cual, esta estrechamente relaciona con la radiación de cuerpo negro.",
     "icon": "resources/logos/Sim_BB_400x400.png"
+  },
+  "simDaOs": {
+    "path": "/DampedOscillator",
+    "title": "Oscilador amortiguado",
+    "url": "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2021_2/DampedOscillator/sketch.js",
+    "doc": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2021_2/DampedOscillator/phy.pdf&embedded=true",
+    "act": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2021_2/DampedOscillator/act.pdf&embedded=true",
+    "author": ["Juan David Ramírez", "-", "-"],
+    "email": ["juan.ramirez19@udea.edu.co", "-", "-"],
+    "abst": "Un oscilador físico que debido a los parámetros del sistema puede presentar o no oscilaciones. La solución de la ecuación de movimiento deviene de una ecuación diferencial de segundo orden.",
+    "icon": "resources/logos/Sim_DO_400x400.jpg"
+  },
+  "simDoPe": {
+    "path": "/DoublePendulum",
+    "title": "Péndulo doble",
+    "url": "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2021_2/DoublePendulum/sketch.js",
+    "doc": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2021_2/DoublePendulum/phy.pdf&embedded=true",
+    "act": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2021_2/DoublePendulum/act.pdf&embedded=true",
+    "author": ["Juan David Ramírez", "-", "-"],
+    "email": ["juan.ramirez19@udea.edu.co", "-", "-"],
+    "abst": "Un péndulo doble es un sistema compuesto por dos péndulos, con el segundo colgando del extremo del primero. La modificación de condiciones iniciales hace que se comporte como un sistema determinista o un sistema caótico.",
+    "icon": "resources/logos/Sim_DP_400x400.jpg"
+  },
+  "simMeAx": {
+    "path": "/MeanAxis",
+    "title": "Teorema del eje intermedio",
+    "url": "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2022_1/MeanAxis/sketch.js",
+    "doc": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2022_1/MeanAxis/phy.pdf&embedded=true",
+    "act": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2022_1/MeanAxis/act.pdf&embedded=true",
+    "author": ["Juan Andrés González", "Cristian Serna", "-"],
+    "email": [
+      "juan.gonzalezm1@udea.edu.co",
+      "cristian.serna1@udea.edu.co",
+      "-"
+    ],
+    "abst": "Simulador del movimiento de rotación de objetos tridimensionales y descripción del movimiento anormal en objetos asimétricos.",
+    "icon": "resources/logos/Sim_MA_400x400.jpg"
+  },
+  "simMaSp": {
+    "path": "/MassSpectro",
+    "title": "Espectrómetro de masas",
+    "url": "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2022_1/MassSpectro/sketch.js",
+    "doc": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2022_1/MassSpectro/phy.pdf&embedded=true",
+    "act": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2022_1/MassSpectro/act.pdf&embedded=true",
+    "author": ["Alejandro Restrepo Giraldo", "Juan Sebastián Ramírez", "-"],
+    "email": [
+      "alejandro.restrepo19@udea.edu.co",
+      "juan.ramirez114@udea.edu.co",
+      "-"
+    ],
+    "abst": "Se analiza la interacción de cargas eléctricas con campos magnéticos en el contexto de la aplicación tecnológica del espectrómetro de masas.",
+    "icon": "resources/logos/Sim_MS_400x400.jpg"
+  },
+  "simIsMo": {
+    "path": "/IsingModel",
+    "title": "Materiales en el Modelo Ising",
+    "url": "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2022_1/IsingModel/sketch.js",
+    "doc": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2022_1/IsingModel/phy.pdf&embedded=true",
+    "act": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2022_1/IsingModel/act.pdf&embedded=true",
+    "author": ["Daniela Andrea Torres Gómez", "Sergio Duque Mejía", "-"],
+    "email": ["dandrea.torres@udea.edu.co", "sergio.duquem@udea.edu.co", "-"],
+    "abst": "Estudio del comportamiento del promedio de magnetización cuando varía la temperatura para materiales con propiedades ferromagnéticas, paramagnéticas y anti-ferromagnéticas utilizando el modelo simplificado de Ising.",
+    "icon": "resources/logos/Sim_IM_400x400.png"
+  },
+  "simFiCh": {
+    "path": "/FieldCharge",
+    "title": "Partícula en campo EM",
+    "url": "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2022_1/FieldCharge/sketch.js",
+    "doc": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2022_1/FieldCharge/phy.pdf&embedded=true",
+    "act": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2022_1/FieldCharge/act.pdf&embedded=true",
+    "author": ["Samuel Hoyos", "Esteban Marulanda", "Carlos Granada"],
+    "email": [
+      "samuel.hoyos@udea.edu.co",
+      "esteban.marulandaa@udea.edu.co",
+      "candres.granada@udea.edu.co"
+    ],
+    "abst": "Se simula el movimiento de una partícula cargada inmersa en un campo electromagnético. Se puede escoger el plano de visualización y se grafica el movimiento.",
+    "icon": "resources/logos/Sim_FC_400x400.jpg"
+  },
+  "simBoDr": {
+    "path": "/BodyDrop",
+    "title": "Cuerpos rígidos rodando",
+    "url": "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2022_1/BodyDrop/sketch.js",
+    "doc": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2022_1/BodyDrop/phy.pdf&embedded=true",
+    "act": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2022_1/BodyDrop/act.pdf&embedded=true",
+    "author": ["Edwin Dair Zapata", "Andres Felipe Gomez", "-"],
+    "email": ["dair.zapata@udea.edu.co", "andres.gomez29@udea.edu.co", "-"],
+    "abst": "La simulación consiste en 4 cuerpos rígidos rondando por un plano inclinado, él objetivo es entender porqué un objeto en particular gana la carrera.",
+    "icon": "resources/logos/Sim_BD_400x400.jpg"
   },
 
   "sim01": {

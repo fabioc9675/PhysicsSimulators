@@ -1,0 +1,68 @@
+.TabFrame {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.TabFrame-pane {
+  display: flex;
+  flex-direction: row;
+  height: 90%;
+}
+
+.tab-pane-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-pane-right-content {
+  display: flex;
+  flex-direction: row;
+  height: 82vh;
+  overflow: hidden;
+}
+
+.tab-content {
+  color: rgb(255, 255, 255);
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.tablist-content {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(0, 114, 151);
+  border-bottom: 1px solid rgb(255, 255, 255);
+  margin: 0 0 10px;
+  padding: 0;
+  height: 5vh;
+  width: 100%;
+}
+
+.tablabel-content {
+  border-bottom: none;
+  list-style: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  width: 16%;
+  text-align: center;
+}
+
+.tablabel-content:focus {
+  outline: none;
+  transition: all 0.7s;
+}
+
+.tablabel-content:hover:not(:focus) {
+  background-color: black;
+  opacity: 0.7;
+}
+
+.tab-panel {
+  transition: all 0.4s;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 80vw;
+  height: 100%;
+}

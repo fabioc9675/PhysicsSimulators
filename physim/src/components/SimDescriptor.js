@@ -24,7 +24,7 @@ export default function SimDescriptor(props) {
   }
 
   return (
-    <div className="desc-pane" onClick={HandleClick}>
+    <div className="desc-pane card-highlight" onClick={HandleClick}>
       <div className="des-pane des-content">
         <div className="des-pane des-title">{title}</div>
         <hr className="desc-line" />
