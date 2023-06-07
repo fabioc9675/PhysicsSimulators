@@ -104,6 +104,33 @@ export default function SimEverything() {
                 abstract={dataSim.simBoDr.abst}
               />
             </div>
+            <div className="SimButton">
+              <SimDescriptor
+                buttonLabel="Simulacion DO_20231"
+                pathUrl={dataSim.simDoOs20231.path}
+                imgDir={dataSim.simDoOs20231.icon}
+                title={dataSim.simDoOs20231.title}
+                abstract={dataSim.simDoOs20231.abst}
+              />
+            </div>
+            <div className="SimButton">
+              <SimDescriptor
+                buttonLabel="Simulacion FM_20231"
+                pathUrl={dataSim.simFlMo20231.path}
+                imgDir={dataSim.simFlMo20231.icon}
+                title={dataSim.simFlMo20231.title}
+                abstract={dataSim.simFlMo20231.abst}
+              />
+            </div>
+            <div className="SimButton">
+              <SimDescriptor
+                buttonLabel="Simulacion PL_20231"
+                pathUrl={dataSim.simPaLa20231.path}
+                imgDir={dataSim.simPaLa20231.icon}
+                title={dataSim.simPaLa20231.title}
+                abstract={dataSim.simPaLa20231.abst}
+              />
+            </div>
           </div>
         </div>
 
