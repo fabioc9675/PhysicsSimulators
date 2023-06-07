@@ -1,0 +1,4 @@
+Nombre de la simulación: Movimiento de cuerpos en fluidos.
+Descripción: Esta simulación describe el comportamiento de cuerpos sometidos a las fuerzas que puede ejercer un fluido sobre él como el empuje o el arrastre.
+Autores: Jacobo Parodi Díez
+Correo Electrónico: jacobo.parodi@udea.edu.co
