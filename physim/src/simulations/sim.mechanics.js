@@ -32,6 +32,15 @@ export default function SimMechanics() {
                 abstract={dataSim.simMeAx.abst}
               />
             </div>
+            <div className="SimButton">
+              <SimDescriptor
+                buttonLabel="Simulacion FM_20231"
+                pathUrl={dataSim.simFlMo20231.path}
+                imgDir={dataSim.simFlMo20231.icon}
+                title={dataSim.simFlMo20231.title}
+                abstract={dataSim.simFlMo20231.abst}
+              />
+            </div>
           </div>
         </div>
 
@@ -53,6 +62,15 @@ export default function SimMechanics() {
                 imgDir={dataSim.simBoDr.icon}
                 title={dataSim.simBoDr.title}
                 abstract={dataSim.simBoDr.abst}
+              />
+            </div>
+            <div className="SimButton">
+              <SimDescriptor
+                buttonLabel="Simulacion PL_20231"
+                pathUrl={dataSim.simPaLa20231.path}
+                imgDir={dataSim.simPaLa20231.icon}
+                title={dataSim.simPaLa20231.title}
+                abstract={dataSim.simPaLa20231.abst}
               />
             </div>
           </div>

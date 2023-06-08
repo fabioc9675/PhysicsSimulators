@@ -1,0 +1,4 @@
+Titulo de la simulación: Cuerpos rígidos rodando
+Nombre de los autores: Edwin Dair Zapata, Andres Felipe Gomez
+Email de los autores: dair.zapata@udea.edu.co, andres.gomez29@udea.edu.co
+Descripción: La simulación consiste en 4 cuerpos rígidos rondando por un plano inclinado, él objetivo es entender porqué un objeto en particular gana la carrera.

@@ -1,0 +1,7 @@
+Proyectil en el sistema solar.
+
+Simulación Tiro parabólico en diferentes planetas, se estudia las componentes vectoriales del movimiento, velocidad y ángulo iniciales, variación masa, rozamiento y variación de la gravedad.
+
+Juan Pablo Ortiz Gil (juanp.ortiz@udea.edu.co)
+Samuel Quitian Gallego (samuel.quitiang@udea.edu.co)
+Waira Murillo García (waira.murillo@udea.edu.co)

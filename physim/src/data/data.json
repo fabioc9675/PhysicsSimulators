@@ -200,6 +200,73 @@
     "abst": "La simulación consiste en 4 cuerpos rígidos rondando por un plano inclinado, él objetivo es entender porqué un objeto en particular gana la carrera.",
     "icon": "resources/logos/Sim_BD_400x400.jpg"
   },
+  "simDoOs20231": {
+    "path": "/DoubleOscillator20231",
+    "title": "Caos en péndulo doble",
+    "url": "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2023_1/DoubleOscillator/sketch.js",
+    "doc": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2023_1/DoubleOscillator/phy.pdf&embedded=true",
+    "act": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2023_1/DoubleOscillator/act.pdf&embedded=true",
+    "author": ["Maria José Domínguez", "-", "-"],
+    "email": ["mjose.dominguez@udea.edu.co", "-", "-"],
+    "abst": "Simulación que brinda una representación dinámica del péndulo doble, su espacio de fase y las figuras de Lissajous, revelando su complejidad y comportamiento caótico.",
+    "icon": "resources/logos/Sim_DO20231_400x400.png"
+  },
+  "simFlMo20231": {
+    "path": "/FluidMovement20231",
+    "title": "Movimiento de cuerpos en fluidos",
+    "url": "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2023_1/FluidsMovement/sketch.js",
+    "doc": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2023_1/FluidsMovement/phy.pdf&embedded=true",
+    "act": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2023_1/FluidsMovement/act.pdf&embedded=true",
+    "author": ["Jacobo Parodi Díez", "-", "-"],
+    "email": ["jacobo.parodi@udea.edu.co", "-", "-"],
+    "abst": "Esta simulación describe el comportamiento de cuerpos sometidos a las fuerzas que puede ejercer un fluido sobre él como el empuje o el arrastre.",
+    "icon": "resources/logos/Sim_FM20231_400x400.png"
+  },
+  "simPaLa20231": {
+    "path": "/ParabolicLaunch20231",
+    "title": "Proyectil en el sistema solar",
+    "url": "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2023_1/ParabolicLaunch/sketch.js",
+    "doc": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2023_1/ParabolicLaunch/phy.pdf&embedded=true",
+    "act": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2023_1/ParabolicLaunch/act.pdf&embedded=true",
+    "author": ["Juan Pablo Ortiz", "Samuel Quitian", "Waira Murillo"],
+    "email": [
+      "juanp.ortiz@udea.edu.co",
+      "samuel.quitiang@udea.edu.co",
+      "waira.murillo@udea.edu.co"
+    ],
+    "abst": "Simulación Tiro parabólico en diferentes planetas, se estudia las componentes vectoriales del movimiento, velocidad y ángulo iniciales, variación masa, rozamiento y variación de la gravedad.",
+    "icon": "resources/logos/Sim_PL20231_400x400.jpg"
+  },
+  "simRiPe20231": {
+    "path": "/RigidPendulum20231",
+    "title": "Péndulo doble rígido",
+    "url": "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2023_1/RigidPendulum/sketch.js",
+    "doc": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2023_1/RigidPendulum/phy.pdf&embedded=true",
+    "act": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2023_1/RigidPendulum/act.pdf&embedded=true",
+    "author": ["Kevin Cortés", "Samuel Vasco", "-"],
+    "email": ["kevin.cortes@udea.edu.co", "samuel.vasco@udea.edu.co", "-"],
+    "abst": "Se presenta una simulación de un péndulo doble compuesto por cuerpos rígidos con distribución de masas uniforme.",
+    "icon": "resources/logos/Sim_RP20231_400x400.png"
+  },
+  "simHyAt20231": {
+    "path": "/HydrogenAtom20231",
+    "title": "Orbitales del átomo de Hidrógeno",
+    "url": "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2023_1/HydrogenAtom/sketch.js",
+    "doc": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2023_1/HydrogenAtom/phy.pdf&embedded=true",
+    "act": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2023_1/HydrogenAtom/act.pdf&embedded=true",
+    "author": [
+      "Cristian David Gutiérrez",
+      "Joseph Nicolay Ruiz",
+      "Sergio Castrillón"
+    ],
+    "email": [
+      "cdavid.gutierrez@udea.edu.co",
+      "joseph.ruiz@udea.edu.co",
+      "sergio.castrillons@udea.edu.co"
+    ],
+    "abst": "Presentación de una visualización espacial de las soluciones de la ecuación de Schrödinger aplicada al átomo de hidrógeno.",
+    "icon": "resources/logos/Sim_HA20231_400x400.png"
+  },
 
   "sim01": {
     "path": "/simul_01",

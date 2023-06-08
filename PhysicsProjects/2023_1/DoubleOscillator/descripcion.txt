@@ -1,0 +1,5 @@
+-Nombre completo: Maria José Domínguez Mesa
+- Correo: mjose.dominguez@udea.edu.co
+- Titulo para la simulación: El péndulo doble
+- Descripción de no mas de 25 palabras: Simulación que brinda una representación dinámica del péndulo doble, su espacio de fase y las figuras de Lissajous, revelando su complejidad y comportamiento caótico.
+- icono de 400x400 pixeles en formato png o jpg:

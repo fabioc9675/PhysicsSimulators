@@ -1,0 +1,13 @@
+Nombre: Orbitales del Átomo de Hidrógeno
+
+Descripción: Presentación de una visualización espacial de las soluciones de la ecuación de Schrödinger aplicada al átomo de hidrógeno.
+
+Autores:
+- Cristian David Gutiérrez 
+- Joseph Nicolay Ruiz
+- Sergio Castrillón
+
+Correos electrónicos:
+- cdavid.gutierrez@udea.edu.co
+- joseph.ruiz@udea.edu.co
+- sergio.castrillons@udea.edu.co
