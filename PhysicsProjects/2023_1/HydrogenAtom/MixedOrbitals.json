@@ -1,0 +1,60 @@
+{
+    "1": {
+        "0": {
+            "0": "1.0*r**2*Math.exp(-2.0*r)/Math.PI"
+        }
+    },
+    "2": {
+        "0": {
+            "0": "0.125*r**2*(1 - 0.5*r)**2*Math.exp(-1.0*r)/Math.PI"
+        },
+        "1": {
+            "-1": "0.0625*r**4*Math.exp(-1.0*r)*Math.sin(theta)**2*Math.cos(phi)**2/Math.PI",
+            "0": "0.03125*r**4*Math.exp(-1.0*r)*Math.cos(theta)**2/Math.PI",
+            "1": "0.0625*r**4*Math.exp(-1.0*r)*Math.sin(phi)**2*Math.sin(theta)**2/Math.PI"
+        }
+    },
+    "3": {
+        "0": {
+            "0": "0.037037037037037*r**2*(0.0740740740740741*r**2 - 0.666666666666667*r + 1)**2*Math.exp(-0.666666666666667*r)/Math.PI"
+        },
+        "1": {
+            "-1": "0.0219478737997257*r**4*(-0.166666666666667*r*Math.sinh(0.333333333333333*r) + 0.166666666666667*r*Math.cosh(0.333333333333333*r) + Math.sinh(0.333333333333333*r) - Math.cosh(0.333333333333333*r))**2*Math.sin(theta)**2*Math.cos(phi)**2/Math.PI",
+            "0": "0.0109739368998628*r**4*(1 - 0.166666666666667*r)**2*Math.exp(-0.666666666666667*r)*Math.cos(theta)**2/Math.PI",
+            "1": "0.0219478737997257*r**4*(-0.166666666666667*r*Math.sinh(0.333333333333333*r) + 0.166666666666667*r*Math.cosh(0.333333333333333*r) + Math.sinh(0.333333333333333*r) - Math.cosh(0.333333333333333*r))**2*Math.sin(phi)**2*Math.sin(theta)**2/Math.PI"
+        },
+        "2": {
+            "-2": "0.00060966316110349*r**6*Math.exp(-0.666666666666667*r)*Math.sin(phi)**2*Math.sin(theta)**4*Math.cos(phi)**2/Math.PI",
+            "-1": "0.00060966316110349*r**6*Math.exp(-0.666666666666667*r)*Math.sin(theta)**2*Math.cos(phi)**2*Math.cos(theta)**2/Math.PI",
+            "0": "2.54026317126454e-5*r**6*(3*Math.cos(theta)**2 - 1)**2*Math.exp(-0.666666666666667*r)/Math.PI",
+            "1": "0.00060966316110349*r**6*Math.exp(-0.666666666666667*r)*Math.sin(phi)**2*Math.sin(theta)**2*Math.cos(theta)**2/Math.PI",
+            "2": "0.000152415790275873*r**6*(2*Math.sin(phi)**2*Math.sinh(0.333333333333333*r) - 2*Math.sin(phi)**2*Math.cosh(0.333333333333333*r) - Math.sinh(0.333333333333333*r) + Math.cosh(0.333333333333333*r))**2*Math.sin(theta)**4/Math.PI"
+        }
+    },
+    "4": {
+        "0": {
+            "0": "0.015625*r**2*(-0.00520833333333333*r**3 + 0.125*r**2 - 0.75*r + 1)**2*Math.exp(-0.5*r)/Math.PI"
+        },
+        "1": {
+            "-1": "0.009765625*r**4*(0.0125*r**2 - 0.25*r + 1)**2*Math.exp(-0.5*r)*Math.sin(theta)**2*Math.cos(phi)**2/Math.PI",
+            "0": "0.0048828125*r**4*(0.0125*r**2 - 0.25*r + 1)**2*Math.exp(-0.5*r)*Math.cos(theta)**2/Math.PI",
+            "1": "0.009765625*r**4*(0.0125*r**2 - 0.25*r + 1)**2*Math.exp(-0.5*r)*Math.sin(phi)**2*Math.sin(theta)**2/Math.PI"
+        },
+        "2": {
+            "-2": "0.0003662109375*r**6*(-0.0833333333333333*r*Math.sinh(0.25*r) + 0.0833333333333333*r*Math.cosh(0.25*r) + Math.sinh(0.25*r) - Math.cosh(0.25*r))**2*Math.sin(phi)**2*Math.sin(theta)**4*Math.cos(phi)**2/Math.PI",
+            "-1": "0.0003662109375*r**6*(-0.0833333333333333*r*Math.sinh(0.25*r) + 0.0833333333333333*r*Math.cosh(0.25*r) + Math.sinh(0.25*r) - Math.cosh(0.25*r))**2*Math.sin(theta)**2*Math.cos(phi)**2*Math.cos(theta)**2/Math.PI",
+            "0": "1.52587890625e-5*r**6*(1 - 0.0833333333333333*r)**2*(3*Math.cos(theta)**2 - 1)**2*Math.exp(-0.5*r)/Math.PI",
+            "1": "0.0003662109375*r**6*(-0.0833333333333333*r*Math.sinh(0.25*r) + 0.0833333333333333*r*Math.cosh(0.25*r) + Math.sinh(0.25*r) - Math.cosh(0.25*r))**2*Math.sin(phi)**2*Math.sin(theta)**2*Math.cos(theta)**2/Math.PI",
+            "2": "0.0003662109375*r**6*(-0.0833333333333333*r*Math.sin(phi)**2*Math.sinh(0.25*r) + 0.0833333333333333*r*Math.sin(phi)**2*Math.cosh(0.25*r) + 0.0416666666666667*r*Math.sinh(0.25*r) - 0.0416666666666667*r*Math.cosh(0.25*r) + Math.sin(phi)**2*Math.sinh(0.25*r) - Math.sin(phi)**2*Math.cosh(0.25*r) - 0.5*Math.sinh(0.25*r) + 0.5*Math.cosh(0.25*r))**2*Math.sin(theta)**4/Math.PI"
+        },
+        "3": {
+            "-3": "1.05963812934028e-7*r**8*Math.exp(-0.5*r)*Math.sin(theta)**6*Math.cos(3*phi)**2/Math.PI",
+            "-2": "2.54313151041667e-6*r**8*Math.exp(-0.5*r)*Math.sin(phi)**2*Math.sin(theta)**4*Math.cos(phi)**2*Math.cos(theta)**2/Math.PI",
+            "-1": "6.35782877604167e-8*r**8*(5*Math.sin(theta)**2*Math.sinh(0.25*r) - 5*Math.sin(theta)**2*Math.cosh(0.25*r) - 4*Math.sinh(0.25*r) + 4*Math.cosh(0.25*r))**2*Math.sin(theta)**2*Math.cos(phi)**2/Math.PI",
+            "0": "2.11927625868056e-8*r**8*(5*Math.cos(theta)**2 - 3)**2*Math.exp(-0.5*r)*Math.cos(theta)**2/Math.PI",
+            "1": "6.35782877604167e-8*r**8*(5*Math.sin(theta)**2*Math.sinh(0.25*r) - 5*Math.sin(theta)**2*Math.cosh(0.25*r) - 4*Math.sinh(0.25*r) + 4*Math.cosh(0.25*r))**2*Math.sin(phi)**2*Math.sin(theta)**2/Math.PI",
+            "2": "6.35782877604167e-7*r**8*(2*Math.sin(phi)**2*Math.sinh(0.25*r) - 2*Math.sin(phi)**2*Math.cosh(0.25*r) - Math.sinh(0.25*r) + Math.cosh(0.25*r))**2*Math.sin(theta)**4*Math.cos(theta)**2/Math.PI",
+            "3": "1.05963812934028e-7*r**8*Math.exp(-0.5*r)*Math.sin(3*phi)**2*Math.sin(theta)**6/Math.PI"
+        }
+    }
+}
