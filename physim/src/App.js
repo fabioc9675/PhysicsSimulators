@@ -304,6 +304,21 @@ export default function App() {
               />
             )}
           />
+          <Route
+            forceRefresh={true}
+            exact
+            path={dataSim.simHyAt20231.path}
+            component={() => (
+              <SimFrame
+                paneTitle={dataSim.simHyAt20231.title}
+                url={dataSim.simHyAt20231.url}
+                doc={dataSim.simHyAt20231.doc}
+                act={dataSim.simHyAt20231.act}
+                author={dataSim.simHyAt20231.author}
+                email={dataSim.simHyAt20231.email}
+              />
+            )}
+          />
 
           <Route
             forceRefresh={true}
