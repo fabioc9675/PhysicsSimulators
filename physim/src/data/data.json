@@ -237,6 +237,17 @@
     "abst": "Simulación Tiro parabólico en diferentes planetas, se estudia las componentes vectoriales del movimiento, velocidad y ángulo iniciales, variación masa, rozamiento y variación de la gravedad.",
     "icon": "resources/logos/Sim_PL20231_400x400.jpg"
   },
+  "simRiPe20231": {
+    "path": "/RigidPendulum20231",
+    "title": "Péndulo doble rígido",
+    "url": "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2023_1/RigidPendulum/sketch.js",
+    "doc": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2023_1/RigidPendulum/phy.pdf&embedded=true",
+    "act": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2023_1/RigidPendulum/act.pdf&embedded=true",
+    "author": ["Kevin Cortés", "Samuel Vasco", "-"],
+    "email": ["kevin.cortes@udea.edu.co", "samuel.vasco@udea.edu.co", "-"],
+    "abst": "Se presenta una simulación de un péndulo doble compuesto por cuerpos rígidos con distribución de masas uniforme.",
+    "icon": "resources/logos/Sim_RP20231_400x400.png"
+  },
 
   "sim01": {
     "path": "/simul_01",
