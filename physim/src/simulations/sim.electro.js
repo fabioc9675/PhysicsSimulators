@@ -46,6 +46,15 @@ export default function SimElectro() {
                 abstract={dataSim.simIsMo.abst}
               />
             </div>
+            <div className="SimButton">
+              <SimDescriptor
+                buttonLabel="Simulacion IM_20231"
+                pathUrl={dataSim.simIsMa20231.path}
+                imgDir={dataSim.simIsMa20231.icon}
+                title={dataSim.simIsMa20231.title}
+                abstract={dataSim.simIsMa20231.abst}
+              />
+            </div>
           </div>
         </div>
       </div>

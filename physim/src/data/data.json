@@ -248,6 +248,25 @@
     "abst": "Se presenta una simulación de un péndulo doble compuesto por cuerpos rígidos con distribución de masas uniforme.",
     "icon": "resources/logos/Sim_RP20231_400x400.png"
   },
+  "simIsMa20231": {
+    "path": "/IssingMagnetic20231",
+    "title": "Modelo de ising magnético",
+    "url": "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2023_1/IssingMagnetic/sketch.js",
+    "doc": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2023_1/IssingMagnetic/phy.pdf&embedded=true",
+    "act": "https://docs.google.com/gview?url=https://github.com/fabioc9675/PhysicsSimulators/raw/devFabian/PhysicsProjects/2023_1/IssingMagnetic/act.pdf&embedded=true",
+    "author": [
+      "David Andrés Pedroza",
+      "Sebastian Saavedra Patiño",
+      "Jordan Hernandez Daza"
+    ],
+    "email": [
+      "david.pedroza@udea.edu.co",
+      "wilfredo.saavedra@udea.edu.co",
+      "jordan.hernandez@udea.edu.co"
+    ],
+    "abst": "El modelo de Ising es un modelo físico que describe la interacción entre espines en una red, útil para estudiar fenómenos magnéticos.",
+    "icon": "resources/logos/Sim_IM20231_400x400.jpg"
+  },
   "simHyAt20231": {
     "path": "/HydrogenAtom20231",
     "title": "Orbitales del átomo de Hidrógeno",

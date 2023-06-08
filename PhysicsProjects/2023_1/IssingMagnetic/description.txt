@@ -1,0 +1,5 @@
+Acerca de la simulación
+NOMBRE: Modelo de ising
+DESCRIPCIÓN:El modelo de Ising es un modelo físico que describe la interacción entre espines en una red, útil para estudiar fenómenos magnéticos.
+AUTORES: David Andrés Pedroza - Sebastian Saavedra Patiño- Jordan Hernandez Daza
+CORREOS: david.pedroza@udea.edu.co - wilfredo.saavedra@udea.edu.co - jordan.hernandez@udea.edu.co 
