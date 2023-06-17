@@ -1,0 +1,3 @@
+[submodule "simulaciones-fisica"]
+	path = simulaciones-fisica
+	url = https://github.com/fabioc9675/simulaciones-fisica.git
