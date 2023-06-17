@@ -1,9 +1,9 @@
 /* ***********************************************************
  * ******* SIMULACION LABORATORIO AVANZADO 3 *****************
  * ***********************************************************
- * * Autores: Juan Pablo Ortiz Gil                           *
- * *          Samuel Quitian Gallego                         *
- * *          Waira Murillo García                           *
+ * * Autores: Cristian David Gutierrez                       *
+ * *          Joseph Nicolay Ruiz                            *
+ * *          Sergio Castrillon                              *
  * * Institucion: Universidad de Antioquia                   *
  * * Curso: Laboratorio avanzado 3                           *
  * ***********************************************************/
