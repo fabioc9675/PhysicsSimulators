@@ -777,7 +777,7 @@ function updateM() {
 /// cargar la imagen para el fondo 
 function preload() {
   // Carga la imagen de fondo
-  backgroundImage = loadImage('background.jpg');
+  backgroundImage = loadImage('https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2023_2/QuantumArmonic/assets/background.jpg');
 }
 
 
