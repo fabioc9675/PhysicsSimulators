@@ -1,7 +1,6 @@
 Título: Oscilador Armónico Cuántico
 
-Descripción: Esta simulación permite visualizar las funciones de onda para el oscilador armónico cuántico, 
-sus módulos cuadrados y la evolución temporal de su parte real.  
+Descripción: Esta simulación permite visualizar las funciones de onda para el oscilador armónico cuántico, sus módulos cuadrados y la evolución temporal de su parte real.  
 
 Autores: Jonathan Posada Loaiza: jonathan.posada1@udea.edu.co
 	 Luis Miguel Galvis Elizalde: miguel.galvis@udea.edu.co 
