@@ -1,0 +1,3 @@
+Título: ONDAS ESTACIONARIAS EN TUBOS.
+Descripción: En la siguiente simulación encontrarás tres tipos de tubos en los cuales podrás observar cómo se comporta el movimiento del aire dentro de estos y podrás percibir la creación de nodos y antinodos para cada tubo en función de la frecuencia con la que vibra el aire.
+Autores: Gustavo Adolfo Castrillón Yepes (gadolfo.castrillon@udea.edu.co) y Ana María Correa Castrillón (ana.correa3@udea.edu.co)
