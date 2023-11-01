@@ -1,0 +1,6 @@
+Decaimiento radioactivo de múltiples elementos.
+La simulación presenta dos elementos en decaimiento, visualizando la desintegración de la cantidad de átomos en el tiempo y con la posibilidad de modificar parámetros.
+
+Simón González Gómez, José Luis Builes Canchala y Santiago Galvis Duque
+
+simon.gonzalezg1@udea.edu.co, jose.builesc@udea.edu.co, santiago.galvis@udea.edu.co
