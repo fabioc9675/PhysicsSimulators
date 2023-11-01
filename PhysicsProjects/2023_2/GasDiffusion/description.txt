@@ -1,0 +1,4 @@
+Titulo: Difuión de gases
+Descripción: Este código simula la dispersión de gases en dos cajas separadas por una línea divisoria controlando partículas con diferentes características.
+Autor: Santiago Ruiz Piedrahita
+Correo: santiago.ruizp@udea.edu.co 
