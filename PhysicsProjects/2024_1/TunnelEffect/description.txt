@@ -1,0 +1,6 @@
+Nombre de la simulación: Efecto Túnel
+
+Descripción: Solución gráfica, interactiva y animada a la ecuación de Schrödinger para una partícula que choca contra 
+una barrera de potencial, presentando el fenómeno del tunelamiento cuántico.
+
+Autor: Juan Felipe Castello Arango - juan.castello@udea.edu.co
