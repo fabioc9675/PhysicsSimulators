@@ -1,0 +1,5 @@
+Experimento Doble Rendija
+
+La simulación visualiza el experimento de la doble rendija, mostrando la dualidad onda particula mediante sliders y activación de detectores.
+
+Santiago Moreno Gonzalez (santiago.moreno5@udea.edu.co)     Alejandra Echeverri (alejandra.echeverri3@udea.edu.co)     Juan Esteban Ospina Holguin (juan.ospina25@udea.edu.co)
