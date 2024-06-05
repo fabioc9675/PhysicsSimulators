@@ -1,0 +1,18 @@
+ + Nombre de la simulación de máximo 4 palabras
+      + Descripción máximo de 25 palabras
+      + Nombre de los autores
+      + Correo electrónico de los autores
+
+
+Nombre: Reaccion Nuclear en cadena
+
+Descripción: El siguiente programa muestra una reacción nuclear en cadena que ocurre cuando un neutrón choca con el núcleo de un isótopo radiactivo (uranio-235), desestabilizándolo y generando dos nuevos neutrones. Estos neutrones, a su vez, colisionan con otros núcleos, desestabilizándolos y produciendo dos nuevos neutrones energéticos que pueden impactar en núcleos vecinos, dando lugar a una reacción en cadena. Esta reacción libera una gran cantidad de energía.
+
+
+
+Nombre de los autores: Juan Manuel Albarracin Herrera, Santiago Ramirez Puentes
+
+Correo Electronico: manuel.albarracin@udea.edu.co, santiago.ramirez28@udea.edu.co
+
+
+
