@@ -23,13 +23,27 @@ let accy = [];
 let showVelocity = true; // Variable para controlar si se muestra el vector de velocidad o aceleración
 
 function preload() {
-    landscape = createImg("assets/blue.jpg");
-    r = createImg("assets/red.jpg");
-    f = createImg("assets/flecha.png"); //se necesitan estas tres iamgenes para el fondo pero nada mas.
-    f2 = createImg("assets/flecha.png");
-    f3 = createImg("assets/flecha.png");
-    f4 = createImg("assets/flecha.png");
-    f5 = createImg("assets/flecha.png");
+    landscape = createImg(
+        "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2024_1/ChargeParticles/assets/blue.jpg"
+    );
+    r = createImg(
+        "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2024_1/ChargeParticles/assets/red.jpg"
+    );
+    f = createImg(
+        "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2024_1/ChargeParticles/assets/flecha.png"
+    ); //se necesitan estas tres iamgenes para el fondo pero nada mas.
+    f2 = createImg(
+        "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2024_1/ChargeParticles/assets/flecha.png"
+    );
+    f3 = createImg(
+        "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2024_1/ChargeParticles/assets/flecha.png"
+    );
+    f4 = createImg(
+        "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2024_1/ChargeParticles/assets/flecha.png"
+    );
+    f5 = createImg(
+        "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2024_1/ChargeParticles/assets/flecha.png"
+    );
 }
 
 // La función setup se ejecuta una sola vez
