@@ -1,0 +1,4 @@
+Nombre de la simulación: Dilatación temporal en relatividad especial.
+Descripción: Simulación que muestra la dilatación temporal que sufre un sistema de referencia inercial con una velocidad respecto a otro sistema en reposo.
+Autores: Fabián Yamith Tovar, Alejandro Valencia Ossa, Emmanuel Sánchez Vásquez.
+Correo: fyamith.tovar@udea.edu.co, alejandro.valenciao1@udea.edu.co, emmanuel.sanchezv@udea.edu.co.
