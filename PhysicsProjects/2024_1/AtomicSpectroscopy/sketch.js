@@ -29,10 +29,10 @@ let menuElementos;
 function preload() {
   // Cargar la imagen desde una URL
   img = loadImage(
-    "https://github.com/fabioc9675/PhysicsSimulators/blob/devFabian/PhysicsProjects/2024_1/AtomicSpectroscopy/images/panel.png"
+    "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2024_1/AtomicSpectroscopy/images/panel.png"
   );
   img2 = loadImage(
-    "https://github.com/fabioc9675/PhysicsSimulators/blob/devFabian/PhysicsProjects/2024_1/AtomicSpectroscopy/images/TuboDescarga.png"
+    "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2024_1/AtomicSpectroscopy/images/TuboDescarga.png"
   );
 }
 
