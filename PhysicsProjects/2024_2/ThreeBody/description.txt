@@ -1,0 +1,6 @@
+Problema de los 3 cuerpos
+
+Esta simulación interactiva modela sistemas planetarios con física gravitacional real, permitiendo visualizar órbitas, trayectorias y datos posicionales de cuerpos celestes.
+
+Autor: Camilo Gómez Zapata
+Correo: camilo.gomez9@udea.edu.co

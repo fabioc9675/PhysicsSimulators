@@ -1,0 +1,8 @@
+Nombre de la simulación: Interferómetro de Mach Zehnder y bombas de Elitzur-Vaidman.
+Descripción: La simulación desarrollada modela cómo el interferómetro de Mach-Zehnder puede utilizarse para
+determinar el estado de una bomba de Elitzur-Vaidman sin necesidad de interactuar directamente con esta. 
+A través de esta simulación, se reproduce el comportamiento de un fotón dentro del interferómetro, 
+lo que permite al usuario explorar este fenómeno cuántico de manera visual.
+Nombre y correo electrónico de los autores: Yennifer Yuliana Guerrero Uchima; yuliana.guerrero@udea.edu.co
+Fernanda Mora Rey; fernanda.morar@udea.edu.co
+Dayana Andrea Henao Arbeláez; dayana.henaoa@udea.edu.co 

@@ -1,0 +1,8 @@
+﻿Nombre de la Simulación: Simulación Acelerador Ciclotrón
+Descripción: Visualización y análisis del comportamiento de una partícula cargada en un acelerador ciclotrón. Permitiendo explorar empíricamente la dinámica del sistema (su movimiento) y cómo esto termina siendo caracterizado principalmente por dos aspectos: la frecuencia ciclotrónica y el radio ciclotrónico. Estas cantidades dependen y se relacionan con los parámetros del sistema: carga, masa y velocidad de la partícula; e intensidad de los campos eléctrico y magnético.
+Autores: Juan Sebastián Sánchez Guarnizo
+Daniel Valle Jaramillo
+Jamir Moreno Salazar
+Correo Electrónico de los Autores: jsebastian.sanchez@udea.edu.co
+daniel.vallej@udea.edu.co
+jamir.morenos@udea.edu.co

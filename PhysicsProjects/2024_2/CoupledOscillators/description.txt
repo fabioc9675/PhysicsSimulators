@@ -1,0 +1,15 @@
+Nombre de la simulación: Sistema de N Osciladores Acoplados
+
+Descripción: Simulación interactiva de osciladores acoplados con N cuerpos, permitiendo ajustar parámetros, analizar frecuencias normales y visualizar en tiempo real sus modos de vibración.
+
+Autores:
+- David Alava
+- David Vázquez
+- Caterine Bedoya
+- Jhonatan Jurado
+
+Correos electrónicos:
+- david.alava@udea.edu.co
+- david.vasquez4@udea.edu.co
+- caterine.bedoyab@udea.edu.co
+- jhonatan.jurado@udea.edu.co
