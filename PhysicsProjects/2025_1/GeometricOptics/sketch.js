@@ -32,7 +32,7 @@ let kittyHeight = 60;
 // Precargar la imagen de Hello Kitty
 function preload() {
   kittyImg = loadImage(
-    "https://th.bing.com/th/id/R.9f85069c807654e04b1b3b5ce6463e57?rik=1aQtmfXVrBEymg&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fpng-hello-kitty-hello-kitty-png-icon-image-16787-1330.png&ehk=zyi4GN6LXZb4fkfy18G1dbE%2bBr2%2bfX6ExDsFkps07CA%3d&risl=&pid=ImgRaw&r=0"
+    "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2025_1/GeometricOptics/assets/kitty.png"
   );
 }
 
