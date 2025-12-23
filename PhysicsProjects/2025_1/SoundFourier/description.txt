@@ -1,0 +1,15 @@
+   + Nombre de la simulación (3 a 4 palabras)
+      + Descripción máximo de 25 palabras
+      + Nombre de los autores
+      + Correo electrónico de los autores
+
+Ondas y timbres musicales
+    Simulación interactiva que combina ondas sonoras, timbres musicales 
+    y transformada de Fourier, permitiendo explorar armónicos, frecuencias
+    y ejercicios didácticos en acústica.
+
+    Emmanuel Botero Osorio
+    Camilo Londoño Vera
+
+    emmanuel.botero@udea.edu.co
+    camilo.londonov@udea.edu.co
