@@ -1,0 +1,11 @@
+Reactor RBMK
+
+Se realiza la simulación de un reactor tipo RBMK usado en Chernóbil. 
+
+Juan Camilo Gallego Bedoya
+Kevin Restrepo Tobón
+Samuel Durán Bustamante
+
+camilo.gallego1@udea.edu.co
+kevin.restrepot@udea.edu.co
+samuel.duran@udea.edu.co
