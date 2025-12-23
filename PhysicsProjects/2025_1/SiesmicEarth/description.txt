@@ -1,0 +1,14 @@
+Simulación de Terremotos en Edificios
+
+Descripción:
+Simulación interactiva en p5.js que muestra cómo diferentes edificios responden a un terremoto, indicando daño y tiempo de colapso.
+
+Autores:
+José Luis Torres López
+Julián Francisco Pinchao
+Juan Esteban Berrío Salazar
+
+Correos:
+jose.torresl@udea.edu.co
+jfrancisco.pinchao@udea.edu.co
+juan.berrios@udea.edu.co
