@@ -1,0 +1,9 @@
+Generación Probabilistica de Rayos 
+
+Simulación interactiva que modela la formación de rayos según humedad, presión, temperatura y carga, mostrando probabilidad, campo eléctrico y visualización gráfica del fenómeno.
+
+Maria Alejandra Sánchez Calderón
+Anna Sofía Giraldo Neira
+
+alejandra.sanchez2@udea.edu.co
+anna.giraldo@udea.edu.co
