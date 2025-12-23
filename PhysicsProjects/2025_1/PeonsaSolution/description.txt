@@ -1,0 +1,8 @@
+General Top Simulation
+
+Summary: Simulation of the motion of a rigid top with arbitrary defining
+parameters controlled by the user.
+
+Authors: Luciano Muñoz, Juan David Salcedo
+
+Emails: luciano.munoz1@udea.edu.co, jdavid.salcedo@udea.edu.co
