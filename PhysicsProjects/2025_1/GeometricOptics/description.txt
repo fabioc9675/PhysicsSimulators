@@ -1,0 +1,8 @@
+﻿Simulador de Óptica de Geométrica
+
+
+Autores: Salomé Osorio Muñoz y Melissa Estrada Murillo
+Correo electrónico: salome.osoriom@udea.edu.co y melissa.estradam@udea.edu.co
+
+
+Simulador interactivo que visualiza formación de imágenes en lentes (convergentes/divergentes) y espejos (planos/cóncavos/convexos), mostrando trayectorias de rayos, posición, tamaño y tipo de imagen (real/virtual).
