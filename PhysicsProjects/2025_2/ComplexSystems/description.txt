@@ -1,0 +1,9 @@
+Nombre de la simulación: Atractor caótico de Rössler
+
+Descripción: Simulación interactiva que resuelve numéricamente el sistema de Rössler, visualiza el atractor, calcula exponentes de Lyapunov y explora bifurcaciones mediante variación paramétrica en tiempo real. 
+
+Nombres de las autoras: Sara Alejandra Carvajal y Ana María Arcila 
+Correo electrónico:
+* saraa.carvajal@udea.edu.co
+* ana.arcila1@udea.edu.co 
+
