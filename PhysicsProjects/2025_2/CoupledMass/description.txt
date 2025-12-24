@@ -1,0 +1,4 @@
+Nombre: Dinamica de masas acopladas
+Descripcion: Movimiento circular y oscilatorio en masas acopladas.
+Autor: Miguel Angel Revelo Cordoba
+Correo: miguel.revelo1@udea.edu.co
