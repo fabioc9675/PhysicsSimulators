@@ -1,0 +1,15 @@
+**SIMULACION: RUEDA DE MAXWELL**
+
+Descripcion: 
+Simulación dinámica que modela el movimiento oscilatorio de una rueda suspendida por cuerda, incluyendo rotación, energía, fricción 
+y comportamiento realista del sistema.
+
+Autores: 
+Jeronimo Lopez Gomez
+Crismer Figueroa Velez
+Valentina Lobo Ruiz
+
+Correos: 
+jeronimo.lopezg@udea.edu.co
+cjinelly.figueroa@udea.edu.co
+valentina.lobo@udea.edu.co
