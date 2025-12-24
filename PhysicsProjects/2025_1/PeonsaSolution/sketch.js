@@ -22,7 +22,7 @@ const params = {
   I3: 1,
   m: 0.1,
   g: 9.8,
-  l: 0.3
+  l: 0.3,
 };
 
 // Initial state (resettable)
@@ -39,15 +39,17 @@ let myFont;
 
 function preload() {
   // Put a .ttf or .otf font in your project folder
-  myFont = loadFont('MyriadPro-Regular.otf');
+  myFont = loadFont("MyriadPro-Regular.otf");
 }
 
 function setup() {
   createCanvas(windowWidth, windowHeight, WEBGL);
-  camera(-500, -400, -100,   0, 0, 0,   0, 1, 0);
+  camera(-500, -400, -100, 0, 0, 0, 0, 1, 0);
 
   angleMode(RADIANS);
-  document.getElementById("resetBtn").addEventListener("click", resetSimulation);
+  document
+    .getElementById("resetBtn")
+    .addEventListener("click", resetSimulation);
 
   textFont(myFont);
   textAlign(CENTER, CENTER);
@@ -102,9 +104,9 @@ function resetSimulation() {
   params.I1 = parseFloat(document.getElementById("I1").value);
   params.I2 = parseFloat(document.getElementById("I2").value);
   params.I3 = parseFloat(document.getElementById("I3").value);
-  params.m  = parseFloat(document.getElementById("m").value);
-  params.g  = parseFloat(document.getElementById("g").value);
-  params.l  = parseFloat(document.getElementById("l").value);
+  params.m = parseFloat(document.getElementById("m").value);
+  params.g = parseFloat(document.getElementById("g").value);
+  params.l = parseFloat(document.getElementById("l").value);
 
   // Reset state to initial conditions
   state = [
@@ -113,7 +115,7 @@ function resetSimulation() {
     parseFloat(document.getElementById("psi").value) * DEG,
     parseFloat(document.getElementById("p_theta").value) * DEG,
     parseFloat(document.getElementById("p_phi").value) * DEG,
-    parseFloat(document.getElementById("p_psi").value) * DEG
+    parseFloat(document.getElementById("p_psi").value) * DEG,
   ];
 
   //  Reset time and clear trail
@@ -140,8 +142,6 @@ function drawTop(dir, psi) {
   strokeWeight(4);
   line(0, 0, 0, 0, 0, 0);
 
-
-
   translate(0, -0.7, 0);
 
   const r = 0.2;
@@ -155,7 +155,7 @@ function drawTop(dir, psi) {
   noFill();
   stroke(0, 100, 200, 150);
   strokeWeight(0.5);
-  ellipse(0, 0, 2*r, 2*r);
+  ellipse(0, 0, 2 * r, 2 * r);
 
   // Arrowhead
   stroke(0, 100, 200);
@@ -173,9 +173,11 @@ function drawTop(dir, psi) {
 // Física (igual que antes)
 function massMatrix(th, ph, ps) {
   const { I1, I2, I3 } = params;
-  const sTh = Math.sin(th), cTh = Math.cos(th);
-  const sPs = Math.sin(ps), cPs = Math.cos(ps);
-  const M11 = (I1 * cPs * cPs + I2 * sPs * sPs);
+  const sTh = Math.sin(th),
+    cTh = Math.cos(th);
+  const sPs = Math.sin(ps),
+    cPs = Math.cos(ps);
+  const M11 = I1 * cPs * cPs + I2 * sPs * sPs;
   const M12 = (I1 - I2) * sTh * sPs * cPs;
   const M13 = 0;
   const M21 = M12;
@@ -184,25 +186,31 @@ function massMatrix(th, ph, ps) {
   const M31 = M13;
   const M32 = M23;
   const M33 = I3;
-  return [[M11, M12, M13],[M21, M22, M23],[M31, M32, M33]];
+  return [
+    [M11, M12, M13],
+    [M21, M22, M23],
+    [M31, M32, M33],
+  ];
 }
 
 function invert3(m) {
   const [a, b, c, d, e, f] = [
-    m[0][0], m[0][1], m[0][2],
-    m[1][1], m[1][2], m[2][2]
+    m[0][0],
+    m[0][1],
+    m[0][2],
+    m[1][1],
+    m[1][2],
+    m[2][2],
   ];
   const det = a * (d * f - e * e) - b * b * f;
   if (Math.abs(det) < 1e-12) throw "singular matrix";
   const inv = [
-    [(d*f - e*e),(c*e - b*f),(b*e - c*d)],
-    [(c*e - b*f),(a*f - c*c),(b*c - a*e)],
-    [(b*e - c*d),(b*c - a*e),(a*d - b*b)]
+    [d * f - e * e, c * e - b * f, b * e - c * d],
+    [c * e - b * f, a * f - c * c, b * c - a * e],
+    [b * e - c * d, b * c - a * e, a * d - b * b],
   ];
   const idet = 1 / det;
-  for (let i = 0; i < 3; i++)
-    for (let j = 0; j < 3; j++)
-      inv[i][j] *= idet;
+  for (let i = 0; i < 3; i++) for (let j = 0; j < 3; j++) inv[i][j] *= idet;
   return inv;
 }
 
@@ -216,18 +224,19 @@ function momentaDot(Q, Qdot) {
   const { I1, I2, I3, m, g, l } = params;
   const [th, ph, ps] = Q;
   const [thd, phd, psd] = Qdot;
-  const sTh = Math.sin(th), cTh = Math.cos(th);
-  const sPs = Math.sin(ps), cPs = Math.cos(ps);
-  const dp1 = (
-    I2*phd*cTh*cPs*(phd*sTh*cPs - thd*sPs) +
-    I1*phd*cTh*sPs*(phd*sTh*sPs + thd*cPs) -
-    I3*phd*sTh*(phd*cTh + psd) + m*g*l*sTh
-  );
+  const sTh = Math.sin(th),
+    cTh = Math.cos(th);
+  const sPs = Math.sin(ps),
+    cPs = Math.cos(ps);
+  const dp1 =
+    I2 * phd * cTh * cPs * (phd * sTh * cPs - thd * sPs) +
+    I1 * phd * cTh * sPs * (phd * sTh * sPs + thd * cPs) -
+    I3 * phd * sTh * (phd * cTh + psd) +
+    m * g * l * sTh;
   const dp2 = 0;
-  const dp3 = (
-    I1*(phd*sTh*sPs + thd*cPs)*(phd*sTh*cPs - thd*sPs) -
-    I2*(phd*sTh*cPs - thd*sPs)*(phd*sTh*sPs + thd*cPs)
-  );
+  const dp3 =
+    I1 * (phd * sTh * sPs + thd * cPs) * (phd * sTh * cPs - thd * sPs) -
+    I2 * (phd * sTh * cPs - thd * sPs) * (phd * sTh * sPs + thd * cPs);
   return [dp1, dp2, dp3];
 }
 
@@ -241,11 +250,11 @@ function derivatives(_, y) {
 
 function rk4Step(y, h) {
   const k1 = derivatives(t, y);
-  const k2 = derivatives(t + h/2, addScaled(y, k1, h/2));
-  const k3 = derivatives(t + h/2, addScaled(y, k2, h/2));
+  const k2 = derivatives(t + h / 2, addScaled(y, k1, h / 2));
+  const k3 = derivatives(t + h / 2, addScaled(y, k2, h / 2));
   const k4 = derivatives(t + h, addScaled(y, k3, h));
   for (let i = 0; i < y.length; i++)
-    y[i] += h/6*(k1[i] + 2*k2[i] + 2*k3[i] + k4[i]);
+    y[i] += (h / 6) * (k1[i] + 2 * k2[i] + 2 * k3[i] + k4[i]);
 }
 
 // Helper functions
@@ -255,14 +264,15 @@ function addScaled(y, k, a) {
 
 function mulMatVec(M, v) {
   return [
-    M[0][0]*v[0] + M[0][1]*v[1] + M[0][2]*v[2],
-    M[1][0]*v[0] + M[1][1]*v[1] + M[1][2]*v[2],
-    M[2][0]*v[0] + M[2][1]*v[1] + M[2][2]*v[2]
+    M[0][0] * v[0] + M[0][1] * v[1] + M[0][2] * v[2],
+    M[1][0] * v[0] + M[1][1] * v[1] + M[1][2] * v[2],
+    M[2][0] * v[0] + M[2][1] * v[1] + M[2][2] * v[2],
   ];
 }
 
 function bodyAxisTip(y) {
-  const th = y[0], ph = y[1];
+  const th = y[0],
+    ph = y[1];
   return createVector(
     Math.sin(th) * Math.cos(ph),
     Math.sin(th) * Math.sin(ph),
@@ -275,38 +285,38 @@ function drawAxes() {
   strokeWeight(1.5);
 
   // X-axis
-  stroke(220,30,30);
-  line(0,0,0,AXIS_LEN,0,0);
+  stroke(220, 30, 30);
+  line(0, 0, 0, AXIS_LEN, 0, 0);
   push();
-  translate(AXIS_LEN+0.05, 0, 0);
+  translate(AXIS_LEN + 0.05, 0, 0);
   rotateY(PI); // face the camera
-  fill(220,30,30);
+  fill(220, 30, 30);
   noStroke();
   textSize(0.2); // scaled to your scene
-  text('X', 0, 0);
+  text("X", 0, 0);
   pop();
 
   // Y-axis
-  stroke(30,220,30);
-  line(0,0,0,0,AXIS_LEN,0);
+  stroke(30, 220, 30);
+  line(0, 0, 0, 0, AXIS_LEN, 0);
   push();
-  translate(0, AXIS_LEN+0.05, 0);
+  translate(0, AXIS_LEN + 0.05, 0);
   rotateY(PI);
-  fill(30,220,30);
+  fill(30, 220, 30);
   noStroke();
   textSize(0.2);
-  text('Y', 0, 0);
+  text("Y", 0, 0);
   pop();
 
   // Z-axis
-  stroke(30,30,220);
-  line(0,0,0,0,0,AXIS_LEN);
+  stroke(30, 30, 220);
+  line(0, 0, 0, 0, 0, AXIS_LEN);
   push();
-  translate(0, 0, AXIS_LEN+0.05);
+  translate(0, 0, AXIS_LEN + 0.05);
   //rotateY(PI);
-  fill(30,30,220);
+  fill(30, 30, 220);
   noStroke();
   textSize(0.2);
-  text('Z', 0, 0);
+  text("Z", 0, 0);
   pop();
 }
