@@ -1,0 +1,14 @@
+Transferencia de calor (conducción)
+
+Este proyecto presenta una simulación computacional interactiva de transferencia de calor por conducción entre dos barras sólidas en contacto térmico, desarrollada con JavaScript y p5.js.
+
+Autores:
+- Juan Pablo Sánchez Arroyave (juanpablo.sanchez@udea.edu.co)
+- Víctor Palacios Mena (victor.palacios@udea.edu.co)
+- David García Gómez (david.garcia@udea.edu.co)
+
+Universidad de Antioquia
+Facultad de Ciencias Exactas y Naturales
+Laboratorio Avanzado III -- Física
+Medellín, Colombia
+2025-1
