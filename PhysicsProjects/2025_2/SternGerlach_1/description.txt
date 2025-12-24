@@ -1,0 +1,4 @@
+·Nombre de la simulación: EXPERIMENTOS DE STERN-GERLACH SECUENCIALES
+·Descripción: Esta simulación muestra cuatro experimentos Stern-Gerlach secuenciales para ilustrar los principios básicos de la mecánica cuántica, como la cuantización, la superposición y los postulados.
+·Autor: Santiago Julio Dávila
+·Correo: santiago.juliod@udea.edu.co
