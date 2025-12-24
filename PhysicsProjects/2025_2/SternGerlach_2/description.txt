@@ -1,0 +1,8 @@
+SIMULACIÓN EXPERIMETO DE STERN-GERLACH
+
+Simulación interactiva del experimento de Stern–Gerlach que 
+permite explorar la medición del espín, el colapso cuántico y probabilidades según el eje de medición.
+
+Marlon Jhassir García Velasquez: marlon.garcia1@udea.edu.co                    
+Ricardo Felipe Moran Vasquez   : ricardo.moranv@udea.edu.co                   
+Juan Sebastian Agudelo Lozada  : sebastian.agudelo8@udea.edu.co
