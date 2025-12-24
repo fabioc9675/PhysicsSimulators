@@ -1,0 +1,10 @@
+Nombre de la simulación: Simulación Oscilador No Lineal
+
+Descripción: Visualiza la dinámica de una masa conectada a resortes en un anillo, permitiendo configurar ángulos y parámetros físicos en tiempo real. Explora configuraciones extrañas y pon a prueba a RK4.
+
+Autores: 
+Sebastian Carrillo Mejía - sebastian.carrillo1@udea.edu.co
+Andrés Felipe Riaño Quintanilla - andres.rianoq@udea.edu.co
+
+
+
