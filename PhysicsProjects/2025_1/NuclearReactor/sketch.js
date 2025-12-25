@@ -110,7 +110,7 @@ function preload() {
   ); //geiger click sound
   clickSound.setVolume(0.4);
   alertimg = loadImage(
-    "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2025_1/NuclearReactor/assets/kitty.png"
+    "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2025_1/NuclearReactor/assets/advertencia.png"
   ); //alerta cuando no hay bombeo de agua
   infoimg = loadImage(
     "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2025_1/NuclearReactor/assets/information-button.png"
