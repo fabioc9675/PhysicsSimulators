@@ -39,7 +39,7 @@ let myFont;
 
 function preload() {
   // Put a .ttf or .otf font in your project folder
-  myFont = loadFont("MyriadPro-Regular.otf");
+  myFont = loadFont("https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2025_1/PeonsaSolution/assets/MyriadPro-Regular.otf");
 }
 
 function setup() {
