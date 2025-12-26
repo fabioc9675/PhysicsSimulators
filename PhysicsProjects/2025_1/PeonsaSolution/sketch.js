@@ -25,6 +25,10 @@ const params = {
   l: 0.3,
 };
 
+// definicion de inputs
+let I1_in, I2_in, I3_in, m_in, g_in, l_in;
+let theta_in, psi_in, phi_in, p1_in, p2_in, p3_in;
+
 // Initial state (resettable)
 let state = [
   46 * DEG, // θ(0)
@@ -39,21 +43,108 @@ let myFont;
 
 function preload() {
   // Put a .ttf or .otf font in your project folder
-  myFont = loadFont("https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2025_1/PeonsaSolution/assets/MyriadPro-Regular.otf");
+  myFont = loadFont(
+    "https://raw.githubusercontent.com/fabioc9675/PhysicsSimulators/devFabian/PhysicsProjects/2025_1/PeonsaSolution/assets/MyriadPro-Regular.otf"
+  );
+}
+
+function textPlot() {
+  let info = createDiv("General Top");
+  info.position(25, 10);
+  info.style(`
+  color: black;
+  font-size: 25px;
+`);
+
+  let I1_if = createDiv("I1 [kg·m²]: ");
+  I1_if.position(5, 70);
+  let I2_if = createDiv("I2 [kg·m²]: ");
+  I2_if.position(5, 100);
+  let I3_if = createDiv("I3 [kg·m²]: ");
+  I3_if.position(5, 130);
+  let m_if = createDiv("m [kg]: ");
+  m_if.position(5, 160);
+  let g_if = createDiv("g [m/s²]: ");
+  g_if.position(5, 190);
+  let l_if = createDiv("l [m]: ");
+  l_if.position(5, 220);
+  let theta_if = createDiv("θ(0) [deg]: ");
+  theta_if.position(5, 260);
+  let psi_if = createDiv("φ(0) [deg]: ");
+  psi_if.position(5, 290);
+  let phi_if = createDiv("ψ(0) [deg]: ");
+  phi_if.position(5, 320);
+  let p1_if = createDiv("p_θ(0) [kg deg/s]: ");
+  p1_if.position(5, 350);
+  let p2_if = createDiv("p_φ(0) [kg deg/s]: ");
+  p2_if.position(5, 380);
+  let p3_if = createDiv("p_ψ(0) [kg deg/s]: ");
+  p3_if.position(5, 410);
 }
 
 function setup() {
   createCanvas(windowWidth, windowHeight, WEBGL);
+  ui = createGraphics(windowWidth, windowHeight);
   camera(-500, -400, -100, 0, 0, 0, 0, 1, 0);
 
   angleMode(RADIANS);
-  document
-    .getElementById("resetBtn")
-    .addEventListener("click", resetSimulation);
 
   textFont(myFont);
   textAlign(CENTER, CENTER);
   textSize(0.1);
+
+  let button = createButton("Reset Simulation");
+  button.position(20, 500);
+
+  // Call repaint() when the button is pressed.
+  button.mousePressed(resetSimulation);
+
+  // definicion de inputs
+  I1_in = createInput("2");
+  I2_in = createInput("2");
+  I3_in = createInput("1");
+  m_in = createInput("0.1");
+  g_in = createInput("9.8");
+  l_in = createInput("0.3");
+
+  theta_in = createInput("46");
+  psi_in = createInput("0");
+  phi_in = createInput("0");
+  p1_in = createInput("54.02");
+  p2_in = createInput("297.94");
+  p3_in = createInput("378.15");
+
+  // definicion de inputs
+  I1_in.position(140, 70);
+  I2_in.position(140, 100);
+  I3_in.position(140, 130);
+  m_in.position(140, 160);
+  g_in.position(140, 190);
+  l_in.position(140, 220);
+
+  theta_in.position(140, 260);
+  psi_in.position(140, 290);
+  phi_in.position(140, 320);
+  p1_in.position(140, 350);
+  p2_in.position(140, 380);
+  p3_in.position(140, 410);
+
+  // definicion de inputs
+  I1_in.size(60, 15);
+  I2_in.size(60, 15);
+  I3_in.size(60, 15);
+  m_in.size(60, 15);
+  g_in.size(60, 15);
+  l_in.size(60, 15);
+
+  theta_in.size(60, 15);
+  psi_in.size(60, 15);
+  phi_in.size(60, 15);
+  p1_in.size(60, 15);
+  p2_in.size(60, 15);
+  p3_in.size(60, 15);
+
+  textPlot();
 }
 
 function draw() {
@@ -101,21 +192,22 @@ function draw() {
 // Restart
 function resetSimulation() {
   //  Update parameters, too
-  params.I1 = parseFloat(document.getElementById("I1").value);
-  params.I2 = parseFloat(document.getElementById("I2").value);
-  params.I3 = parseFloat(document.getElementById("I3").value);
-  params.m = parseFloat(document.getElementById("m").value);
-  params.g = parseFloat(document.getElementById("g").value);
-  params.l = parseFloat(document.getElementById("l").value);
+  params.I1 = parseFloat(I1_in.value());
+  params.I2 = parseFloat(I2_in.value());
+  params.I3 = parseFloat(I3_in.value());
+  params.m = parseFloat(m_in.value());
+  params.g = parseFloat(g_in.value());
+  params.l = parseFloat(l_in.value());
 
   // Reset state to initial conditions
+
   state = [
-    parseFloat(document.getElementById("theta").value) * DEG,
-    parseFloat(document.getElementById("phi").value) * DEG,
-    parseFloat(document.getElementById("psi").value) * DEG,
-    parseFloat(document.getElementById("p_theta").value) * DEG,
-    parseFloat(document.getElementById("p_phi").value) * DEG,
-    parseFloat(document.getElementById("p_psi").value) * DEG,
+    parseFloat(theta_in.value()) * DEG,
+    parseFloat(psi_in.value()) * DEG,
+    parseFloat(phi_in.value()) * DEG,
+    parseFloat(p1_in.value()) * DEG,
+    parseFloat(p2_in.value()) * DEG,
+    parseFloat(p3_in.value()) * DEG,
   ];
 
   //  Reset time and clear trail
