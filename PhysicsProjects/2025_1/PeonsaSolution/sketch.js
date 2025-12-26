@@ -227,7 +227,8 @@ function drawTop(dir, psi) {
 
   translate(0, -0.5, 0);
   noStroke();
-  ambientMaterial(0, 0, 0); //  Black but visible with lights
+  ambientMaterial(1, 1, 1); //  Black but visible with lights
+  normalMaterial();
   cone(0.15, 1);
 
   stroke(255, 0, 0);
